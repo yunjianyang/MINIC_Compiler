@@ -6,7 +6,7 @@ module edu.nyu.yunjian.Pr1 {
 
 space [ \t\n] | '//'.* | '/*'.*'*/';
 
-token Identifier | [A-Za-z_\$]+[A-Za-z0-9_\$]* ;
+token Identifier | [A-Za-z_\$][A-Za-z0-9_\$]* ;
 token Integer    | ⟨Digit⟩+ ;
 token String     | \"([^\\\n]? "\\\\"? "\\n"? "\\t"?
                       ("\\"[0-7][0-7]?[0-7]?)?
