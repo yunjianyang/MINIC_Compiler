@@ -29,6 +29,10 @@ Pr1[(
 -[Data[#]]: '$Print-Pr1$Typehelper' [#] → '$Print2-Pr1$Typehelper' [#, 0] ;
 
 
+'$Print-Pr1$Ivalue' [Pr1$Ivalue] :: Text ;
+-[Data[#]]: '$Print-Pr1$Ivalue' [#] → '$Print2-Pr1$Ivalue' [#, 0] ;
+
+
 '$Print-Pr1$Expr' [Pr1$Expr] :: Text ;
 -[Data[#]]: '$Print-Pr1$Expr' [#] → '$Print2-Pr1$Expr' [#, 0] ;
 
@@ -51,6 +55,10 @@ Pr1[(
 
 '$Print-Pr1$Declarationhelper' [Pr1$Declarationhelper] :: Text ;
 -[Data[#]]: '$Print-Pr1$Declarationhelper' [#] → '$Print2-Pr1$Declarationhelper' [#, 0] ;
+
+
+'$Print-Pr1$Programhelper' [Pr1$Programhelper] :: Text ;
+-[Data[#]]: '$Print-Pr1$Programhelper' [#] → '$Print2-Pr1$Programhelper' [#, 0] ;
 
 
 '$Print-Pr1$Program' [Pr1$Program] :: Text ;
@@ -153,6 +161,36 @@ $[If, $[GreaterThan, #prec, 0],
 $[If, $[GreaterThan, #prec, 0],
   %n⟪(‹ '$Print2-Pr1$Type' [#1, 0] ›,‹ '$Print2-Pr1$Typehelper' [#2, 0] ›)⟫,
   %n⟪‹ '$Print2-Pr1$Type' [#1, 0] ›,‹ '$Print2-Pr1$Typehelper' [#2, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr1$Typehelper' [ 'Pr1$Typehelper_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr1$Ivalue' [ 'Pr1$Ivalue__Identifier_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr1$Identifier' [#1, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr1$Identifier' [#1, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr1$Ivalue' [ 'Pr1$Ivalue_*_Expr_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(*‹ '$Print2-Pr1$Expr' [#1, 0] ›)⟫,
+  %n⟪*‹ '$Print2-Pr1$Expr' [#1, 0] ›⟫
 ];
 
 
@@ -418,6 +456,16 @@ $[If, $[GreaterThan, #prec, 0],
 
 <!--NOT SYMBOL REFERENCE FORM-->
 -[Data[#prec]] :
+'$Print2-Pr1$Exprhelper' [ 'Pr1$Exprhelper_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
 '$Print2-Pr1$Statement' [ 'Pr1$Statement_var_Type__Identifier_;' [#1, #2], #prec ]
 →
 $[If, $[GreaterThan, #prec, 7],
@@ -428,11 +476,11 @@ $[If, $[GreaterThan, #prec, 7],
 
 <!--NOT SYMBOL REFERENCE FORM-->
 -[Data[#prec]] :
-'$Print2-Pr1$Statement' [ 'Pr1$Statement__Expr_=_Expr_;' [#1, #2], #prec ]
+'$Print2-Pr1$Statement' [ 'Pr1$Statement__Ivalue_=_Expr_;' [#1, #2], #prec ]
 →
 $[If, $[GreaterThan, #prec, 6],
-  %n⟪(‹ '$Print2-Pr1$Expr' [#1, 0] › =  ‹ '$Print2-Pr1$Expr' [#2, 0] › ;)⟫,
-  %n⟪‹ '$Print2-Pr1$Expr' [#1, 0] › =  ‹ '$Print2-Pr1$Expr' [#2, 0] › ;⟫
+  %n⟪(‹ '$Print2-Pr1$Ivalue' [#1, 0] › =  ‹ '$Print2-Pr1$Expr' [#2, 0] › ;)⟫,
+  %n⟪‹ '$Print2-Pr1$Ivalue' [#1, 0] › =  ‹ '$Print2-Pr1$Expr' [#2, 0] › ;⟫
 ];
 
 
@@ -508,6 +556,16 @@ $[If, $[GreaterThan, #prec, 0],
 
 <!--NOT SYMBOL REFERENCE FORM-->
 -[Data[#prec]] :
+'$Print2-Pr1$Statementhelper' [ 'Pr1$Statementhelper_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
 '$Print2-Pr1$Declaration' [ 'Pr1$Declaration_function_Type__Identifier_(_Declarationhelper_){_Statementhelper_}' [#1, #2, #3, #4], #prec ]
 →
 $[If, $[GreaterThan, #prec, 0],
@@ -538,7 +596,17 @@ $[If, $[GreaterThan, #prec, 0],
 
 <!--NOT SYMBOL REFERENCE FORM-->
 -[Data[#prec]] :
-'$Print2-Pr1$Program' [ 'Pr1$Program__Declaration_' [#1], #prec ]
+'$Print2-Pr1$Declarationhelper' [ 'Pr1$Declarationhelper_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr1$Programhelper' [ 'Pr1$Programhelper__Declaration_' [#1], #prec ]
 →
 $[If, $[GreaterThan, #prec, 0],
   %n⟪(‹ '$Print2-Pr1$Declaration' [#1, 0] ›)⟫,
@@ -548,11 +616,31 @@ $[If, $[GreaterThan, #prec, 0],
 
 <!--NOT SYMBOL REFERENCE FORM-->
 -[Data[#prec]] :
-'$Print2-Pr1$Program' [ 'Pr1$Program__Declaration__Program_' [#1, #2], #prec ]
+'$Print2-Pr1$Programhelper' [ 'Pr1$Programhelper__Declaration_,_Programhelper_' [#1, #2], #prec ]
 →
 $[If, $[GreaterThan, #prec, 0],
-  %n⟪(‹ '$Print2-Pr1$Declaration' [#1, 0] › ‹ '$Print2-Pr1$Program' [#2, 0] ›)⟫,
-  %n⟪‹ '$Print2-Pr1$Declaration' [#1, 0] › ‹ '$Print2-Pr1$Program' [#2, 0] ›⟫
+  %n⟪(‹ '$Print2-Pr1$Declaration' [#1, 0] ›,‹ '$Print2-Pr1$Programhelper' [#2, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr1$Declaration' [#1, 0] ›,‹ '$Print2-Pr1$Programhelper' [#2, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr1$Programhelper' [ 'Pr1$Programhelper_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr1$Program' [ 'Pr1$Program__Declaration__Programhelper_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 1],
+  %n⟪(‹ '$Print2-Pr1$Declaration' [#1, 0] ›‹ '$Print2-Pr1$Programhelper' [#2, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr1$Declaration' [#1, 0] ›‹ '$Print2-Pr1$Programhelper' [#2, 0] ›⟫
 ];
 
 $Print2-Pr1$Computed[$Numeric, $Numeric] :: Text ;
@@ -577,6 +665,13 @@ $Print2-Pr1$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n]]›�
 
 
 <!--RULES FOR SORT Pr1$Typehelper.-->
+
+
+
+
+
+
+<!--RULES FOR SORT Pr1$Ivalue.-->
 
 
 
@@ -616,6 +711,7 @@ $Print2-Pr1$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n]]›�
 
 
 
+
 <!--RULES FOR SORT Pr1$Statement.-->
 
 
@@ -633,6 +729,7 @@ $Print2-Pr1$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n]]›�
 
 
 
+
 <!--RULES FOR SORT Pr1$Declaration.-->
 
 
@@ -644,8 +741,15 @@ $Print2-Pr1$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n]]›�
 
 
 
-<!--RULES FOR SORT Pr1$Program.-->
 
+<!--RULES FOR SORT Pr1$Programhelper.-->
+
+
+
+
+
+
+<!--RULES FOR SORT Pr1$Program.-->
 
 
 

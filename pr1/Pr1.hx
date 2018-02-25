@@ -3,14 +3,16 @@
 module edu.nyu.yunjian.Pr1 {
 
 /* LEXICAL ANALYSIS. */
-
-space [ \t\n] | '//'.* | '/*'.*'*/';
+space [ \t\n] | '//'.* | "/*"[^/]*(/[^\*]+)*[^/]*"*/";
 
 token Identifier | [A-Za-z_\$][A-Za-z0-9_\$]* ;
 token Integer    | ⟨Digit⟩+ ;
-token String     | \"([^\\\n]? "\\\\"? "\\n"? "\\t"?
+token String     | \"([^\\\n]|(\\\")|(\\\\)|(\\n)|(\\\n)|(\\t)|(\\[0-7][0-7]?[0-7]?)|(\\[xX][0-9a-fA-F][0-9a-fA-F]))*\" ;
+/*
+token String     | \"([^\\\n]? "\\\\"? "\\n"?"\\\n"?"\\t"?
                       ("\\"[0-7][0-7]?[0-7]?)?
                       ("\\"[xX][0-9a-fA-F][0-9a-fA-F])?)*\" ;
+*/                 
 
 token fragment Digit  | [0-9] ;
 
@@ -25,7 +27,12 @@ sort Type  | ⟦int⟧@2
 
 sort Typehelper | ⟦⟨Type⟩⟧
                 | ⟦⟨Type⟩,⟨Typehelper⟩⟧
+                | ⟦⟧
                 ;
+
+sort Ivalue | ⟦⟨Identifier⟩⟧
+            | ⟦*⟨Expr⟩⟧
+            ;
 
 sort Expr  | ⟦⟨Identifier⟩⟧@4
            | ⟦⟨String⟩⟧@4
@@ -55,10 +62,11 @@ sort Expr  | ⟦⟨Identifier⟩⟧@4
 
 sort Exprhelper | ⟦⟨Expr⟩⟧
                 | ⟦⟨Expr⟩,⟨Exprhelper⟩⟧
+                | ⟦⟧
                 ;
 
 sort Statement  | ⟦var ⟨Type⟩ ⟨Identifier⟩ ;⟧@7
-                | ⟦⟨Expr⟩ =  ⟨Expr⟩ ;⟧@6
+                | ⟦⟨Ivalue⟩ =  ⟨Expr⟩ ;⟧@6
                 | ⟦if ( ⟨Expr⟩ )  ⟨Statement⟩ ⟧@5
                 | ⟦if ( ⟨Expr⟩ )  ⟨Statement⟩ else ⟨Statement⟩⟧@4
                 | ⟦while ( ⟨Expr⟩ )  ⟨Statement⟩⟧@3
@@ -68,6 +76,7 @@ sort Statement  | ⟦var ⟨Type⟩ ⟨Identifier⟩ ;⟧@7
 
 sort Statementhelper | ⟦⟨Statement⟩⟧
                 | ⟦⟨Statement⟩ ⟨Statementhelper⟩⟧
+                | ⟦⟧
                 ;
 
 
@@ -77,9 +86,15 @@ sort Declaration | ⟦function ⟨Type⟩ ⟨Identifier⟩ (⟨Declarationhelper
 
 sort Declarationhelper | ⟦⟨Type⟩ ⟨Identifier⟩⟧
                        | ⟦⟨Type⟩ ⟨Identifier⟩,⟨Declarationhelper⟩⟧
+                       | ⟦⟧
                        ;
 
-main sort Program | ⟦⟨Declaration⟩⟧
-                  | ⟦⟨Declaration⟩ ⟨Program⟩⟧
+
+sort Programhelper | ⟦⟨Declaration⟩⟧
+                   | ⟦⟨Declaration⟩,⟨Programhelper⟩⟧
+                   | ⟦⟧
+                   ;
+                   
+main sort Program | ⟦⟨Declaration⟩⟨Programhelper⟩⟧@1
                   ;
 }

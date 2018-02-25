@@ -12,7 +12,7 @@ usage () {
 MODULE='edu.nyu.yunjian.Pr1'
 NAME='Pr1'
 SORT='Program'
-SORTS='Program Type Typehelper Expr Exprhelper Statement Statementhelper Declaration Declarationhelper Identifier Integer String'
+SORTS='Program Type Typehelper Ivalue Expr Exprhelper Statement Statementhelper Declaration Declarationhelper Programhelper Identifier Integer String'
 SINKCLASS='net.sf.crsx.text.TextSink'
 PARSERCLASS='edu.nyu.yunjian.Pr1Parser'
 PREFIX='pr1_'
@@ -93,7 +93,7 @@ if [ -z "$BUILD" -o ! -d "$BUILD" ]; then
 
 # Check options.
 if [ -z "$SORT" ]; then
-   fail=true; echo "${0}: SORT must be correctly specified (use default or one of "Program Type Typehelper Expr Exprhelper Statement Statementhelper Declaration Declarationhelper Identifier Integer String")" >&2
+   fail=true; echo "${0}: SORT must be correctly specified (use default or one of "Program Type Typehelper Ivalue Expr Exprhelper Statement Statementhelper Declaration Declarationhelper Programhelper Identifier Integer String")" >&2
 elif [ -z "$SCHEME" ]; then
    SCHEME="$NAME"'$'"$SORT";
 fi
