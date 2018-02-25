@@ -31462,3 +31462,180 @@ Note: Recompile with -Xlint:deprecation for details.
 + LD_LIBRARY_PATH=/home/yy1851/.hacs/lib/hacs/icu4c/lib
 + /home/yy1851/.hacs/lib/hacs/HacsRewriter term=MakeRun output=Pr1.run.tmp MODULE=edu.nyu.yunjian.Pr1 NAME=Pr1 SORT=Program 'SORTS=Program Type Typehelper Ivalue Expr Exprhelper Statement Statementhelper Declaration Declarationhelper Programhelper Identifier Integer String' SINKCLASS=net.sf.crsx.text.TextSink PARSERCLASS=edu.nyu.yunjian.Pr1Parser PREFIX=pr1_ METAPARSERCLASS=edu.nyu.yunjian.Pr1Hx METAPREFIX=pr1Meta_ EMBEDPARSERCLASS=edu.nyu.yunjian.Pr1Embed EMBEDPREFIX=pr1Embed_ PACKAGE=edu.nyu.yunjian PACKAGEDIR=edu/nyu/yunjian BUILD=/home/yy1851/Compiler/Project/pr1/build HACSVERSION=1.1.23 CRSXJAR=/home/yy1851/.hacs/share/java/crsx.jar HACSJAR=/home/yy1851/.hacs/share/java/hacs.jar CRSXC=/home/yy1851/.hacs/lib/hacs/crsxc ICU4CINCLUDE=/home/yy1851/.hacs/lib/hacs/icu4c/include ICU4CDIR=/home/yy1851/.hacs/lib/hacs/icu4c/lib LIBDIR=/home/yy1851/.hacs/lib/hacs BINDIR=/home/yy1851/.hacs/bin DOCDIR= SHAREDIR=/home/yy1851/.hacs/share/hacs SHAREJAVA=/home/yy1851/.hacs/share/java SHELL=/bin/bash JAVA=java JAVAC=javac
 + mv Pr1.run.tmp Pr1.run
++ java -ea -cp /home/yy1851/Compiler/Project/pr1/build:/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar -Dfile.encoding=UTF-8 -Xss80000K -Xmx4000m net.sf.crsx.run.Crsx allow-unnamed-rules allow-missing-cases sortify verbose=1 'grammar=('\''org.crsx.hacs.HxRaw'\'';'\''net.sf.crsx.text.Text'\'';)' input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx category=rawHxModule output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw.tmp simple-terms max-indent=10 width=255
+// $Sortify
+// $[Load, "/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx", "rawHxModule"]
+
+// Normalizing with 0 rules
+// Normal form with null after 0 rewrites
+
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw
++ '[' -x /home/yy1851/.hacs/lib/hacs/HacsRewriter -a -z '' ']'
++ LD_LIBRARY_PATH=/home/yy1851/.hacs/lib/hacs/icu4c/lib
++ /home/yy1851/.hacs/lib/hacs/HacsRewriter wrapper=Prep input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep.tmp
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep
++ sed -e :start -e '/[/][*][*][*][*][*]\([^*]\|[*][^*]\|[*][*][^*]\)*$/{N; bstart;}' -e 's./[*][*][*][*][*]\([A-Z]*[&]\)*USERPG\([&][A-Z]*\)*: *\(\([^*]\|[*][^*]\|[*][*][^*]\)*\)[*][*][*][*][*]/.\3.g' -e tstart -e 's./[*][*][*][*][*]\([^*]\|[*][^*]\|[*][*][^*]\)*[*][*][*][*][*]/..g' -e tstart -e 's/ *$//gM' /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Parser.pg.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Parser.pg
++ java -ea -cp /home/yy1851/Compiler/Project/pr1/build:/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar net.sf.crsx.pg.PG verbose=1 -source=/home/yy1851/Compiler/Project/pr1/build /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Parser.pg
++ mkdir -p /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/
++ cd /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/
++ java -cp /home/yy1851/.hacs/share/java/javacc.jar javacc Pr1Parser.jj
+Java Compiler Compiler Version 6.0_1 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file Pr1Parser.jj . . .
+Warning: Choice conflict involving two expansions at
+         line 1674, column 18 and line 1716, column 18 respectively.
+         A common prefix is: "if" "("
+         Consider using a lookahead of 3 or more for earlier expansion.
+Warning: Line 1950, Column 34: This choice can expand to the empty token sequence and will therefore always be taken in favor of the choices appearing later.
+File "TokenMgrError.java" is being rebuilt.
+File "ParseException.java" is being rebuilt.
+File "Token.java" is being rebuilt.
+File "SimpleCharStream.java" is being rebuilt.
+Parser generated with 0 errors and 2 warnings.
++ cd /home/yy1851/Compiler/Project/pr1/build
++ javac -cp :/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Parser.java
+Note: /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Parser.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
++ java -ea -cp /home/yy1851/Compiler/Project/pr1/build:/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar -Dfile.encoding=UTF-8 -Xss80000K -Xmx4000m net.sf.crsx.run.Crsx allow-unnamed-rules allow-missing-cases sortify verbose=1 'grammar=('\''org.crsx.hacs.HxRaw'\'';'\''net.sf.crsx.text.Text'\'';)' input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx category=rawHxModule output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw.tmp simple-terms max-indent=10 width=255
+// $Sortify
+// $[Load, "/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx", "rawHxModule"]
+
+// Normalizing with 0 rules
+// Normal form with null after 0 rewrites
+
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw
++ '[' -x /home/yy1851/.hacs/lib/hacs/HacsRewriter -a -z '' ']'
++ LD_LIBRARY_PATH=/home/yy1851/.hacs/lib/hacs/icu4c/lib
++ /home/yy1851/.hacs/lib/hacs/HacsRewriter wrapper=Prep input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep.tmp
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep
++ sed -e :start -e '/[/][*][*][*][*][*]\([^*]\|[*][^*]\|[*][*][^*]\)*$/{N; bstart;}' -e 's./[*][*][*][*][*]\([A-Z]*[&]\)*METAPG\([&][A-Z]*\)*: *\(\([^*]\|[*][^*]\|[*][*][^*]\)*\)[*][*][*][*][*]/.\3.g' -e tstart -e 's./[*][*][*][*][*]\([^*]\|[*][^*]\|[*][*][^*]\)*[*][*][*][*][*]/..g' -e tstart -e 's/ *$//gM' /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Hx.pgtemplate.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Hx.pgtemplate
++ mkdir -p /home/yy1851/Compiler/Project/pr1/build/org/crsx/hacs
++ cd /home/yy1851/Compiler/Project/pr1/build
++ jar xf /home/yy1851/.hacs/share/java/hacs.jar org/crsx/hacs/Hx.pgnames
++ cd /home/yy1851/Compiler/Project/pr1/build
++ jar xf /home/yy1851/.hacs/share/java/hacs.jar org/crsx/hacs/Hx.pgdecs
++ cd /home/yy1851/Compiler/Project/pr1/build
++ jar xf /home/yy1851/.hacs/share/java/hacs.jar org/crsx/hacs/Hx.pgpre
++ cd /home/yy1851/Compiler/Project/pr1/build
++ jar xf /home/yy1851/.hacs/share/java/hacs.jar org/crsx/hacs/Hx.pgpost
+++ sed -n 's/prefix *"\(.*\)".*/\1/p' /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Hx.pgtemplate
++ prefix=pr1Meta_
++ sed -e s/%%%PREFIX%%%/pr1Meta_/g
++ sed -e '/%%%HXNONTERMINALS%%%/ bnames' -e '/%%%HXDECLARATIONS%%%/ bdecs' -e '/%%%HXPREPRODUCTIONS%%%/ bpre' -e '/%%%HXPOSTPRODUCTIONS%%%/ bpost' -e b -e :names -e 'r /home/yy1851/Compiler/Project/pr1/build/org/crsx/hacs/Hx.pgnames' -e d -e :decs -e 'r /home/yy1851/Compiler/Project/pr1/build/org/crsx/hacs/Hx.pgdecs' -e d -e :pre -e 'r /home/yy1851/Compiler/Project/pr1/build/org/crsx/hacs/Hx.pgpre' -e d -e :post -e 'r /home/yy1851/Compiler/Project/pr1/build/org/crsx/hacs/Hx.pgpost' -e d -e 's/ *$//' /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Hx.pgtemplate
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Hx.pg.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Hx.pg
++ java -ea -cp /home/yy1851/Compiler/Project/pr1/build:/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar net.sf.crsx.pg.PG verbose=1 -source=/home/yy1851/Compiler/Project/pr1/build /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Hx.pg
++ mkdir -p /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/
++ cd /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/
++ java -cp /home/yy1851/.hacs/share/java/javacc.jar javacc Pr1Hx.jj
+Java Compiler Compiler Version 6.0_1 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file Pr1Hx.jj . . .
+Warning: Line 4459, Column 18: Non-ASCII characters used in regular expression.Please make sure you use the correct Reader when you create the parser, one that can handle your character set.
+File "TokenMgrError.java" is being rebuilt.
+File "ParseException.java" is being rebuilt.
+File "Token.java" is being rebuilt.
+File "SimpleCharStream.java" is being rebuilt.
+Parser generated with 0 errors and 1 warnings.
++ cd /home/yy1851/Compiler/Project/pr1/build
++ javac -cp :/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Hx.java
+Note: /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Hx.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
++ java -ea -cp /home/yy1851/Compiler/Project/pr1/build:/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar -Dfile.encoding=UTF-8 -Xss80000K -Xmx4000m net.sf.crsx.run.Crsx allow-unnamed-rules allow-missing-cases sortify verbose=1 'grammar=('\''org.crsx.hacs.HxRaw'\'';'\''net.sf.crsx.text.Text'\'';)' input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx category=rawHxModule output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw.tmp simple-terms max-indent=10 width=255
+// $Sortify
+// $[Load, "/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx", "rawHxModule"]
+
+// Normalizing with 0 rules
+// Normal form with null after 0 rewrites
+
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw
++ '[' -x /home/yy1851/.hacs/lib/hacs/HacsRewriter -a -z '' ']'
++ LD_LIBRARY_PATH=/home/yy1851/.hacs/lib/hacs/icu4c/lib
++ /home/yy1851/.hacs/lib/hacs/HacsRewriter wrapper=Prep input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep.tmp
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep
++ sed -e :start -e '/[/][*][*][*][*][*]\([^*]\|[*][^*]\|[*][*][^*]\)*$/{N; bstart;}' -e 's./[*][*][*][*][*]\([A-Z]*[&]\)*EMBEDPG\([&][A-Z]*\)*: *\(\([^*]\|[*][^*]\|[*][*][^*]\)*\)[*][*][*][*][*]/.\3.g' -e tstart -e 's./[*][*][*][*][*]\([^*]\|[*][^*]\|[*][*][^*]\)*[*][*][*][*][*]/..g' -e tstart -e 's/ *$//gM' /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.prep
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Embed.pg.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Embed.pg
++ java -ea -cp /home/yy1851/Compiler/Project/pr1/build:/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar net.sf.crsx.pg.PG verbose=1 -source=/home/yy1851/Compiler/Project/pr1/build /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Embed.pg
++ mkdir -p /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/
++ cd /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/
++ java -cp /home/yy1851/.hacs/share/java/javacc.jar javacc Pr1Embed.jj
+Java Compiler Compiler Version 6.0_1 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file Pr1Embed.jj . . .
+Warning: Choice conflict involving two expansions at
+         line 1880, column 18 and line 1922, column 18 respectively.
+         A common prefix is: "if" "("
+         Consider using a lookahead of 3 or more for earlier expansion.
+Warning: Line 2193, Column 34: This choice can expand to the empty token sequence and will therefore always be taken in favor of the choices appearing later.
+Warning: Line 2328, Column 32: Non-ASCII characters used in regular expression.Please make sure you use the correct Reader when you create the parser, one that can handle your character set.
+File "TokenMgrError.java" is being rebuilt.
+File "ParseException.java" is being rebuilt.
+File "Token.java" is being rebuilt.
+File "SimpleCharStream.java" is being rebuilt.
+Parser generated with 0 errors and 3 warnings.
++ cd /home/yy1851/Compiler/Project/pr1/build
++ javac -cp :/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Embed.java
+Note: /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Embed.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
++ java -ea -cp /home/yy1851/Compiler/Project/pr1/build:/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar -Dfile.encoding=UTF-8 -Xss80000K -Xmx4000m net.sf.crsx.run.Crsx allow-unnamed-rules allow-missing-cases sortify verbose=1 'grammar=('\''org.crsx.hacs.HxRaw'\'';'\''net.sf.crsx.text.Text'\'';)' input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx category=rawHxModule output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw.tmp simple-terms max-indent=10 width=255
+// $Sortify
+// $[Load, "/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx", "rawHxModule"]
+
+// Normalizing with 0 rules
+// Normal form with null after 0 rewrites
+
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw
++ '[' -x /home/yy1851/.hacs/lib/hacs/HacsRewriter -a -z '' ']'
++ LD_LIBRARY_PATH=/home/yy1851/.hacs/lib/hacs/icu4c/lib
++ /home/yy1851/.hacs/lib/hacs/HacsRewriter wrapper=P-PrintEnvironment input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxraw output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.env.tmp
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.env.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.env
++ MODULE=edu.nyu.yunjian.Pr1
++ NAME=Pr1
++ SORT=Program
++ SORTS='Program Type Typehelper Ivalue Expr Exprhelper Statement Statementhelper Declaration Declarationhelper Programhelper Identifier Integer String'
++ SINKCLASS=net.sf.crsx.text.TextSink
++ PARSERCLASS=edu.nyu.yunjian.Pr1Parser
++ PREFIX=pr1_
++ METAPARSERCLASS=edu.nyu.yunjian.Pr1Hx
++ METAPREFIX=pr1Meta_
++ EMBEDPARSERCLASS=edu.nyu.yunjian.Pr1Embed
++ EMBEDPREFIX=pr1Embed_
++ dir=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/
++ package=edu.nyu.yunjian
+++ echo edu.nyu.yunjian
+++ tr . /
++ packagedir=edu/nyu/yunjian
++ java -ea -cp /home/yy1851/Compiler/Project/pr1/build:/home/yy1851/.hacs/share/java/hacs.jar:/home/yy1851/.hacs/share/java/crsx.jar -Dfile.encoding=UTF-8 -Xss80000K -Xmx4000m net.sf.crsx.run.Crsx allow-unnamed-rules allow-missing-cases sortify verbose=1 'grammar=('\''edu.nyu.yunjian.Pr1Hx'\'';'\''edu.nyu.yunjian.Pr1Embed'\'';'\''net.sf.crsx.text.Text'\'';'\''org.crsx.hacs.Prelude'\'';)' input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx category=pr1Meta_HxModule output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxprep.tmp simple-terms max-indent=10 width=255
+// $Sortify
+// $[Load, "/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hx", "pr1Meta_HxModule"]
+
+// Normalizing with 0 rules
+// Normal form with null after 0 rewrites
+
++ mv /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxprep.tmp /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxprep
++ '[' -x /home/yy1851/.hacs/lib/hacs/HacsRewriter -a -z '' ']'
++ LD_LIBRARY_PATH=/home/yy1851/.hacs/lib/hacs/icu4c/lib
++ /home/yy1851/.hacs/lib/hacs/HacsRewriter crsx-debug-steps wrapper=Cook input=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1.hxprep output=/home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Rewriter.crs.tmp
++ sed s/222222222/9/g /home/yy1851/Compiler/Project/pr1/build/edu/nyu/yunjian/Pr1Rewriter.crs.tmp
++ MODULE=edu.nyu.yunjian.Pr1
++ NAME=Pr1
++ SORT=Program
++ SORTS='Program Type Typehelper Ivalue Expr Exprhelper Statement Statementhelper Declaration Declarationhelper Programhelper Identifier Integer String'
++ SINKCLASS=net.sf.crsx.text.TextSink
++ PARSERCLASS=edu.nyu.yunjian.Pr1Parser
++ PREFIX=pr1_
++ METAPARSERCLASS=edu.nyu.yunjian.Pr1Hx
++ METAPREFIX=pr1Meta_
++ EMBEDPARSERCLASS=edu.nyu.yunjian.Pr1Embed
++ EMBEDPREFIX=pr1Embed_
++ dir=./
++ package=edu.nyu.yunjian
+++ echo edu.nyu.yunjian
+++ tr . /
++ packagedir=edu/nyu/yunjian
++ '[' -x /home/yy1851/.hacs/lib/hacs/HacsRewriter -a -z '' ']'
+++ unzip -q -p /home/yy1851/.hacs/share/java/hacs.jar org/crsx/hacs/VERSION
++ LD_LIBRARY_PATH=/home/yy1851/.hacs/lib/hacs/icu4c/lib
++ /home/yy1851/.hacs/lib/hacs/HacsRewriter term=MakeRun output=Pr1.run.tmp MODULE=edu.nyu.yunjian.Pr1 NAME=Pr1 SORT=Program 'SORTS=Program Type Typehelper Ivalue Expr Exprhelper Statement Statementhelper Declaration Declarationhelper Programhelper Identifier Integer String' SINKCLASS=net.sf.crsx.text.TextSink PARSERCLASS=edu.nyu.yunjian.Pr1Parser PREFIX=pr1_ METAPARSERCLASS=edu.nyu.yunjian.Pr1Hx METAPREFIX=pr1Meta_ EMBEDPARSERCLASS=edu.nyu.yunjian.Pr1Embed EMBEDPREFIX=pr1Embed_ PACKAGE=edu.nyu.yunjian PACKAGEDIR=edu/nyu/yunjian BUILD=/home/yy1851/Compiler/Project/pr1/build HACSVERSION=1.1.23 CRSXJAR=/home/yy1851/.hacs/share/java/crsx.jar HACSJAR=/home/yy1851/.hacs/share/java/hacs.jar CRSXC=/home/yy1851/.hacs/lib/hacs/crsxc ICU4CINCLUDE=/home/yy1851/.hacs/lib/hacs/icu4c/include ICU4CDIR=/home/yy1851/.hacs/lib/hacs/icu4c/lib LIBDIR=/home/yy1851/.hacs/lib/hacs BINDIR=/home/yy1851/.hacs/bin DOCDIR= SHAREDIR=/home/yy1851/.hacs/share/hacs SHAREJAVA=/home/yy1851/.hacs/share/java SHELL=/bin/bash JAVA=java JAVAC=javac
++ mv Pr1.run.tmp Pr1.run
