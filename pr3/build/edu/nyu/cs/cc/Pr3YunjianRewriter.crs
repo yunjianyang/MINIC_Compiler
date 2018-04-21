@@ -1,0 +1,2389 @@
+// CRSX RULES FOR edu.nyu.cs.cc.Pr3Yunjian.
+
+Pr3Yunjian[(
+
+// Print uses text.
+  $CheckGrammar["net.sf.crsx.text.Text"];
+  $Use["net/sf/crsx/text/Text.crs"];
+
+// Standard functions.
+  $Use["org/crsx/hacs/Prelude.crs"];
+
+// Infer options.
+  $Lax;
+
+/////////////////////////////////////////////////////////////////////////////
+// DECLARATIONS AND OUTPUT.
+
+
+
+'$Print-Pr3Yunjian$Arg' [Pr3Yunjian$Arg] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Arg' [#] → '$Print2-Pr3Yunjian$Arg' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$ArgumentSignature' [Pr3Yunjian$ArgumentSignature] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$ArgumentSignature' [#] → '$Print2-Pr3Yunjian$ArgumentSignature' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Op' [Pr3Yunjian$Op] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Op' [#] → '$Print2-Pr3Yunjian$Op' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Label' [Pr3Yunjian$Label] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Label' [#] → '$Print2-Pr3Yunjian$Label' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Program' [Pr3Yunjian$Program] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Program' [#] → '$Print2-Pr3Yunjian$Program' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Integer' [Pr3Yunjian$Integer] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Integer' [#] → '$Print2-Pr3Yunjian$Integer' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Local' [Pr3Yunjian$Local] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Local' [#] → '$Print2-Pr3Yunjian$Local' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Reg' [Pr3Yunjian$Reg] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Reg' [#] → '$Print2-Pr3Yunjian$Reg' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$String' [Pr3Yunjian$String] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$String' [#] → '$Print2-Pr3Yunjian$String' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Mem' [Pr3Yunjian$Mem] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Mem' [#] → '$Print2-Pr3Yunjian$Mem' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Instructions' [Pr3Yunjian$Instructions] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Instructions' [#] → '$Print2-Pr3Yunjian$Instructions' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$FT' [Pr3Yunjian$FT] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$FT' [#] → '$Print2-Pr3Yunjian$FT' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$After1' [Pr3Yunjian$After1] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$After1' [#] → '$Print2-Pr3Yunjian$After1' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Identifier' [Pr3Yunjian$Identifier] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Identifier' [#] → '$Print2-Pr3Yunjian$Identifier' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$TypeList' [Pr3Yunjian$TypeList] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$TypeList' [#] → '$Print2-Pr3Yunjian$TypeList' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Constant' [Pr3Yunjian$Constant] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Constant' [#] → '$Print2-Pr3Yunjian$Constant' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Rs' [Pr3Yunjian$Rs] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Rs' [#] → '$Print2-Pr3Yunjian$Rs' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Integers' [Pr3Yunjian$Integers] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Integers' [#] → '$Print2-Pr3Yunjian$Integers' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Type' [Pr3Yunjian$Type] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Type' [#] → '$Print2-Pr3Yunjian$Type' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Sign' [Pr3Yunjian$Sign] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Sign' [#] → '$Print2-Pr3Yunjian$Sign' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Instruction' [Pr3Yunjian$Instruction] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Instruction' [#] → '$Print2-Pr3Yunjian$Instruction' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Statements' [Pr3Yunjian$Statements] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Statements' [#] → '$Print2-Pr3Yunjian$Statements' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$TypeIdentifierTail' [Pr3Yunjian$TypeIdentifierTail] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$TypeIdentifierTail' [#] → '$Print2-Pr3Yunjian$TypeIdentifierTail' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Computed' [Pr3Yunjian$Computed] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Computed' [#] → '$Print2-Pr3Yunjian$Computed' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Regs' [Pr3Yunjian$Regs] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Regs' [#] → '$Print2-Pr3Yunjian$Regs' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Statement' [Pr3Yunjian$Statement] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Statement' [#] → '$Print2-Pr3Yunjian$Statement' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Declaration' [Pr3Yunjian$Declaration] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Declaration' [#] → '$Print2-Pr3Yunjian$Declaration' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Expression' [Pr3Yunjian$Expression] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Expression' [#] → '$Print2-Pr3Yunjian$Expression' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$TypeListTail' [Pr3Yunjian$TypeListTail] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$TypeListTail' [#] → '$Print2-Pr3Yunjian$TypeListTail' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$ExpressionList' [Pr3Yunjian$ExpressionList] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$ExpressionList' [#] → '$Print2-Pr3Yunjian$ExpressionList' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$ExpressionListTail' [Pr3Yunjian$ExpressionListTail] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$ExpressionListTail' [#] → '$Print2-Pr3Yunjian$ExpressionListTail' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$IfTail' [Pr3Yunjian$IfTail] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$IfTail' [#] → '$Print2-Pr3Yunjian$IfTail' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Declarations' [Pr3Yunjian$Declarations] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Declarations' [#] → '$Print2-Pr3Yunjian$Declarations' [#, 0] ;
+
+
+'$Print-DummyComputed' 
+→
+'$Print2-Pr3Yunjian$Computed' [
+  'Pr3Yunjian$Computed_DummyComputed' ,
+  0]
+;
+
+
+'$Print-Pr3Yunjian$ID' [Pr3Yunjian$ID] :: Text ;
+'$Print-Pr3Yunjian$ID' [#] → '$Print2-Pr3Yunjian$ID' [#, 0] ;
+
+'$Print2-Pr3Yunjian$ID' [Pr3Yunjian$ID, $Numeric] :: Text ;
+'$Print2-Pr3Yunjian$ID' [#, #prec] → %n⟪‹StringToText[#]›⟫ ;
+
+
+'$Print-Pr3Yunjian$INT' [Pr3Yunjian$INT] :: Text ;
+'$Print-Pr3Yunjian$INT' [#] → '$Print2-Pr3Yunjian$INT' [#, 0] ;
+
+'$Print2-Pr3Yunjian$INT' [Pr3Yunjian$INT, $Numeric] :: Text ;
+'$Print2-Pr3Yunjian$INT' [#, #prec] → %n⟪‹StringToText[#]›⟫ ;
+
+
+'$Print-Pr3Yunjian$STR' [Pr3Yunjian$STR] :: Text ;
+'$Print-Pr3Yunjian$STR' [#] → '$Print2-Pr3Yunjian$STR' [#, 0] ;
+
+'$Print2-Pr3Yunjian$STR' [Pr3Yunjian$STR, $Numeric] :: Text ;
+'$Print2-Pr3Yunjian$STR' [#, #prec] → %n⟪‹StringToText[#]›⟫ ;
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Program' [ 'Pr3Yunjian$Program__Declarations_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Declarations' [#1, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Declarations' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Declarations' [ 'Pr3Yunjian$Declarations__Declaration__Declarations_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Declaration' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Declarations' [#2, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Declaration' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Declarations' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Declarations' [ 'Pr3Yunjian$Declarations_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Declaration' [ 'Pr3Yunjian$Declaration_function_Type__Identifier__ArgumentSignature_{_Statements_}' [#1, #2, #3, #4], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( function ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Identifier' [#2, 0] › ‹ '$Print2-Pr3Yunjian$ArgumentSignature' [#3, 0] › { ‹ '$Print2-Pr3Yunjian$Statements' [#4, 0] › } )⟫,
+  %n⟪ function ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Identifier' [#2, 0] › ‹ '$Print2-Pr3Yunjian$ArgumentSignature' [#3, 0] › { ‹ '$Print2-Pr3Yunjian$Statements' [#4, 0] › } ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$ArgumentSignature' [ 'Pr3Yunjian$ArgumentSignature_()' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ( ) )⟫,
+  %n⟪ ( ) ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$ArgumentSignature' [ 'Pr3Yunjian$ArgumentSignature_(_Type__Identifier__TypeIdentifierTail_)' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ( ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Identifier' [#2, 0] › ‹ '$Print2-Pr3Yunjian$TypeIdentifierTail' [#3, 0] › ) )⟫,
+  %n⟪ ( ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Identifier' [#2, 0] › ‹ '$Print2-Pr3Yunjian$TypeIdentifierTail' [#3, 0] › ) ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$TypeIdentifierTail' [ 'Pr3Yunjian$TypeIdentifierTail_,_Type__Identifier__TypeIdentifierTail_' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( , ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Identifier' [#2, 0] › ‹ '$Print2-Pr3Yunjian$TypeIdentifierTail' [#3, 0] › )⟫,
+  %n⟪ , ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Identifier' [#2, 0] › ‹ '$Print2-Pr3Yunjian$TypeIdentifierTail' [#3, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$TypeIdentifierTail' [ 'Pr3Yunjian$TypeIdentifierTail_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( )⟫,
+  %n⟪ ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Statements' [ 'Pr3Yunjian$Statements__Statement__Statements_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Statement' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Statements' [#2, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Statement' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Statements' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Statements' [ 'Pr3Yunjian$Statements_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Statement' [ 'Pr3Yunjian$Statement_{_Statements_}' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( { ‹ '$Print2-Pr3Yunjian$Statements' [#1, 0] › } )⟫,
+  %n⟪ { ‹ '$Print2-Pr3Yunjian$Statements' [#1, 0] › } ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Statement' [ 'Pr3Yunjian$Statement_var_Type__Identifier_;' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( var ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Identifier' [#2, 0] › ; )⟫,
+  %n⟪ var ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Identifier' [#2, 0] › ; ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Statement' [ 'Pr3Yunjian$Statement__Expression_=_Expression_;' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › = ‹ '$Print2-Pr3Yunjian$Expression' [#2, 0] › ; )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › = ‹ '$Print2-Pr3Yunjian$Expression' [#2, 0] › ; ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Statement' [ 'Pr3Yunjian$Statement_if(_Expression_)_IfTail_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( if ( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ) ‹ '$Print2-Pr3Yunjian$IfTail' [#2, 0] › )⟫,
+  %n⟪ if ( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ) ‹ '$Print2-Pr3Yunjian$IfTail' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Statement' [ 'Pr3Yunjian$Statement_while(_Expression_)_Statement_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( while ( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ) ‹ '$Print2-Pr3Yunjian$Statement' [#2, 0] › )⟫,
+  %n⟪ while ( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ) ‹ '$Print2-Pr3Yunjian$Statement' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Statement' [ 'Pr3Yunjian$Statement_return_Expression_;' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( return ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ; )⟫,
+  %n⟪ return ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ; ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$IfTail' [ 'Pr3Yunjian$IfTail__Statement_else_Statement_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Statement' [#1, 0] › else ‹ '$Print2-Pr3Yunjian$Statement' [#2, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Statement' [#1, 0] › else ‹ '$Print2-Pr3Yunjian$Statement' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$IfTail' [ 'Pr3Yunjian$IfTail__Statement_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Statement' [#1, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Statement' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Type' [ 'Pr3Yunjian$Type_int' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 3],
+  %n⟪( int )⟫,
+  %n⟪ int ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Type' [ 'Pr3Yunjian$Type_char' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 3],
+  %n⟪( char )⟫,
+  %n⟪ char ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Type' [ 'Pr3Yunjian$Type_(_Type_)' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 3],
+  %n⟪( ( ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ))⟫,
+  %n⟪ ( ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › )⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Type' [ 'Pr3Yunjian$Type__Type_(_TypeList_)' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 2],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Type' [#1, 2] › ( ‹ '$Print2-Pr3Yunjian$TypeList' [#2, 0] › ))⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Type' [#1, 2] › ( ‹ '$Print2-Pr3Yunjian$TypeList' [#2, 0] › )⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Type' [ 'Pr3Yunjian$Type_*_Type_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 1],
+  %n⟪( * ‹ '$Print2-Pr3Yunjian$Type' [#1, 1] › )⟫,
+  %n⟪ * ‹ '$Print2-Pr3Yunjian$Type' [#1, 1] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$TypeList' [ 'Pr3Yunjian$TypeList__Type__TypeListTail_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$TypeListTail' [#2, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$TypeListTail' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$TypeList' [ 'Pr3Yunjian$TypeList_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$TypeListTail' [ 'Pr3Yunjian$TypeListTail_,_Type__TypeListTail_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( , ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$TypeListTail' [#2, 0] › )⟫,
+  %n⟪ , ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ‹ '$Print2-Pr3Yunjian$TypeListTail' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$TypeListTail' [ 'Pr3Yunjian$TypeListTail_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Integer_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 10],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Integer' [#1, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Integer' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__String_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 10],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$String' [#1, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$String' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Identifier_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 10],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Identifier' [#1, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Identifier' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_(_ExpressionList_)' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 9],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 9] › ( ‹ '$Print2-Pr3Yunjian$ExpressionList' [#2, 0] › ) )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 9] › ( ‹ '$Print2-Pr3Yunjian$ExpressionList' [#2, 0] › ) ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression_null(_Type_)' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 9],
+  %n⟪( null ( ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ) )⟫,
+  %n⟪ null ( ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ) ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression_sizeof(_Type_)' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 9],
+  %n⟪( sizeof ( ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › ))⟫,
+  %n⟪ sizeof ( ‹ '$Print2-Pr3Yunjian$Type' [#1, 0] › )⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression_!_Expression_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 8],
+  %n⟪( ! ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › )⟫,
+  %n⟪ ! ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression_-_Expression_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 8],
+  %n⟪( - ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › )⟫,
+  %n⟪ - ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression_+_Expression_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 8],
+  %n⟪( + ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › )⟫,
+  %n⟪ + ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression_*_Expression_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 8],
+  %n⟪( * ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › )⟫,
+  %n⟪ * ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression_&_Expression_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 8],
+  %n⟪( & ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › )⟫,
+  %n⟪ & ‹ '$Print2-Pr3Yunjian$Expression' [#1, 8] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_*_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 7],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 7] › * ‹ '$Print2-Pr3Yunjian$Expression' [#2, 8] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 7] › * ‹ '$Print2-Pr3Yunjian$Expression' [#2, 8] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_+_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 6],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › + ‹ '$Print2-Pr3Yunjian$Expression' [#2, 7] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › + ‹ '$Print2-Pr3Yunjian$Expression' [#2, 7] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_-_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 6],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › - ‹ '$Print2-Pr3Yunjian$Expression' [#2, 7] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › - ‹ '$Print2-Pr3Yunjian$Expression' [#2, 7] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_<_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 5],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › < ‹ '$Print2-Pr3Yunjian$Expression' [#2, 6] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › < ‹ '$Print2-Pr3Yunjian$Expression' [#2, 6] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_>_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 5],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › > ‹ '$Print2-Pr3Yunjian$Expression' [#2, 6] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › > ‹ '$Print2-Pr3Yunjian$Expression' [#2, 6] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_<=_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 5],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › <= ‹ '$Print2-Pr3Yunjian$Expression' [#2, 6] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › <= ‹ '$Print2-Pr3Yunjian$Expression' [#2, 6] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_>=_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 5],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › >= ‹ '$Print2-Pr3Yunjian$Expression' [#2, 6] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 6] › >= ‹ '$Print2-Pr3Yunjian$Expression' [#2, 6] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_==_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 4],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 5] › == ‹ '$Print2-Pr3Yunjian$Expression' [#2, 5] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 5] › == ‹ '$Print2-Pr3Yunjian$Expression' [#2, 5] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_!=_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 4],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 5] › != ‹ '$Print2-Pr3Yunjian$Expression' [#2, 5] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 5] › != ‹ '$Print2-Pr3Yunjian$Expression' [#2, 5] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_&&_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 3],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 3] › && ‹ '$Print2-Pr3Yunjian$Expression' [#2, 4] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 3] › && ‹ '$Print2-Pr3Yunjian$Expression' [#2, 4] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Expression' [ 'Pr3Yunjian$Expression__Expression_||_Expression_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 2],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 2] › || ‹ '$Print2-Pr3Yunjian$Expression' [#2, 3] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 2] › || ‹ '$Print2-Pr3Yunjian$Expression' [#2, 3] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$ExpressionList' [ 'Pr3Yunjian$ExpressionList__Expression__ExpressionListTail_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ‹ '$Print2-Pr3Yunjian$ExpressionListTail' [#2, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ‹ '$Print2-Pr3Yunjian$ExpressionListTail' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$ExpressionList' [ 'Pr3Yunjian$ExpressionList_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$ExpressionListTail' [ 'Pr3Yunjian$ExpressionListTail_,_Expression__ExpressionListTail_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( , ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ‹ '$Print2-Pr3Yunjian$ExpressionListTail' [#2, 0] › )⟫,
+  %n⟪ , ‹ '$Print2-Pr3Yunjian$Expression' [#1, 0] › ‹ '$Print2-Pr3Yunjian$ExpressionListTail' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$ExpressionListTail' [ 'Pr3Yunjian$ExpressionListTail_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Integer' [ 'Pr3Yunjian$Integer__INT_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$INT' [#1, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$INT' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$String' [ 'Pr3Yunjian$String__STR_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$STR' [#1, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$STR' [#1, 0] › ⟫
+];
+
+'$Print2-Pr3Yunjian$Identifier' [Pr3Yunjian$Identifier, $Numeric] :: Text ;
+-[Free[y_7882]]: '$Print2-Pr3Yunjian$Identifier' [y_7882, #prec] → %n⟪‹y_7882›⟫ ;
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Instructions' [ 'Pr3Yunjian$Instructions__Instruction__Instructions_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Instruction' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Instructions' [#2, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Instruction' [#1, 0] › ‹ '$Print2-Pr3Yunjian$Instructions' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Instructions' [ 'Pr3Yunjian$Instructions_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Instruction' [ 'Pr3Yunjian$Instruction_DEF_ID_=_Integer_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(DEF ‹ '$Print2-Pr3Yunjian$ID' [#1, 0] › = ‹ '$Print2-Pr3Yunjian$Integer' [#2, 0] › ↲
+)⟫,
+  %n⟪DEF ‹ '$Print2-Pr3Yunjian$ID' [#1, 0] › = ‹ '$Print2-Pr3Yunjian$Integer' [#2, 0] › ↲
+⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Instruction' [ 'Pr3Yunjian$Instruction__Label_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(↲
+‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › )⟫,
+  %n⟪↲
+‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Instruction' [ 'Pr3Yunjian$Instruction_DCI_Integers_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(DCI ‹ '$Print2-Pr3Yunjian$Integers' [#1, 0] › ↲
+)⟫,
+  %n⟪DCI ‹ '$Print2-Pr3Yunjian$Integers' [#1, 0] › ↲
+⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Instruction' [ 'Pr3Yunjian$Instruction_DCS_String_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(DCS ‹ '$Print2-Pr3Yunjian$String' [#1, 0] › ↲
+)⟫,
+  %n⟪DCS ‹ '$Print2-Pr3Yunjian$String' [#1, 0] › ↲
+⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Instruction' [ 'Pr3Yunjian$Instruction__Op_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr3Yunjian$Op' [#1, 0] › ↲
+)⟫,
+  %n⟪‹ '$Print2-Pr3Yunjian$Op' [#1, 0] › ↲
+⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Integers' [ 'Pr3Yunjian$Integers__Integer_,_Integers_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Integer' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Integers' [#2, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Integer' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Integers' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Integers' [ 'Pr3Yunjian$Integers__Integer_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪( ‹ '$Print2-Pr3Yunjian$Integer' [#1, 0] › )⟫,
+  %n⟪ ‹ '$Print2-Pr3Yunjian$Integer' [#1, 0] › ⟫
+];
+
+'$Print2-Pr3Yunjian$Label' [Pr3Yunjian$Label, $Numeric] :: Text ;
+-[Free[y_8260]]: '$Print2-Pr3Yunjian$Label' [y_8260, #prec] → %n⟪‹y_8260›⟫ ;
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(MOV ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#2, 0] › )⟫,
+  %n⟪MOV ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_MVN_Reg_,_Arg_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(MVN ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#2, 0] › )⟫,
+  %n⟪MVN ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_ADD_Reg_,_Reg_,_Arg_' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(ADD ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › )⟫,
+  %n⟪ADD ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_SUB_Reg_,_Reg_,_Arg_' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(SUB ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › )⟫,
+  %n⟪SUB ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_RSB_Reg_,_Reg_,_Arg_' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(RSB ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › )⟫,
+  %n⟪RSB ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_AND_Reg_,_Reg_,_Arg_' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(AND ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › )⟫,
+  %n⟪AND ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_ORR_Reg_,_Reg_,_Arg_' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(ORR ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › )⟫,
+  %n⟪ORR ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_EOR_Reg_,_Reg_,_Arg_' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(EOR ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › )⟫,
+  %n⟪EOR ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_CMP_Reg_,_Arg_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(CMP ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#2, 0] › )⟫,
+  %n⟪CMP ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Arg' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_MUL_Reg_,_Reg_,_Reg_' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(MUL ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#3, 0] › )⟫,
+  %n⟪MUL ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [#3, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_B_Label_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(B ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › )⟫,
+  %n⟪B ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_BEQ_Label_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(BEQ ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › )⟫,
+  %n⟪BEQ ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_BNE_Label_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(BNE ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › )⟫,
+  %n⟪BNE ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_BGT_Label_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(BGT ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › )⟫,
+  %n⟪BGT ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_BLT_Label_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(BLT ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › )⟫,
+  %n⟪BLT ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_BGE_Label_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(BGE ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › )⟫,
+  %n⟪BGE ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_BLE_Label_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(BLE ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › )⟫,
+  %n⟪BLE ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_BL_Label_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(BL ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › )⟫,
+  %n⟪BL ‹ '$Print2-Pr3Yunjian$Label' [#1, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_LDR_Reg_,_Mem_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(LDR ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Mem' [#2, 0] › )⟫,
+  %n⟪LDR ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Mem' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_STR_Reg_,_Mem_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(STR ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Mem' [#2, 0] › )⟫,
+  %n⟪STR ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Mem' [#2, 0] › ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_LDMFD_Reg_!,{_Regs_}' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(LDMFD ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›! , {‹ '$Print2-Pr3Yunjian$Regs' [#2, 0] ›} )⟫,
+  %n⟪LDMFD ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›! , {‹ '$Print2-Pr3Yunjian$Regs' [#2, 0] ›} ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Op' [ 'Pr3Yunjian$Op_STMFD_Reg_!,{_Regs_}' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(STMFD ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›! , {‹ '$Print2-Pr3Yunjian$Regs' [#2, 0] ›} )⟫,
+  %n⟪STMFD ‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›! , {‹ '$Print2-Pr3Yunjian$Regs' [#2, 0] ›} ⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R0' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R0)⟫,
+  %n⟪R0⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R1' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R1)⟫,
+  %n⟪R1⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R2' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R2)⟫,
+  %n⟪R2⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R3' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R3)⟫,
+  %n⟪R3⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R4' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R4)⟫,
+  %n⟪R4⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R5' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R5)⟫,
+  %n⟪R5⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R6' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R6)⟫,
+  %n⟪R6⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R7' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R7)⟫,
+  %n⟪R7⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R8' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R8)⟫,
+  %n⟪R8⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R9' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R9)⟫,
+  %n⟪R9⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R10' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R10)⟫,
+  %n⟪R10⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R11' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R11)⟫,
+  %n⟪R11⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_R12' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(R12)⟫,
+  %n⟪R12⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_SP' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(SP)⟫,
+  %n⟪SP⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_LR' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(LR)⟫,
+  %n⟪LR⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Reg' [ 'Pr3Yunjian$Reg_PC' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(PC)⟫,
+  %n⟪PC⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Arg' [ 'Pr3Yunjian$Arg__Constant_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr3Yunjian$Constant' [#1, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr3Yunjian$Constant' [#1, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Arg' [ 'Pr3Yunjian$Arg__Reg_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Arg' [ 'Pr3Yunjian$Arg__Reg_,LSL_Constant_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, LSL ‹ '$Print2-Pr3Yunjian$Constant' [#2, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, LSL ‹ '$Print2-Pr3Yunjian$Constant' [#2, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Arg' [ 'Pr3Yunjian$Arg__Reg_,LSR_Constant_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, LSR ‹ '$Print2-Pr3Yunjian$Constant' [#2, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, LSR ‹ '$Print2-Pr3Yunjian$Constant' [#2, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Mem' [ 'Pr3Yunjian$Mem_[_Reg_,_Sign__Arg_]' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪([‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Sign' [#2, 0] ›‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] ›])⟫,
+  %n⟪[‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Sign' [#2, 0] ›‹ '$Print2-Pr3Yunjian$Arg' [#3, 0] ›]⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Sign' [ 'Pr3Yunjian$Sign_+' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(+)⟫,
+  %n⟪+⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Sign' [ 'Pr3Yunjian$Sign_-' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(-)⟫,
+  %n⟪-⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Sign' [ 'Pr3Yunjian$Sign_' , #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪()⟫,
+  %n⟪⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Regs' [ 'Pr3Yunjian$Regs__Reg_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Regs' [ 'Pr3Yunjian$Regs__Reg_-_Reg_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›-‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›-‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Regs' [ 'Pr3Yunjian$Regs__Reg_,_Regs_' [#1, #2], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Regs' [#2, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›, ‹ '$Print2-Pr3Yunjian$Regs' [#2, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Regs' [ 'Pr3Yunjian$Regs__Reg_-_Reg_,_Regs_' [#1, #2, #3], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›-‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Regs' [#3, 0] ›)⟫,
+  %n⟪‹ '$Print2-Pr3Yunjian$Reg' [#1, 0] ›-‹ '$Print2-Pr3Yunjian$Reg' [#2, 0] ›, ‹ '$Print2-Pr3Yunjian$Regs' [#3, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Constant' [ 'Pr3Yunjian$Constant_#_Integer_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(#‹ '$Print2-Pr3Yunjian$Integer' [#1, 0] ›)⟫,
+  %n⟪#‹ '$Print2-Pr3Yunjian$Integer' [#1, 0] ›⟫
+];
+
+
+<!--NOT SYMBOL REFERENCE FORM-->
+-[Data[#prec]] :
+'$Print2-Pr3Yunjian$Constant' [ 'Pr3Yunjian$Constant_&_ID_' [#1], #prec ]
+→
+$[If, $[GreaterThan, #prec, 0],
+  %n⟪(&‹ '$Print2-Pr3Yunjian$ID' [#1, 0] ›)⟫,
+  %n⟪&‹ '$Print2-Pr3Yunjian$ID' [#1, 0] ›⟫
+];
+
+
+'$Print2-Pr3Yunjian$Rs' [Pr3Yunjian$Rs, $Numeric] :: Text ;
+
+'$Print2-Pr3Yunjian$Rs' [ 'NoRs' , #prec ]
+→
+%n⟪'NoRs' ⟫
+;
+
+
+'$Print2-Pr3Yunjian$Rs' [Pr3Yunjian$Rs, $Numeric] :: Text ;
+
+'$Print2-Pr3Yunjian$Rs' [ 'MoRs' [#1, #2], #prec ]
+→
+%n⟪'MoRs' [‹ '$Print2-Pr3Yunjian$Reg' [ '$Print2-Pr3Yunjian$Rs' [#1, 0],0] ›, ‹ '$Print2-Pr3Yunjian$Rs' [ '$Print2-Pr3Yunjian$Rs' [#2, 0],0] ›]⟫
+;
+
+
+'$Print-AppendRs' [#1, #2]
+→
+'$Print2-Pr3Yunjian$Rs' [
+  'Pr3Yunjian$Rs_AppendRs' [#1, #2],
+  0]
+;
+
+
+'$Print-XRegs' [#1]
+→
+'$Print2-Pr3Yunjian$Rs' [
+  'Pr3Yunjian$Rs_XRegs' [#1],
+  0]
+;
+
+
+'$Print-XRegs1' [#1, #2]
+→
+'$Print2-Pr3Yunjian$Rs' [
+  'Pr3Yunjian$Rs_XRegs1' [#1, #2],
+  0]
+;
+
+
+'$Print-XRegs2' [#1, #2]
+→
+'$Print2-Pr3Yunjian$Rs' [
+  'Pr3Yunjian$Rs_XRegs2' [#1, #2],
+  0]
+;
+
+
+'$Print-Immediate' [#1]
+→
+'$Print2-Pr3Yunjian$Constant' [
+  'Pr3Yunjian$Constant_Immediate' [#1],
+  0]
+;
+
+
+'$Print-Reference' [#1]
+→
+'$Print2-Pr3Yunjian$Constant' [
+  'Pr3Yunjian$Constant_Reference' [#1],
+  0]
+;
+
+
+'$Print-FrameAccess' [#1]
+→
+'$Print2-Pr3Yunjian$Mem' [
+  'Pr3Yunjian$Mem_FrameAccess' [#1],
+  0]
+;
+
+
+'$Print-FrameAccess1' [#1, #2, #3]
+→
+'$Print2-Pr3Yunjian$Mem' [
+  'Pr3Yunjian$Mem_FrameAccess1' [#1, #2, #3],
+  0]
+;
+
+
+'$Print-FrameAccess2' [#1]
+→
+'$Print2-Pr3Yunjian$Mem' [
+  'Pr3Yunjian$Mem_FrameAccess2' [#1],
+  0]
+;
+
+
+'$Print-AddConstant' [#1, #2, #3]
+→
+'$Print2-Pr3Yunjian$Instruction' [
+  'Pr3Yunjian$Instruction_AddConstant' [#1, #2, #3],
+  0]
+;
+
+
+'$Print-AddConstant1' [#1, #2, #3]
+→
+'$Print2-Pr3Yunjian$Instruction' [
+  'Pr3Yunjian$Instruction_AddConstant1' [#1, #2, #3],
+  0]
+;
+
+
+'$Print-AddConstant2' [#1]
+→
+'$Print2-Pr3Yunjian$Instruction' [
+  'Pr3Yunjian$Instruction_AddConstant2' [#1],
+  0]
+;
+
+
+'$Print-Dummy' 
+→
+'$Print2-Pr3Yunjian$Computed' [
+  'Pr3Yunjian$Computed_Dummy' ,
+  0]
+;
+
+
+'$Print-Compile' [#1]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_Compile' [#1],
+  0]
+;
+
+
+'$Print2-Pr3Yunjian$After1' [Pr3Yunjian$After1, $Numeric] :: Text ;
+
+'$Print2-Pr3Yunjian$After1' [ 'Data1' [#1, #2], #prec ]
+→
+%n⟪'Data1' [‹ '$Print2-Pr3Yunjian$Instructions' [ '$Print2-Pr3Yunjian$After1' [#1, 0],0] ›, ‹ '$Print2-Pr3Yunjian$FT' [ '$Print2-Pr3Yunjian$After1' [#2, 0],0] ›]⟫
+;
+
+
+'$Print-Join1' [#1, #2]
+→
+'$Print2-Pr3Yunjian$After1' [
+  'Pr3Yunjian$After1_Join1' [#1, #2],
+  0]
+;
+
+
+'$Print2-Pr3Yunjian$FT' [Pr3Yunjian$FT, $Numeric] :: Text ;
+
+'$Print2-Pr3Yunjian$FT' [ 'NoFT' , #prec ]
+→
+%n⟪'NoFT' ⟫
+;
+
+
+'$Print2-Pr3Yunjian$FT' [Pr3Yunjian$FT, $Numeric] :: Text ;
+
+'$Print2-Pr3Yunjian$FT' [ 'MoFT' [#1, #2, #3], #prec ]
+→
+%n⟪'MoFT' [‹ '$Print2-Pr3Yunjian$Identifier' [ '$Print2-Pr3Yunjian$FT' [#1, 0],0] ›, ‹ '$Print2-Pr3Yunjian$Type' [ '$Print2-Pr3Yunjian$FT' [#2, 0],0] ›, ‹ '$Print2-Pr3Yunjian$FT' [ '$Print2-Pr3Yunjian$FT' [#3, 0],0] ›]⟫
+;
+
+
+'$Print-AppendFT' [#1, #2]
+→
+'$Print2-Pr3Yunjian$FT' [
+  'Pr3Yunjian$FT_AppendFT' [#1, #2],
+  0]
+;
+
+
+'$Print-P1' [#1]
+→
+'$Print2-Pr3Yunjian$After1' [
+  'Pr3Yunjian$After1_P1' [#1],
+  0]
+;
+
+
+'$Print-P1Ds' [#1]
+→
+'$Print2-Pr3Yunjian$After1' [
+  'Pr3Yunjian$After1_P1Ds' [#1],
+  0]
+;
+
+
+'$Print-D' [#1]
+→
+'$Print2-Pr3Yunjian$After1' [
+  'Pr3Yunjian$After1_D' [#1],
+  0]
+;
+
+
+'$Print-P2' [#1, #2]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_P2' [#1, #2],
+  0]
+;
+
+
+'$Print2-Pr3Yunjian$Local' [Pr3Yunjian$Local, $Numeric] :: Text ;
+
+'$Print2-Pr3Yunjian$Local' [ 'RegLocal' [#1, #2], #prec ]
+→
+%n⟪'RegLocal' [‹ '$Print2-Pr3Yunjian$Type' [ '$Print2-Pr3Yunjian$Local' [#1, 0],0] ›, ‹ '$Print2-Pr3Yunjian$Reg' [ '$Print2-Pr3Yunjian$Local' [#2, 0],0] ›]⟫
+;
+
+
+'$Print2-Pr3Yunjian$Local' [Pr3Yunjian$Local, $Numeric] :: Text ;
+
+'$Print2-Pr3Yunjian$Local' [ 'FrameLocal' [#1, #2], #prec ]
+→
+%n⟪'FrameLocal' [‹ '$Print2-Pr3Yunjian$Type' [ '$Print2-Pr3Yunjian$Local' [#1, 0],0] ›, ‹ '$Print2-Pr3Yunjian$Computed' [ '$Print2-Pr3Yunjian$Local' [#2, 0],0] ›]⟫
+;
+
+
+'$Print-P2Load' [#1, #2, #3]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_P2Load' [#1, #2, #3],
+  0]
+;
+
+
+'$Print-P' [#1]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_P' [#1],
+  0]
+;
+
+
+'$Print-Ds' [#1]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_Ds' [#1],
+  0]
+;
+
+
+'$Print-F' [#1]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_F' [#1],
+  0]
+;
+
+
+'$Print-AS' [#1, #2, #3]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_AS' [#1, #2, #3],
+  0]
+;
+
+
+'$Print-AS2' [#1, #2, #3]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_AS2' [#1, #2, #3],
+  0]
+;
+
+
+'$Print-S' [#1]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_S' [#1],
+  0]
+;
+
+
+'$Print-SingleS' [#1]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_SingleS' [#1],
+  0]
+;
+
+
+'$Print-E' [#1]
+→
+'$Print2-Pr3Yunjian$Instructions' [
+  'Pr3Yunjian$Instructions_E' [#1],
+  0]
+;
+
+$Print2-Pr3Yunjian$Computed[$Numeric, $Numeric] :: Text ;
+$Print2-Pr3Yunjian$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n]]›⟫ ;
+
+
+/////////////////////////////////////////////////////////////////////////////
+// RULES.
+
+<!--RULES FOR SORT Pr3Yunjian$Arg.-->
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$ArgumentSignature.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Op.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Label.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Program.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Integer.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Local.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Reg.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$String.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Mem.-->
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$Mem_FrameAccess' [ <!--TERM:Computed-->  #x ]
+→
+   'Pr3Yunjian$Mem_FrameAccess1' [ <!--TERM:Computed-->  #x ,  <!--TERM:Mem-->  'Pr3Yunjian$Mem_[_Reg_,_Sign__Arg_]' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Sign-->  'Pr3Yunjian$Sign_' ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant-->  'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  #x ]]],  <!--TERM:Mem-->  'Pr3Yunjian$Mem_[_Reg_,_Sign__Arg_]' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Sign-->  'Pr3Yunjian$Sign_-' ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant-->  'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  'Sub' [ <!--TERM:Computed-->  'StringToNumeric' [ <!--TERM:Computed-->  "0" ],  <!--TERM:Computed-->  #x ]]]]]
+;
+
+
+- :
+   'Pr3Yunjian$Mem_FrameAccess1' [ <!--TERM:Computed-->  #x ,  <!--TERM:Mem-->  #pos ,  <!--TERM:Mem-->  #neg ]
+→
+   'Pr3Yunjian$Mem_FrameAccess2' [ <!--TERM:Computed-->  'If' [ <!--TERM:-->  'LessEq2' [ <!--TERM:-->  'StringToNumeric' [ <!--TERM:Computed-->  "0" ],  <!--TERM:-->  #x ],  <!--TERM:-->  #pos ,  <!--TERM:-->  #neg ]]
+;
+
+
+- :
+   'Pr3Yunjian$Mem_FrameAccess2' [ <!--TERM:Computed-->  #mem ]
+→
+   #mem 
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Instructions.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ,  <!--TERM:Instructions-->  # ]
+→
+   # 
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  #1 ,  <!--TERM:Instructions-->  #2 ],  <!--TERM:Instructions-->  #3 ]
+→
+   'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  #1 ,  <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  #2 ,  <!--TERM:Instructions-->  #3 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_Compile' [ <!--TERM:Program-->  #1 ]
+→
+   'Pr3Yunjian$Instructions_P2' [ <!--TERM:After1-->  'Pr3Yunjian$After1_P1' [ <!--TERM:Program-->  #1 ],  <!--TERM:Program-->  #1 ]
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_P2' [ <!--TERM:After1-->  'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:FT-->  #ft1 ],  <!--TERM:Program-->  #P ]
+→
+  { "vt" : {}A_vt ; "ft" : {}A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:FT-->  #ft1 ,  <!--TERM:Program-->  #P ]
+;
+
+
+- [Free[f::Pr3Yunjian$Identifier]]:
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:FT--> {  }  'Pr3Yunjian$FT_MoFT' [ <!--TERM:Identifier--> {  }  f ,  <!--TERM:Type--> {  }  #T ,  <!--TERM:FT--> {  }  #ft ],  <!--TERM:Program--> {  }  #P ]
+→
+  { "vt" : {##vt}A_vt ; "ft" : {##ft;  f  : {  }  #T }A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:FT--> {  }  #ft ,  <!--TERM:Program--> {  }  #P ]
+;
+
+
+- :
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:FT--> {  }  'Pr3Yunjian$FT_NoFT' ,  <!--TERM:Program--> {  }  #P ]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:Instructions--> { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P' [ <!--TERM:Program--> {  }  #P ]]
+;
+
+
+- :
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P' [ <!--TERM:Program--> {  }  'Pr3Yunjian$Program__Declarations_' [ <!--TERM:Declarations--> {  }  #Ds ]]
+→
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  #Ds ]
+;
+
+
+- :
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  'Pr3Yunjian$Declarations__Declaration__Declarations_' [ <!--TERM:Declaration--> {  }  #D ,  <!--TERM:Declarations--> {  }  #Ds ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_F' [ <!--TERM:Declaration--> {  }  #D ],  <!--TERM:Instructions--> { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  #Ds ]]
+;
+
+
+- :
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  'Pr3Yunjian$Declarations_' ]
+→
+  {  }  'Pr3Yunjian$Instructions_' 
+;
+
+
+- [Free[f::Label], Fresh[v"L"::Label]]:
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_F' [ <!--TERM:Declaration--> {  }  'Pr3Yunjian$Declaration_function_Type__Identifier__ArgumentSignature_{_Statements_}' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  f ,  <!--TERM:ArgumentSignature--> {  }  #AS ,  <!--TERM:Statements--> {  }  #S ]]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  f ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_STMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_,_Regs_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_LR' ]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "return" : A_return[{  }  v"L" ] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS' [ <!--TERM:ArgumentSignature--> {  }  #AS ,  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R3' ]],  <!--TERM:Statements--> {  }  #S ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"L" ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R12' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_LDMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_,_Regs_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_PC' ]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]]
+;
+
+
+- :
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS' [ <!--TERM:ArgumentSignature--> {  }  'Pr3Yunjian$ArgumentSignature_()' ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
+→
+  { "offset" : A_offset[{  }  'Sub' [ <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "0" ],  <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "4" ]]] ; "unused" : A_unused[{  }  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ]]] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #S ]
+;
+
+
+- [Free[a::Pr3Yunjian$Identifier]]:
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS' [ <!--TERM:ArgumentSignature--> {  }  'Pr3Yunjian$ArgumentSignature_(_Type__Identifier__TypeIdentifierTail_)' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  a ,  <!--TERM:TypeIdentifierTail--> {  }  #TIT ],  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg--> {  }  #r ,  <!--TERM:Rs--> {  }  #Rs ],  <!--TERM:Statements--> {  }  #S ]
+→
+  { "return" : A_return[#return] ; "vt" : {##vt;  a  : {  }  'Pr3Yunjian$Local_RegLocal' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Reg--> {  }  #r ]}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  #TIT ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
+;
+
+
+- :
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  'Pr3Yunjian$TypeIdentifierTail_' ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
+→
+  { "offset" : A_offset[{  }  'Sub' [ <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "0" ],  <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "4" ]]] ; "unused" : A_unused[{  }  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ]]] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #S ]
+;
+
+
+- [Free[a::Pr3Yunjian$Identifier]]:
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  'Pr3Yunjian$TypeIdentifierTail_,_Type__Identifier__TypeIdentifierTail_' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  a ,  <!--TERM:TypeIdentifierTail--> {  }  #TIT ],  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg--> {  }  #r ,  <!--TERM:Rs--> {  }  #Rs ],  <!--TERM:Statements--> {  }  #S ]
+→
+  { "return" : A_return[#return] ; "vt" : {##vt;  a  : {  }  'Pr3Yunjian$Local_RegLocal' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Reg--> {  }  #r ]}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  #TIT ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
+;
+
+
+- [Free[a::Identifier]]:
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  'Pr3Yunjian$TypeIdentifierTail_,_Type__Identifier__TypeIdentifierTail_' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  a ,  <!--TERM:TypeIdentifierTail--> {  }  #TIT ],  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_NoRs' ,  <!--TERM:Statements--> {  }  #S ]
+→
+  {  }  Special_error[%n⟪More than four arguments to function not allowed.⟫] 
+;
+
+
+- [Free[r::Pr3Yunjian$Label], Fresh[v"StatementLabel"::Label]]:
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  #1 ,  <!--TERM:Statements--> {  }  #2 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  v"StatementLabel" ] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"StatementLabel" ],  <!--TERM:Instructions--> { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #2 ]]]
+;
+
+
+- [Free[r::Label]]:
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements_' ]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_B_Label_' [ <!--TERM:Label--> {  }  r ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]
+;
+
+
+- :
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_{_Statements_}' [ <!--TERM:Statements--> {  }  #1 ]]
+→
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #1 ]
+;
+
+
+- :
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[{  }  'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg--> {  }  #r ,  <!--TERM:Rs--> {  }  #Rs ]] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_var_Type__Identifier_;' [ <!--TERM:Type--> {  }  #1 ,  <!--TERM:Identifier--> {  }  #2 ]]
+→
+  { "vt" : {##vt;  #2  : {  }  'Pr3Yunjian$Local_RegLocal' [ <!--TERM:Type--> {  }  #1 ,  <!--TERM:Reg--> {  }  #r ]}A_vt ; "unused" : A_unused[{  }  #Rs ]  }  'Pr3Yunjian$Instructions_' 
+;
+
+
+- :
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[{  }  'Pr3Yunjian$Rs_NoRs' ] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_var_Type__Identifier_;' [ <!--TERM:Type--> {  }  #1 ,  <!--TERM:Identifier--> {  }  #2 ]]
+→
+  { "vt" : {##vt;  #2  : {  }  'Pr3Yunjian$Local_FrameLocal' [ <!--TERM:Type--> {  }  #1 ,  <!--TERM:Computed--> {  }  'Sub' [ <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "0" ],  <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "4" ]]]}A_vt  }  'Pr3Yunjian$Instructions_' 
+;
+
+
+- :
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement__Expression_=_Expression_;' [ <!--TERM:Expression--> {  }  #1 ,  <!--TERM:Expression--> {  }  #2 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]
+;
+
+
+- [Fresh[v"Statement"::Label]]:
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  # ]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_B_Label_' [ <!--TERM:Label--> {  }  v"Statement" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]
+;
+
+
+- :
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_return_Expression_;' [ <!--TERM:Expression--> {  }  #1 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]
+;
+
+
+- [Fresh[v"Expression"::Label]]:
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  # ]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_B_Label_' [ <!--TERM:Label--> {  }  v"Expression" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$FT.-->
+
+
+
+
+
+- :
+   'Pr3Yunjian$FT_AppendFT' [ <!--TERM:FT-->  'Pr3Yunjian$FT_NoFT' ,  <!--TERM:FT-->  #ft2 ]
+→
+   #ft2 
+;
+
+
+- :
+   'Pr3Yunjian$FT_AppendFT' [ <!--TERM:FT-->  'Pr3Yunjian$FT_MoFT' [ <!--TERM:Identifier-->  #id1 ,  <!--TERM:Type-->  #T1 ,  <!--TERM:FT-->  #ft1 ],  <!--TERM:FT-->  #ft2 ]
+→
+   'Pr3Yunjian$FT_MoFT' [ <!--TERM:Identifier-->  #id1 ,  <!--TERM:Type-->  #T1 ,  <!--TERM:FT-->  'Pr3Yunjian$FT_AppendFT' [ <!--TERM:FT-->  #ft1 ,  <!--TERM:FT-->  #ft2 ]]
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$After1.-->
+
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$After1_Join1' [ <!--TERM:After1-->  'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:FT-->  #ft1 ],  <!--TERM:After1-->  'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  #2 ,  <!--TERM:FT-->  #ft2 ]]
+→
+   'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:Instructions-->  #2 ],  <!--TERM:FT-->  'Pr3Yunjian$FT_AppendFT' [ <!--TERM:FT-->  #ft1 ,  <!--TERM:FT-->  #ft2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$After1_P1' [ <!--TERM:Program-->  'Pr3Yunjian$Program__Declarations_' [ <!--TERM:Declarations-->  #Ds ]]
+→
+   'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  #Ds ]
+;
+
+
+- :
+   'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  'Pr3Yunjian$Declarations__Declaration__Declarations_' [ <!--TERM:Declaration-->  #D ,  <!--TERM:Declarations-->  #Ds ]]
+→
+   'Pr3Yunjian$After1_Join1' [ <!--TERM:After1-->  'Pr3Yunjian$After1_D' [ <!--TERM:Declaration-->  #D ],  <!--TERM:After1-->  'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  #Ds ]]
+;
+
+
+- :
+   'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  'Pr3Yunjian$Declarations_' ]
+→
+   'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ,  <!--TERM:FT-->  'Pr3Yunjian$FT_NoFT' ]
+;
+
+
+- [Free[f::Identifier]]:
+   'Pr3Yunjian$After1_D' [ <!--TERM:Declaration-->  'Pr3Yunjian$Declaration_function_Type__Identifier__ArgumentSignature_{_Statements_}' [ <!--TERM:Type-->  #T ,  <!--TERM:Identifier-->  f ,  <!--TERM:ArgumentSignature-->  #As ,  <!--TERM:Statements-->  #S ]]
+→
+   'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ,  <!--TERM:FT-->  'Pr3Yunjian$FT_MoFT' [ <!--TERM:Identifier-->  f ,  <!--TERM:Type-->  #T ,  <!--TERM:FT-->  'Pr3Yunjian$FT_NoFT' ]]
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Identifier.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$TypeList.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Constant.-->
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  #x ]
+→
+   'Pr3Yunjian$Constant_#_Integer_' [ <!--TERM:Integer-->  'Pr3Yunjian$Integer__INT_' [ <!--TOKEN:INT-->   #x  ]]
+;
+
+
+- :
+   'Pr3Yunjian$Constant_Reference' [ <!--TERM:Computed-->  #id ]
+→
+   'Pr3Yunjian$Constant_&_ID_' [ <!--TOKEN:ID-->   #id  ]
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Rs.-->
+
+
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$Rs_AppendRs' [ <!--TERM:Rs-->  'Pr3Yunjian$Rs_NoRs' ,  <!--TERM:Rs-->  #Rs ]
+→
+   #Rs 
+;
+
+
+- :
+   'Pr3Yunjian$Rs_AppendRs' [ <!--TERM:Rs-->  'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  #Rn ,  <!--TERM:Rs-->  #Rs1 ],  <!--TERM:Rs-->  #Rs2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  #Rn ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_AppendRs' [ <!--TERM:Rs-->  #Rs1 ,  <!--TERM:Rs-->  #Rs2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs-->  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg-->  #r ]]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  #r ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_NoRs' ]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs-->  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg-->  #r1 ,  <!--TERM:Reg-->  #r2 ]]
+→
+   'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  #r1 ,  <!--TERM:Reg-->  #r2 ]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs-->  'Pr3Yunjian$Regs__Reg_,_Regs_' [ <!--TERM:Reg-->  #r ,  <!--TERM:Regs-->  #Rs ]]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  #r ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs-->  #Rs ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs-->  'Pr3Yunjian$Regs__Reg_-_Reg_,_Regs_' [ <!--TERM:Reg-->  #r1 ,  <!--TERM:Reg-->  #r2 ,  <!--TERM:Regs-->  #Rs ]]
+→
+   'Pr3Yunjian$Rs_AppendRs' [ <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  #r1 ,  <!--TERM:Reg-->  #r2 ],  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs-->  #Rs ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  #r ,  <!--TERM:Reg-->  #r ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  #r ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_NoRs' ]
+;
+
+
+- [Fallback, Data[#r2,#r1]]:
+   'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  #r1 ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  #r1 ,  <!--TERM:Reg-->  #r2 ]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R1' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R1' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R1' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R2' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R2' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R2' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R3' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R3' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R3' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R5' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R5' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R5' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R6' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R6' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R6' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R7' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R7' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R7' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R8' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R8' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R8' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R9' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R9' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R9' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R10' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R10' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R10' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R11' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R11' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R11' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Reg-->  #r2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs2' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Reg-->  #r2 ]
+→
+   'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Rs-->  'Pr3Yunjian$Rs_NoRs' ]
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Reg-->  #r2 ]
+→
+   Special_error[%n⟪MinARM32 error: Cannot use SP in Regs range.⟫] 
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_LR' ,  <!--TERM:Reg-->  #r2 ]
+→
+   Special_error[%n⟪MinARM32 error: Cannot use LR in Regs range.⟫] 
+;
+
+
+- :
+   'Pr3Yunjian$Rs_XRegs1' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_PC' ,  <!--TERM:Reg-->  #r2 ]
+→
+   Special_error[%n⟪MinARM32 error: Cannot use PC in Regs range.⟫] 
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Integers.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Type.-->
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Sign.-->
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Instruction.-->
+
+
+
+
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$Instruction_AddConstant' [ <!--TERM:Reg-->  #Rd ,  <!--TERM:Reg-->  #Rn ,  <!--TERM:Computed-->  #x ]
+→
+   'Pr3Yunjian$Instruction_AddConstant1' [ <!--TERM:Computed-->  #x ,  <!--TERM:Instruction-->  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op-->  'Pr3Yunjian$Op_ADD_Reg_,_Reg_,_Arg_' [ <!--TERM:Reg-->  #Rd ,  <!--TERM:Reg-->  #Rn ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant-->  'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  #x ]]]],  <!--TERM:Instruction-->  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op-->  'Pr3Yunjian$Op_SUB_Reg_,_Reg_,_Arg_' [ <!--TERM:Reg-->  #Rd ,  <!--TERM:Reg-->  #Rn ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant-->  'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  'Sub' [ <!--TERM:Computed-->  'StringToNumeric' [ <!--TERM:Computed-->  "0" ],  <!--TERM:Computed-->  #x ]]]]]]
+;
+
+
+- :
+   'Pr3Yunjian$Instruction_AddConstant1' [ <!--TERM:Computed-->  #x ,  <!--TERM:Instruction-->  #pos ,  <!--TERM:Instruction-->  #neg ]
+→
+   'Pr3Yunjian$Instruction_AddConstant2' [ <!--TERM:Computed-->  'If' [ <!--TERM:-->  'LessEq2' [ <!--TERM:-->  'StringToNumeric' [ <!--TERM:Computed-->  "0" ],  <!--TERM:-->  #x ],  <!--TERM:-->  #pos ,  <!--TERM:-->  #neg ]]
+;
+
+
+- :
+   'Pr3Yunjian$Instruction_AddConstant2' [ <!--TERM:Computed-->  #add ]
+→
+   #add 
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Statements.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$TypeIdentifierTail.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Computed.-->
+
+
+
+
+- :
+   'Pr3Yunjian$Computed_Dummy' 
+→
+   'StringToNumeric' [ <!--TERM:Computed-->  "0" ]
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Regs.-->
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Statement.-->
+
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Declaration.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Expression.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$TypeListTail.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$ExpressionList.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$ExpressionListTail.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$IfTail.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Declarations.-->
+
+
+
+
+
+
+)] //Pr3Yunjian
+
