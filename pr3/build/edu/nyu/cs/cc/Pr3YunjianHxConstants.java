@@ -11,145 +11,145 @@ public interface Pr3YunjianHxConstants {
   /** End of File. */
   int EOF = 0;
   /** RegularExpression Id. */
-  int T_HX_CONCRETE = 78;
+  int T_HX_CONCRETE = 76;
   /** RegularExpression Id. */
-  int T_HX_PP_UNCONCRETE = 88;
+  int T_HX_PP_UNCONCRETE = 86;
   /** RegularExpression Id. */
-  int T_HX_SEMI = 91;
+  int T_HX_SEMI = 89;
   /** RegularExpression Id. */
-  int T_HX_BAR = 92;
+  int T_HX_BAR = 90;
   /** RegularExpression Id. */
-  int T_HX_LPAREN = 93;
+  int T_HX_LPAREN = 91;
   /** RegularExpression Id. */
-  int T_HX_RPAREN = 94;
+  int T_HX_RPAREN = 92;
   /** RegularExpression Id. */
-  int T_HX_STAR = 95;
+  int T_HX_STAR = 93;
   /** RegularExpression Id. */
-  int T_HX_PLUS = 96;
+  int T_HX_PLUS = 94;
   /** RegularExpression Id. */
-  int T_HX_QUEST = 97;
+  int T_HX_QUEST = 95;
   /** RegularExpression Id. */
-  int T_HX_SUB = 98;
+  int T_HX_SUB = 96;
   /** RegularExpression Id. */
-  int T_HX_DOT = 99;
+  int T_HX_DOT = 97;
   /** RegularExpression Id. */
-  int T_HX_COLON = 100;
+  int T_HX_COLON = 98;
   /** RegularExpression Id. */
-  int T_HX_LBRACE = 101;
+  int T_HX_LBRACE = 99;
   /** RegularExpression Id. */
-  int T_HX_RBRACE = 102;
+  int T_HX_RBRACE = 100;
   /** RegularExpression Id. */
-  int T_HX_LBRACKET = 103;
+  int T_HX_LBRACKET = 101;
   /** RegularExpression Id. */
-  int T_HX_RBRACKET = 104;
+  int T_HX_RBRACKET = 102;
   /** RegularExpression Id. */
-  int T_HX_COMMA = 105;
+  int T_HX_COMMA = 103;
   /** RegularExpression Id. */
-  int T_HX_FORALL = 106;
+  int T_HX_FORALL = 104;
   /** RegularExpression Id. */
-  int T_HX_ARROW = 107;
+  int T_HX_ARROW = 105;
   /** RegularExpression Id. */
-  int T_HX_UP = 108;
+  int T_HX_UP = 106;
   /** RegularExpression Id. */
-  int T_HX_DOWN = 109;
+  int T_HX_DOWN = 107;
   /** RegularExpression Id. */
-  int T_HX_NOT = 110;
+  int T_HX_NOT = 108;
   /** RegularExpression Id. */
-  int T_HX_AT = 111;
+  int T_HX_AT = 109;
   /** RegularExpression Id. */
-  int T_HX_DOTTEDNAME = 112;
+  int T_HX_DOTTEDNAME = 110;
   /** RegularExpression Id. */
-  int T_HX_AS = 113;
+  int T_HX_AS = 111;
   /** RegularExpression Id. */
-  int T_HX_ATTRIBUTE = 114;
+  int T_HX_ATTRIBUTE = 112;
   /** RegularExpression Id. */
-  int T_HX_AUTOMATIC = 115;
+  int T_HX_AUTOMATIC = 113;
   /** RegularExpression Id. */
-  int T_HX_BINDS = 116;
+  int T_HX_BINDS = 114;
   /** RegularExpression Id. */
-  int T_HX_COMPOSE = 117;
+  int T_HX_COMPOSE = 115;
   /** RegularExpression Id. */
-  int T_HX_DATA = 118;
+  int T_HX_DATA = 116;
   /** RegularExpression Id. */
-  int T_HX_DEFAULT = 119;
+  int T_HX_DEFAULT = 117;
   /** RegularExpression Id. */
-  int T_HX_FREE = 120;
+  int T_HX_FREE = 118;
   /** RegularExpression Id. */
-  int T_HX_FRESH = 121;
+  int T_HX_FRESH = 119;
   /** RegularExpression Id. */
-  int T_HX_GLOBAL = 122;
+  int T_HX_GLOBAL = 120;
   /** RegularExpression Id. */
-  int T_HX_IMPORT = 123;
+  int T_HX_IMPORT = 121;
   /** RegularExpression Id. */
-  int T_HX_MAIN = 124;
+  int T_HX_MAIN = 122;
   /** RegularExpression Id. */
-  int T_HX_MODULE = 125;
+  int T_HX_MODULE = 123;
   /** RegularExpression Id. */
-  int T_HX_PRIORITY = 126;
+  int T_HX_PRIORITY = 124;
   /** RegularExpression Id. */
-  int T_HX_RULE = 127;
+  int T_HX_RULE = 125;
   /** RegularExpression Id. */
-  int T_HX_SCHEME = 128;
+  int T_HX_SCHEME = 126;
   /** RegularExpression Id. */
-  int T_HX_SORT = 129;
+  int T_HX_SORT = 127;
   /** RegularExpression Id. */
-  int T_HX_STATIC = 130;
+  int T_HX_STATIC = 128;
   /** RegularExpression Id. */
-  int T_HX_SUGAR = 131;
+  int T_HX_SUGAR = 129;
   /** RegularExpression Id. */
-  int T_HX_SYMBOL = 132;
+  int T_HX_SYMBOL = 130;
   /** RegularExpression Id. */
-  int T_HX_TAG = 133;
+  int T_HX_TAG = 131;
   /** RegularExpression Id. */
-  int T_HX_SPACE = 134;
+  int T_HX_SPACE = 132;
   /** RegularExpression Id. */
-  int T_HX_TOKEN = 135;
+  int T_HX_TOKEN = 133;
   /** RegularExpression Id. */
-  int T_HX_FRAGMENT = 136;
+  int T_HX_FRAGMENT = 134;
   /** RegularExpression Id. */
-  int T_HX_NESTED = 137;
+  int T_HX_NESTED = 135;
   /** RegularExpression Id. */
-  int T_HX_FRAGMENT_REF = 138;
+  int T_HX_FRAGMENT_REF = 136;
   /** RegularExpression Id. */
-  int T_HX_RE_NAME = 139;
+  int T_HX_RE_NAME = 137;
   /** RegularExpression Id. */
-  int T_HX_RE_WORD = 140;
+  int T_HX_RE_WORD = 138;
   /** RegularExpression Id. */
-  int T_HX_META = 141;
+  int T_HX_META = 139;
   /** RegularExpression Id. */
-  int T_HX_VAR = 142;
+  int T_HX_VAR = 140;
   /** RegularExpression Id. */
-  int T_HX_NATURAL = 143;
+  int T_HX_NATURAL = 141;
   /** RegularExpression Id. */
-  int T_HX_INTEGER = 144;
+  int T_HX_INTEGER = 142;
   /** RegularExpression Id. */
-  int T_HX_UNNATURAL = 145;
+  int T_HX_UNNATURAL = 143;
   /** RegularExpression Id. */
-  int T_HX_STRING = 146;
+  int T_HX_STRING = 144;
   /** RegularExpression Id. */
-  int T_HX_STRING1CHAR = 147;
+  int T_HX_STRING1CHAR = 145;
   /** RegularExpression Id. */
-  int T_HX_STRING2CHAR = 148;
+  int T_HX_STRING2CHAR = 146;
   /** RegularExpression Id. */
-  int T_HX_ESCAPEDCHAR = 149;
+  int T_HX_ESCAPEDCHAR = 147;
   /** RegularExpression Id. */
-  int T_HX_HEX = 150;
+  int T_HX_HEX = 148;
   /** RegularExpression Id. */
-  int T_HX_CHAR_CLASS = 151;
+  int T_HX_CHAR_CLASS = 149;
   /** RegularExpression Id. */
-  int T_HX_CC_NOT = 152;
+  int T_HX_CC_NOT = 150;
   /** RegularExpression Id. */
-  int T_HX_CC_RBRACKET = 153;
+  int T_HX_CC_RBRACKET = 151;
   /** RegularExpression Id. */
-  int T_HX_CC_DASH = 154;
+  int T_HX_CC_DASH = 152;
   /** RegularExpression Id. */
-  int T_HX_CC_OTHER = 155;
+  int T_HX_CC_OTHER = 153;
   /** RegularExpression Id. */
-  int T_HX_CC_SKIP = 156;
+  int T_HX_CC_SKIP = 154;
   /** RegularExpression Id. */
-  int T_HX_PP_CONCRETE_SPACE = 157;
+  int T_HX_PP_CONCRETE_SPACE = 155;
   /** RegularExpression Id. */
-  int T_HX_PP_CONCRETE_WORD = 158;
+  int T_HX_PP_CONCRETE_WORD = 156;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -174,41 +174,53 @@ public interface Pr3YunjianHxConstants {
   String[] tokenImage = {
     "<EOF>",
     "\"INT\"",
-    "\"STR\"",
     "\"ID\"",
-    "\"Instructions\"",
-    "\"Instruction\"",
-    "\"Type\"",
-    "\"IfTail\"",
-    "\"Declarations\"",
-    "\"Integers\"",
-    "\"Label\"",
-    "\"Arg\"",
-    "\"TypeList\"",
-    "\"Constant\"",
-    "\"Identifier\"",
-    "\"Reg\"",
-    "\"Declaration\"",
-    "\"Expression\"",
-    "\"ExpressionList\"",
-    "\"Local\"",
-    "\"TypeIdentifierTail\"",
+    "\"STR\"",
     "\"Statements\"",
-    "\"After1\"",
     "\"ArgumentSignature\"",
-    "\"Program\"",
-    "\"Regs\"",
-    "\"Statement\"",
-    "\"Sign\"",
-    "\"Computed\"",
-    "\"Mem\"",
-    "\"Integer\"",
     "\"Rs\"",
-    "\"FT\"",
-    "\"String\"",
+    "\"Statement\"",
+    "\"IfTail\"",
+    "\"Arg\"",
     "\"Op\"",
+    "\"Type\"",
+    "\"Identifier\"",
+    "\"Mem\"",
+    "\"Reg\"",
+    "\"String\"",
+    "\"Program\"",
     "\"ExpressionListTail\"",
+    "\"Instruction\"",
+    "\"Integer\"",
+    "\"Sign\"",
+    "\"Declarations\"",
+    "\"Expression\"",
+    "\"Instructions\"",
     "\"TypeListTail\"",
+    "\"Constant\"",
+    "\"TypeList\"",
+    "\"Integers\"",
+    "\"Regs\"",
+    "\"Declaration\"",
+    "\"ExpressionList\"",
+    "\"TypeIdentifierTail\"",
+    "\"Label\"",
+    "\"Computed\"",
+    "\"After1\"",
+    "\"FT\"",
+    "\"Local\"",
+    "\"NoRs\"",
+    "\"MoRs\"",
+    "\"AppendRs\"",
+    "\"XRegs\"",
+    "\"XRegs1\"",
+    "\"XRegs2\"",
+    "\"FrameAccess\"",
+    "\"FrameAccess1\"",
+    "\"FrameAccess2\"",
+    "\"AddConstant\"",
+    "\"AddConstant1\"",
+    "\"AddConstant2\"",
     "\"Compile\"",
     "\"P2\"",
     "\"P2Load\"",
@@ -218,51 +230,37 @@ public interface Pr3YunjianHxConstants {
     "\"AS\"",
     "\"AS2\"",
     "\"S\"",
-    "\"SingleS\"",
-    "\"E\"",
-    "\"AddConstant\"",
-    "\"AddConstant1\"",
-    "\"AddConstant2\"",
     "\"Immediate\"",
     "\"Reference\"",
-    "\"RegLocal\"",
-    "\"FrameLocal\"",
+    "\"Incr\"",
     "\"Data1\"",
     "\"Join1\"",
     "\"P1\"",
     "\"P1Ds\"",
     "\"D\"",
-    "\"Dummy\"",
-    "\"FrameAccess\"",
-    "\"FrameAccess1\"",
-    "\"FrameAccess2\"",
-    "\"NoRs\"",
-    "\"MoRs\"",
-    "\"AppendRs\"",
-    "\"XRegs\"",
-    "\"XRegs1\"",
-    "\"XRegs2\"",
     "\"NoFT\"",
     "\"MoFT\"",
     "\"AppendFT\"",
+    "\"RegLocal\"",
+    "\"FrameLocal\"",
     "\"__HACS__\"",
     "\"\\u27e6\"",
     "\"\\u27e6\"",
     "\"\\u27e6\"",
     "\"\\u27e7\"",
     "\"\\u27e7\"",
-    "<token of kind 79>",
+    "<token of kind 77>",
     "\"/*\"",
     "\"/*\"",
     "\"*/\"",
-    "<token of kind 83>",
+    "<token of kind 81>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 89>",
-    "<token of kind 90>",
+    "<token of kind 87>",
+    "<token of kind 88>",
     "\";\"",
     "\"|\"",
     "\"(\"",

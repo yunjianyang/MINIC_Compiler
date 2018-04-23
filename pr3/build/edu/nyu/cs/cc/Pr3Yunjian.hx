@@ -261,8 +261,8 @@ module edu.nyu.cs.cc.Pr3Yunjian {
 
  // HACS doesn't like to compile with Computed sort
  // unless there exists a scheme that can generate Computed
- sort Computed | scheme Dummy ;
- Dummy → ⟦ 0 ⟧;
+ sort Computed | scheme Incr(Computed) ;
+ Incr(#o) → ⟦ #o + 4 ⟧;
 
  // MAIN SCHEME
 
@@ -352,50 +352,8 @@ module edu.nyu.cs.cc.Pr3Yunjian {
 
   // Statements
   sort Instructions | scheme S(Statements) ↓ft ↓vt ↓return ↓unused ↓offset ;
-  S(⟦ ⟨Statement#1⟩ ⟨Statements#2⟩ ⟧)↓return(r) →
-    ⟦{⟨Instructions SingleS(#1)↓return(⟦StatementLabel⟧)⟩}
-      StatementLabel ⟨Instructions S(#2)↓return(r)⟩
-    ⟧;
+  S(⟦ var ⟨Type#t⟩ ⟨Identifier#1⟩ ; ⟨Statements#2⟩⟧)↓offset(#o)↓vt{:#v}
+  → S(#2)↓offset(Incr(#o))↓vt{:#v}↓vt{#1:FrameLocal(#t, #o)};
+
   S(⟦⟧)↓return(r) → ⟦B r⟧;
-
-  // Statement
-  sort Instructions | scheme SingleS(Statement) ↓ft ↓vt ↓return ↓unused ↓offset ;
-  SingleS(⟦ { ⟨Statements#1⟩ } ⟧) → S(#1);
-
-  SingleS(⟦ var ⟨Type#1⟩ ⟨Identifier#2⟩ ; ⟧)↓unused(MoRs(#r, #Rs)) →
-    ⟦
-    ⟧↓vt{#2 : RegLocal(#1, #r)}↓unused(#Rs);
-
-  // TODO: how to compute the offset for frame
-  SingleS(⟦ var ⟨Type#1⟩ ⟨Identifier#2⟩ ; ⟧)↓unused(NoRs) →
-    ⟦
-    ⟧↓vt{#2 : FrameLocal(#1, ⟦0-4⟧)};
-  SingleS(⟦ ⟨Expression#1⟩ = ⟨Expression#2⟩ ; ⟧) →
-    ⟦
-     {⟨Instructions E(#2)⟩}
-     {⟨Instructions E(#1)⟩}
-    ⟧;
-  SingleS(⟦ if ( ⟨Expression#1⟩ ) ⟨Statement#2⟩ else ⟨Statement#3⟩ ⟧) →
-    ⟦
-     {⟨Instructions E(#1)⟩↓true(⟦TRUE⟧) ↓(⟦FALSE⟧)}
-    ⟧;
-  SingleS( ⟦ return ⟨Expression#1⟩ ; ⟧) →
-    ⟦
-     {⟨Instructions E(#1)⟩}
-     MOV R0, R4
-    ⟧;
-  SingleS(#) → ⟦B Statement⟧;
-  /*
-       |  ⟦ if ( ⟨Expression⟩ ) ⟨IfTail⟩ ⟧
-       |  ⟦ while ( ⟨Expression⟩ ) ⟨Statement⟩ ⟧
-       |
-       ;
-  */
-
-  // Expression
-  sort Instructions | scheme E(Expression) ↓ft ↓vt ↓return ↓unused ↓offset ↓true ↓false;
-  E(#) →
-    ⟦
-      B Expression
-    ⟧;
 }
