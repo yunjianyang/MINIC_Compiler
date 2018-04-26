@@ -350,10 +350,37 @@ module edu.nyu.cs.cc.Pr3Yunjian {
   AS2(⟦ , ⟨Type#T⟩ a ⟨TypeIdentifierTail#TIT⟩ ⟧, NoRs, #S)
     → error⟦More than four arguments to function not allowed.⟧ ;
 
+  sort Instructions | scheme Store(Local, Reg) | scheme StoreReg(Reg, Reg);
+  Store(RegLocal(#t, #lvalue), #rs) →
+    ⟦ MOV ⟨Reg#lvalue⟩, ⟨Reg#rs⟩⟧;
+  Store(FrameLocal(#t, #lvalue), #rs) →
+    ⟦ STR ⟨Reg#rs⟩, ⟨Mem FrameAccess(#lvalue)⟩⟧;
+  StoreReg(#mem, #value) →
+    ⟦ STR ⟨Reg#value⟩, [R12, ⟨Reg#mem⟩]⟧;
+
   // Statements
   sort Instructions | scheme S(Statements) ↓ft ↓vt ↓return ↓unused ↓offset ;
   S(⟦ var ⟨Type#t⟩ ⟨Identifier#1⟩ ; ⟨Statements#2⟩⟧)↓offset(#o)↓vt{:#v}
   → S(#2)↓offset(Incr(#o))↓vt{:#v}↓vt{#1:FrameLocal(#t, #o)};
-
+  S(⟦ ⟨Identifier#1⟩ = ⟨Expression#2⟩ ; ⟨Statements#3⟩⟧)
+    ↓offset(#o)↓vt{#1:#l}
+  → ⟦
+     {⟨Instructions E(#2)⟩}
+     {⟨Instructions Store(#l, ⟦R4⟧)⟩}
+     {⟨Instructions S(#3)↓offset(#o)↓vt{#1:#l}⟩}
+    ⟧;
+  S(⟦ *⟨Expression#1⟩ = ⟨Expression#2⟩ ; ⟨Statements#3⟩⟧)
+    ↓offset(#o)↓vt{:#v}
+  → ⟦
+     {⟨Instructions E(#1)⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)⟩}
+     LDMFD SP!, {R5}
+     {⟨Instructions StoreReg(⟦R5⟧, ⟦R4⟧)⟩}
+     {⟨Instructions S(#3)↓offset(#o)↓vt{:#l}⟩}
+    ⟧;
   S(⟦⟧)↓return(r) → ⟦B r⟧;
+
+  sort Instructions | scheme E(Expression) ↓vt ↓unused ↓value;
+  E(#)↓return(r) → ⟦⟧;
 }

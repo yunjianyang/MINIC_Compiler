@@ -12,7 +12,7 @@ usage () {
 MODULE='edu.nyu.cs.cc.Pr3Yunjian'
 NAME='Pr3Yunjian'
 SORT='Program'
-SORTS='Program Declaration Instructions Statement ArgumentSignature TypeList Sign Instruction Mem IfTail Integers Statements Regs Arg Op Integer Reg ExpressionListTail Expression Identifier Label Declarations TypeIdentifierTail Rs ExpressionList Constant Type String TypeListTail Computed After1 FT Local ID STR INT'
+SORTS='Program Instructions Integer Constant ArgumentSignature TypeList Rs String Identifier Sign Label Expression Op TypeListTail Statements Reg Arg Regs IfTail Type Instruction Mem ExpressionListTail TypeIdentifierTail ExpressionList Integers Declaration Statement Declarations Computed After1 FT Local STR INT ID'
 SINKCLASS='net.sf.crsx.text.TextSink'
 PARSERCLASS='edu.nyu.cs.cc.Pr3YunjianParser'
 PREFIX='pr3yunjian_'
@@ -93,7 +93,7 @@ if [ -z "$BUILD" -o ! -d "$BUILD" ]; then
 
 # Check options.
 if [ -z "$SORT" ]; then
-   fail=true; echo "${0}: SORT must be correctly specified (use default or one of "Program Declaration Instructions Statement ArgumentSignature TypeList Sign Instruction Mem IfTail Integers Statements Regs Arg Op Integer Reg ExpressionListTail Expression Identifier Label Declarations TypeIdentifierTail Rs ExpressionList Constant Type String TypeListTail Computed After1 FT Local ID STR INT")" >&2
+   fail=true; echo "${0}: SORT must be correctly specified (use default or one of "Program Instructions Integer Constant ArgumentSignature TypeList Rs String Identifier Sign Label Expression Op TypeListTail Statements Reg Arg Regs IfTail Type Instruction Mem ExpressionListTail TypeIdentifierTail ExpressionList Integers Declaration Statement Declarations Computed After1 FT Local STR INT ID")" >&2
 elif [ -z "$SCHEME" ]; then
    SCHEME="$NAME"'$'"$SORT";
 fi
