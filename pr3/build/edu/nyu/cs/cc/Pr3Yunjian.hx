@@ -310,6 +310,7 @@ module edu.nyu.cs.cc.Pr3Yunjian {
  attribute ↓return(Label) ;		// label of return code
  attribute ↓true(Label) ;		// label to jump for true result
  attribute ↓false(Label) ;		// label to jump for false result
+ attribute ↓next(Label) ;		// helper label for next
  attribute ↓value(Reg) ;		// register for expression result
  attribute ↓offset(Computed) ;		// frame offset for first unused local
  attribute ↓unused(Rs) ;		// list of unused registers
@@ -360,27 +361,88 @@ module edu.nyu.cs.cc.Pr3Yunjian {
 
   // Statements
   sort Instructions | scheme S(Statements) ↓ft ↓vt ↓return ↓unused ↓offset ;
-  S(⟦ var ⟨Type#t⟩ ⟨Identifier#1⟩ ; ⟨Statements#2⟩⟧)↓offset(#o)↓vt{:#v}
-  → S(#2)↓offset(Incr(#o))↓vt{:#v}↓vt{#1:FrameLocal(#t, #o)};
+  S(⟦ var ⟨Type#t⟩ ⟨Identifier#1⟩ ; ⟨Statements#2⟩⟧)
+    ↓offset(#o)↓vt{:#v}↓return(r)
+  → S(#2)↓offset(Incr(#o))↓vt{:#v}↓vt{#1:FrameLocal(#t, #o)}↓return(r);
   S(⟦ ⟨Identifier#1⟩ = ⟨Expression#2⟩ ; ⟨Statements#3⟩⟧)
-    ↓offset(#o)↓vt{#1:#l}
+    ↓offset(#o)↓vt{#1:#l}↓return(r)
   → ⟦
      {⟨Instructions E(#2)⟩}
      {⟨Instructions Store(#l, ⟦R4⟧)⟩}
-     {⟨Instructions S(#3)↓offset(#o)↓vt{#1:#l}⟩}
+     {⟨Instructions S(#3)↓offset(#o)↓vt{#1:#l}↓return(r)⟩}
     ⟧;
   S(⟦ *⟨Expression#1⟩ = ⟨Expression#2⟩ ; ⟨Statements#3⟩⟧)
-    ↓offset(#o)↓vt{:#v}
+    ↓offset(#o)↓vt{:#v}↓return(#r)
   → ⟦
      {⟨Instructions E(#1)⟩}
      STMFD SP!, {R4}
      {⟨Instructions E(#2)⟩}
      LDMFD SP!, {R5}
      {⟨Instructions StoreReg(⟦R5⟧, ⟦R4⟧)⟩}
-     {⟨Instructions S(#3)↓offset(#o)↓vt{:#l}⟩}
+     {⟨Instructions S(#3)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
     ⟧;
-  S(⟦⟧)↓return(r) → ⟦B r⟧;
+  S(⟦ if ( ⟨Expression#1⟩ ) ⟨IfTail#2⟩ ⟨Statements#3⟩⟧)↓offset(#o)↓vt{:#v}↓return(#r)
+  → ⟦
+      {⟨Instructions E(#1)⟩}
+      CMP R4, # 0
+      BNE TRUE
+      BL  FALSE
+      {⟨Instructions IT(#2)↓true(⟦TRUE⟧)↓false(⟦FALSE⟧)↓next(⟦NEXT⟧)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
+      {⟨Instructions S(#3)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
+    ⟧;
+  S(⟦⟧) → ⟦⟧;
+  S(#) → ⟦MOV R0, R5⟧;
 
-  sort Instructions | scheme E(Expression) ↓vt ↓unused ↓value;
-  E(#)↓return(r) → ⟦⟧;
+  sort Instructions | scheme SingleS(Statement)↓ft ↓vt ↓return ↓unused ↓offset;
+  SingleS(⟦{⟨Statements #ss⟩}⟧)↓offset(#o)↓vt{:#v}↓return(#r)
+                                                     → S(#ss)↓offset(#o)↓vt{:#v}↓return(#r);
+  SingleS(⟦ var ⟨Type#t⟩ ⟨Identifier#1⟩ ;⟧) → ⟦⟧;
+
+  SingleS(⟦ ⟨Identifier#1⟩ = ⟨Expression#2⟩ ; ⟧)
+    ↓offset(#o)↓vt{#1:#l}↓return(r)
+  → ⟦
+     {⟨Instructions E(#2)⟩}
+     {⟨Instructions Store(#l, ⟦R4⟧)⟩}
+    ⟧;
+  SingleS(⟦ *⟨Expression#1⟩ = ⟨Expression#2⟩ ;⟧)
+    ↓offset(#o)↓vt{:#v}↓return(#r)
+  → ⟦
+     {⟨Instructions E(#1)⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)⟩}
+     LDMFD SP!, {R5}
+     {⟨Instructions StoreReg(⟦R5⟧, ⟦R4⟧)⟩}
+    ⟧;
+  SingleS(⟦ if ( ⟨Expression#1⟩ ) ⟨IfTail#2⟩⟧)↓offset(#o)↓vt{:#v}↓return(#r)
+  → ⟦
+      {⟨Instructions E(#1)⟩}
+      CMP R4, # 0
+      BNE TRUE
+      BL  FALSE
+      {⟨Instructions IT(#2)↓true(⟦TRUE⟧)↓false(⟦FALSE⟧)↓next(⟦NEXT⟧)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
+    ⟧;
+  SingleS(#) → ⟦MOV R0, R6⟧;
+
+
+  sort Instructions | scheme IT(IfTail)↓true ↓false ↓next ↓vt ↓offset ↓return;
+  IT(⟦ ⟨Statement#1⟩ else ⟨Statement#2⟩ ⟧)
+    ↓true(#t) ↓false(#f) ↓next(#n) ↓vt{:#v} ↓offset(#o) ↓return(#r)
+  → ⟦⟨Label#t⟩
+     {⟨Instructions SingleS(#1)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
+     BL ⟨Label#n⟩
+     ⟨Label#f⟩
+     {⟨Instructions SingleS(#2)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
+     ⟨Label#n⟩
+    ⟧;
+  IT(⟦ ⟨Statement#1⟩ else ⟨Statement#2⟩ ⟧)
+    ↓true(#t) ↓false(#f) ↓next(#n) ↓vt{:#v} ↓offset(#o) ↓return(#r)
+  → ⟦⟨Label#t⟩
+     {⟨Instructions SingleS(#1)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
+     BL ⟨Label#n⟩
+     ⟨Label#f⟩
+   ⟧;
+
+  sort Instructions | scheme E(Expression);
+  E(#) → ⟦⟧;
+
 }
