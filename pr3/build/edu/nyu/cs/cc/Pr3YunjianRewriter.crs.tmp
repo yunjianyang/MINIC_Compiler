@@ -17,136 +17,136 @@ Pr3Yunjian[(
 
 
 
-'$Print-Pr3Yunjian$FT' [Pr3Yunjian$FT] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$FT' [#] → '$Print2-Pr3Yunjian$FT' [#, 0] ;
+'$Print-Pr3Yunjian$Arg' [Pr3Yunjian$Arg] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Arg' [#] → '$Print2-Pr3Yunjian$Arg' [#, 0] ;
 
 
-'$Print-Pr3Yunjian$Sign' [Pr3Yunjian$Sign] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Sign' [#] → '$Print2-Pr3Yunjian$Sign' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Declaration' [Pr3Yunjian$Declaration] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Declaration' [#] → '$Print2-Pr3Yunjian$Declaration' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Identifier' [Pr3Yunjian$Identifier] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Identifier' [#] → '$Print2-Pr3Yunjian$Identifier' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Computed' [Pr3Yunjian$Computed] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Computed' [#] → '$Print2-Pr3Yunjian$Computed' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$TypeListTail' [Pr3Yunjian$TypeListTail] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$TypeListTail' [#] → '$Print2-Pr3Yunjian$TypeListTail' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Rs' [Pr3Yunjian$Rs] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Rs' [#] → '$Print2-Pr3Yunjian$Rs' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$ArgumentSignature' [Pr3Yunjian$ArgumentSignature] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$ArgumentSignature' [#] → '$Print2-Pr3Yunjian$ArgumentSignature' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Integer' [Pr3Yunjian$Integer] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Integer' [#] → '$Print2-Pr3Yunjian$Integer' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Statement' [Pr3Yunjian$Statement] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Statement' [#] → '$Print2-Pr3Yunjian$Statement' [#, 0] ;
+'$Print-Pr3Yunjian$Reg' [Pr3Yunjian$Reg] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Reg' [#] → '$Print2-Pr3Yunjian$Reg' [#, 0] ;
 
 
 '$Print-Pr3Yunjian$ExpressionListTail' [Pr3Yunjian$ExpressionListTail] :: Text ;
 -[Data[#]]: '$Print-Pr3Yunjian$ExpressionListTail' [#] → '$Print2-Pr3Yunjian$ExpressionListTail' [#, 0] ;
 
 
-'$Print-Pr3Yunjian$Instructions' [Pr3Yunjian$Instructions] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Instructions' [#] → '$Print2-Pr3Yunjian$Instructions' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Local' [Pr3Yunjian$Local] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Local' [#] → '$Print2-Pr3Yunjian$Local' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Instruction' [Pr3Yunjian$Instruction] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Instruction' [#] → '$Print2-Pr3Yunjian$Instruction' [#, 0] ;
-
-
 '$Print-Pr3Yunjian$TypeIdentifierTail' [Pr3Yunjian$TypeIdentifierTail] :: Text ;
 -[Data[#]]: '$Print-Pr3Yunjian$TypeIdentifierTail' [#] → '$Print2-Pr3Yunjian$TypeIdentifierTail' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Op' [Pr3Yunjian$Op] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Op' [#] → '$Print2-Pr3Yunjian$Op' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$TypeList' [Pr3Yunjian$TypeList] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$TypeList' [#] → '$Print2-Pr3Yunjian$TypeList' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Arg' [Pr3Yunjian$Arg] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Arg' [#] → '$Print2-Pr3Yunjian$Arg' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$String' [Pr3Yunjian$String] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$String' [#] → '$Print2-Pr3Yunjian$String' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Expression' [Pr3Yunjian$Expression] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Expression' [#] → '$Print2-Pr3Yunjian$Expression' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Regs' [Pr3Yunjian$Regs] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Regs' [#] → '$Print2-Pr3Yunjian$Regs' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Declarations' [Pr3Yunjian$Declarations] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Declarations' [#] → '$Print2-Pr3Yunjian$Declarations' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Integers' [Pr3Yunjian$Integers] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Integers' [#] → '$Print2-Pr3Yunjian$Integers' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Program' [Pr3Yunjian$Program] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Program' [#] → '$Print2-Pr3Yunjian$Program' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$After1' [Pr3Yunjian$After1] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$After1' [#] → '$Print2-Pr3Yunjian$After1' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$IfTail' [Pr3Yunjian$IfTail] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$IfTail' [#] → '$Print2-Pr3Yunjian$IfTail' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Constant' [Pr3Yunjian$Constant] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Constant' [#] → '$Print2-Pr3Yunjian$Constant' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Statements' [Pr3Yunjian$Statements] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Statements' [#] → '$Print2-Pr3Yunjian$Statements' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$Label' [Pr3Yunjian$Label] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Label' [#] → '$Print2-Pr3Yunjian$Label' [#, 0] ;
-
-
-'$Print-Pr3Yunjian$ExpressionList' [Pr3Yunjian$ExpressionList] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$ExpressionList' [#] → '$Print2-Pr3Yunjian$ExpressionList' [#, 0] ;
 
 
 '$Print-Pr3Yunjian$Type' [Pr3Yunjian$Type] :: Text ;
 -[Data[#]]: '$Print-Pr3Yunjian$Type' [#] → '$Print2-Pr3Yunjian$Type' [#, 0] ;
 
 
+'$Print-Pr3Yunjian$TypeList' [Pr3Yunjian$TypeList] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$TypeList' [#] → '$Print2-Pr3Yunjian$TypeList' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Computed' [Pr3Yunjian$Computed] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Computed' [#] → '$Print2-Pr3Yunjian$Computed' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Local' [Pr3Yunjian$Local] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Local' [#] → '$Print2-Pr3Yunjian$Local' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$ArgumentSignature' [Pr3Yunjian$ArgumentSignature] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$ArgumentSignature' [#] → '$Print2-Pr3Yunjian$ArgumentSignature' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Statement' [Pr3Yunjian$Statement] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Statement' [#] → '$Print2-Pr3Yunjian$Statement' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$ExpressionList' [Pr3Yunjian$ExpressionList] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$ExpressionList' [#] → '$Print2-Pr3Yunjian$ExpressionList' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Declarations' [Pr3Yunjian$Declarations] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Declarations' [#] → '$Print2-Pr3Yunjian$Declarations' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Sign' [Pr3Yunjian$Sign] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Sign' [#] → '$Print2-Pr3Yunjian$Sign' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$FT' [Pr3Yunjian$FT] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$FT' [#] → '$Print2-Pr3Yunjian$FT' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Program' [Pr3Yunjian$Program] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Program' [#] → '$Print2-Pr3Yunjian$Program' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Label' [Pr3Yunjian$Label] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Label' [#] → '$Print2-Pr3Yunjian$Label' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Instructions' [Pr3Yunjian$Instructions] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Instructions' [#] → '$Print2-Pr3Yunjian$Instructions' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$After1' [Pr3Yunjian$After1] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$After1' [#] → '$Print2-Pr3Yunjian$After1' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Integers' [Pr3Yunjian$Integers] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Integers' [#] → '$Print2-Pr3Yunjian$Integers' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Constant' [Pr3Yunjian$Constant] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Constant' [#] → '$Print2-Pr3Yunjian$Constant' [#, 0] ;
+
+
 '$Print-Pr3Yunjian$Mem' [Pr3Yunjian$Mem] :: Text ;
 -[Data[#]]: '$Print-Pr3Yunjian$Mem' [#] → '$Print2-Pr3Yunjian$Mem' [#, 0] ;
 
 
-'$Print-Pr3Yunjian$Reg' [Pr3Yunjian$Reg] :: Text ;
--[Data[#]]: '$Print-Pr3Yunjian$Reg' [#] → '$Print2-Pr3Yunjian$Reg' [#, 0] ;
+'$Print-Pr3Yunjian$Integer' [Pr3Yunjian$Integer] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Integer' [#] → '$Print2-Pr3Yunjian$Integer' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Regs' [Pr3Yunjian$Regs] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Regs' [#] → '$Print2-Pr3Yunjian$Regs' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Expression' [Pr3Yunjian$Expression] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Expression' [#] → '$Print2-Pr3Yunjian$Expression' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$String' [Pr3Yunjian$String] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$String' [#] → '$Print2-Pr3Yunjian$String' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$IfTail' [Pr3Yunjian$IfTail] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$IfTail' [#] → '$Print2-Pr3Yunjian$IfTail' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Identifier' [Pr3Yunjian$Identifier] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Identifier' [#] → '$Print2-Pr3Yunjian$Identifier' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Op' [Pr3Yunjian$Op] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Op' [#] → '$Print2-Pr3Yunjian$Op' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Declaration' [Pr3Yunjian$Declaration] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Declaration' [#] → '$Print2-Pr3Yunjian$Declaration' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Rs' [Pr3Yunjian$Rs] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Rs' [#] → '$Print2-Pr3Yunjian$Rs' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$TypeListTail' [Pr3Yunjian$TypeListTail] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$TypeListTail' [#] → '$Print2-Pr3Yunjian$TypeListTail' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Instruction' [Pr3Yunjian$Instruction] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Instruction' [#] → '$Print2-Pr3Yunjian$Instruction' [#, 0] ;
+
+
+'$Print-Pr3Yunjian$Statements' [Pr3Yunjian$Statements] :: Text ;
+-[Data[#]]: '$Print-Pr3Yunjian$Statements' [#] → '$Print2-Pr3Yunjian$Statements' [#, 0] ;
 
 
 '$Print-DummyComputed' 
@@ -728,7 +728,7 @@ $[If, $[GreaterThan, #prec, 0],
 ];
 
 '$Print2-Pr3Yunjian$Identifier' [Pr3Yunjian$Identifier, $Numeric] :: Text ;
--[Free[y_6201]]: '$Print2-Pr3Yunjian$Identifier' [y_6201, #prec] → %n⟪‹y_6201›⟫ ;
+-[Free[y_6429]]: '$Print2-Pr3Yunjian$Identifier' [y_6429, #prec] → %n⟪‹y_6429›⟫ ;
 
 
 <!--NOT SYMBOL REFERENCE FORM-->
@@ -831,7 +831,7 @@ $[If, $[GreaterThan, #prec, 0],
 ];
 
 '$Print2-Pr3Yunjian$Label' [Pr3Yunjian$Label, $Numeric] :: Text ;
--[Free[y_6579]]: '$Print2-Pr3Yunjian$Label' [y_6579, #prec] → %n⟪‹y_6579›⟫ ;
+-[Free[y_6807]]: '$Print2-Pr3Yunjian$Label' [y_6807, #prec] → %n⟪‹y_6807›⟫ ;
 
 
 <!--NOT SYMBOL REFERENCE FORM-->
@@ -1672,6 +1672,115 @@ $Print2-Pr3Yunjian$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n
 /////////////////////////////////////////////////////////////////////////////
 // RULES.
 
+<!--RULES FOR SORT Pr3Yunjian$Arg.-->
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Reg.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$ExpressionListTail.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$TypeIdentifierTail.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Type.-->
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$TypeList.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Computed.-->
+
+
+
+
+- :
+   'Pr3Yunjian$Computed_Incr' [ <!--TERM:Computed-->  #o ]
+→
+   'Sum2' [ <!--TERM:Computed-->  #o ,  <!--TERM:Computed-->  'StringToNumeric' [ <!--TERM:Computed-->  "4" ]]
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Local.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$ArgumentSignature.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Statement.-->
+
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$ExpressionList.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Declarations.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Sign.-->
+
+
+
+
+
+
 <!--RULES FOR SORT Pr3Yunjian$FT.-->
 
 
@@ -1693,14 +1802,429 @@ $Print2-Pr3Yunjian$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n
 
 
 
-<!--RULES FOR SORT Pr3Yunjian$Sign.-->
+<!--RULES FOR SORT Pr3Yunjian$Program.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Label.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Instructions.-->
 
 
 
 
 
 
-<!--RULES FOR SORT Pr3Yunjian$Declaration.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ,  <!--TERM:Instructions-->  # ]
+→
+   # 
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  #1 ,  <!--TERM:Instructions-->  #2 ],  <!--TERM:Instructions-->  #3 ]
+→
+   'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  #1 ,  <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  #2 ,  <!--TERM:Instructions-->  #3 ]]
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_Compile' [ <!--TERM:Program-->  #1 ]
+→
+   'Pr3Yunjian$Instructions_P2' [ <!--TERM:After1-->  'Pr3Yunjian$After1_P1' [ <!--TERM:Program-->  #1 ],  <!--TERM:Program-->  #1 ]
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_P2' [ <!--TERM:After1-->  'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:FT-->  #ft1 ],  <!--TERM:Program-->  #P ]
+→
+  { "vt" : {}A_vt ; "ft" : {}A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:FT-->  #ft1 ,  <!--TERM:Program-->  #P ]
+;
+
+
+- [Free[f::Pr3Yunjian$Identifier]]:
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:FT--> {  }  'Pr3Yunjian$FT_MoFT' [ <!--TERM:Identifier--> {  }  f ,  <!--TERM:Type--> {  }  #T ,  <!--TERM:FT--> {  }  #ft ],  <!--TERM:Program--> {  }  #P ]
+→
+  { "vt" : {##vt}A_vt ; "ft" : {##ft;  f  : {  }  #T }A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:FT--> {  }  #ft ,  <!--TERM:Program--> {  }  #P ]
+;
+
+
+- :
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:FT--> {  }  'Pr3Yunjian$FT_NoFT' ,  <!--TERM:Program--> {  }  #P ]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:Instructions--> { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P' [ <!--TERM:Program--> {  }  #P ]]
+;
+
+
+- :
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P' [ <!--TERM:Program--> {  }  'Pr3Yunjian$Program__Declarations_' [ <!--TERM:Declarations--> {  }  #Ds ]]
+→
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  #Ds ]
+;
+
+
+- :
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  'Pr3Yunjian$Declarations__Declaration__Declarations_' [ <!--TERM:Declaration--> {  }  #D ,  <!--TERM:Declarations--> {  }  #Ds ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_F' [ <!--TERM:Declaration--> {  }  #D ],  <!--TERM:Instructions--> { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  #Ds ]]
+;
+
+
+- :
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  'Pr3Yunjian$Declarations_' ]
+→
+  {  }  'Pr3Yunjian$Instructions_' 
+;
+
+
+- [Free[f::Label], Fresh[v"L"::Label]]:
+  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_F' [ <!--TERM:Declaration--> {  }  'Pr3Yunjian$Declaration_function_Type__Identifier__ArgumentSignature_{_Statements_}' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  f ,  <!--TERM:ArgumentSignature--> {  }  #AS ,  <!--TERM:Statements--> {  }  #S ]]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  f ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_STMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_,_Regs_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_LR' ]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "return" : A_return[{  }  v"L" ] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS' [ <!--TERM:ArgumentSignature--> {  }  #AS ,  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R3' ]],  <!--TERM:Statements--> {  }  #S ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"L" ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R12' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_LDMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_,_Regs_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_PC' ]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]]
+;
+
+
+- :
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS' [ <!--TERM:ArgumentSignature--> {  }  'Pr3Yunjian$ArgumentSignature_()' ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
+→
+  { "offset" : A_offset[{  }  'Sub' [ <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "0" ],  <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "4" ]]] ; "unused" : A_unused[{  }  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ]]] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #S ]
+;
+
+
+- [Free[a::Pr3Yunjian$Identifier]]:
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS' [ <!--TERM:ArgumentSignature--> {  }  'Pr3Yunjian$ArgumentSignature_(_Type__Identifier__TypeIdentifierTail_)' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  a ,  <!--TERM:TypeIdentifierTail--> {  }  #TIT ],  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg--> {  }  #r ,  <!--TERM:Rs--> {  }  #Rs ],  <!--TERM:Statements--> {  }  #S ]
+→
+  { "return" : A_return[#return] ; "vt" : {##vt;  a  : {  }  'Pr3Yunjian$Local_RegLocal' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Reg--> {  }  #r ]}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  #TIT ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
+;
+
+
+- :
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  'Pr3Yunjian$TypeIdentifierTail_' ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
+→
+  { "offset" : A_offset[{  }  'Sub' [ <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "0" ],  <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "4" ]]] ; "unused" : A_unused[{  }  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ]]] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #S ]
+;
+
+
+- [Free[a::Pr3Yunjian$Identifier]]:
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  'Pr3Yunjian$TypeIdentifierTail_,_Type__Identifier__TypeIdentifierTail_' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  a ,  <!--TERM:TypeIdentifierTail--> {  }  #TIT ],  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg--> {  }  #r ,  <!--TERM:Rs--> {  }  #Rs ],  <!--TERM:Statements--> {  }  #S ]
+→
+  { "return" : A_return[#return] ; "vt" : {##vt;  a  : {  }  'Pr3Yunjian$Local_RegLocal' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Reg--> {  }  #r ]}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  #TIT ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
+;
+
+
+- [Free[a::Identifier]]:
+  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  'Pr3Yunjian$TypeIdentifierTail_,_Type__Identifier__TypeIdentifierTail_' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  a ,  <!--TERM:TypeIdentifierTail--> {  }  #TIT ],  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_NoRs' ,  <!--TERM:Statements--> {  }  #S ]
+→
+  {  }  Special_error[%n⟪More than four arguments to function not allowed.⟫] 
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_Store' [ <!--TERM:Local-->  'Pr3Yunjian$Local_RegLocal' [ <!--TERM:Type-->  #t ,  <!--TERM:Reg-->  #lvalue ],  <!--TERM:Reg-->  #rs ]
+→
+   'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op-->  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg-->  #lvalue ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg-->  #rs ]]],  <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ]
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_Store' [ <!--TERM:Local-->  'Pr3Yunjian$Local_FrameLocal' [ <!--TERM:Type-->  #t ,  <!--TERM:Computed-->  #lvalue ],  <!--TERM:Reg-->  #rs ]
+→
+   'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op-->  'Pr3Yunjian$Op_STR_Reg_,_Mem_' [ <!--TERM:Reg-->  #rs ,  <!--TERM:Mem-->  'Pr3Yunjian$Mem_FrameAccess' [ <!--TERM:Computed-->  #lvalue ]]],  <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ]
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_StoreReg' [ <!--TERM:Reg-->  #mem ,  <!--TERM:Reg-->  #value ]
+→
+   'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op-->  'Pr3Yunjian$Op_STR_Reg_,_Mem_' [ <!--TERM:Reg-->  #value ,  <!--TERM:Mem-->  'Pr3Yunjian$Mem_[_Reg_,_Sign__Arg_]' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Sign-->  'Pr3Yunjian$Sign_' ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg-->  #mem ]]]],  <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ]
+;
+
+
+- [Free[r::Pr3Yunjian$Label]]:
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_var_Type__Identifier_;' [ <!--TERM:Type--> {  }  #t ,  <!--TERM:Identifier--> {  }  #1 ],  <!--TERM:Statements--> {  }  #2 ]]
+→
+  { "offset" : A_offset[{  }  'Pr3Yunjian$Computed_Incr' [ <!--TERM:Computed--> {  }  #o ]] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {#v;  #1  : {  }  'Pr3Yunjian$Local_FrameLocal' [ <!--TERM:Type--> {  }  #t ,  <!--TERM:Computed--> {  }  #o ]}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #2 ]
+;
+
+
+- [Free[r::Pr3Yunjian$Label]]:
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {##vt;  #1  : {  }  #l }A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement__Expression_=_Expression_;' [ <!--TERM:Expression--> {  }  'Pr3Yunjian$Expression__Identifier_' [ <!--TERM:Identifier--> {  }  #1 ],  <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Statements--> {  }  #3 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_Store' [ <!--TERM:Local--> {  }  #l ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {##vt;  #1  : {  }  #l }A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #3 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]
+;
+
+
+- :
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement__Expression_=_Expression_;' [ <!--TERM:Expression--> {  }  'Pr3Yunjian$Expression_*_Expression_' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Statements--> {  }  #3 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_STMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_LDMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_StoreReg' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #3 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]
+;
+
+
+- [Fresh[v"TRUE"::Pr3Yunjian$Label,v"NEXT"::Pr3Yunjian$Label,v"FALSE"::Pr3Yunjian$Label]]:
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_if(_Expression_)_IfTail_' [ <!--TERM:Expression--> {  }  #1 ,  <!--TERM:IfTail--> {  }  #2 ],  <!--TERM:Statements--> {  }  #3 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_CMP_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant--> {  }  'Pr3Yunjian$Constant_#_Integer_' [ <!--TERM:Integer--> {  }  'Pr3Yunjian$Integer__INT_' [ <!--TOKEN:INT-->  {  }  "0"  ]]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BNE_Label_' [ <!--TERM:Label--> {  }  v"TRUE" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  v"FALSE" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "return" : A_return[{  }  #r ] ; "offset" : A_offset[{  }  #o ] ; "vt" : {#v}A_vt ; "next" : A_next[{  }  v"NEXT" ] ; "false" : A_false[{  }  v"FALSE" ] ; "true" : A_true[{  }  v"TRUE" ]  }  'Pr3Yunjian$Instructions_IT' [ <!--TERM:IfTail--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #3 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]
+;
+
+
+- [Fresh[v"TRUE"::Label,v"BEGIN"::Label,v"NEXT"::Label]]:
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_while(_Expression_)_Statement_' [ <!--TERM:Expression--> {  }  #1 ,  <!--TERM:Statement--> {  }  #2 ],  <!--TERM:Statements--> {  }  #3 ]]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"BEGIN" ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_CMP_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant--> {  }  'Pr3Yunjian$Constant_#_Integer_' [ <!--TERM:Integer--> {  }  'Pr3Yunjian$Integer__INT_' [ <!--TOKEN:INT-->  {  }  "0"  ]]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BEQ_Label_' [ <!--TERM:Label--> {  }  v"NEXT" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"TRUE" ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  v"BEGIN" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"NEXT" ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #3 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]]]]
+;
+
+
+- :
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements_' ]
+→
+  {  }  'Pr3Yunjian$Instructions_' 
+;
+
+
+- :
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  # ]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]
+;
+
+
+- :
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_{_Statements_}' [ <!--TERM:Statements--> {  }  #ss ]]
+→
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #ss ]
+;
+
+
+- :
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_var_Type__Identifier_;' [ <!--TERM:Type--> {  }  #t ,  <!--TERM:Identifier--> {  }  #1 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_' 
+;
+
+
+- [Free[r::Pr3Yunjian$Label]]:
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {##vt;  #1  : {  }  #l }A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement__Expression_=_Expression_;' [ <!--TERM:Expression--> {  }  'Pr3Yunjian$Expression__Identifier_' [ <!--TERM:Identifier--> {  }  #1 ],  <!--TERM:Expression--> {  }  #2 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_Store' [ <!--TERM:Local--> {  }  #l ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]
+;
+
+
+- :
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement__Expression_=_Expression_;' [ <!--TERM:Expression--> {  }  'Pr3Yunjian$Expression_*_Expression_' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Expression--> {  }  #2 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_STMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_LDMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_StoreReg' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]
+;
+
+
+- [Fresh[v"TRUE"::Pr3Yunjian$Label,v"NEXT"::Pr3Yunjian$Label,v"FALSE"::Pr3Yunjian$Label]]:
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_if(_Expression_)_IfTail_' [ <!--TERM:Expression--> {  }  #1 ,  <!--TERM:IfTail--> {  }  #2 ]]
+→
+  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_CMP_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant--> {  }  'Pr3Yunjian$Constant_#_Integer_' [ <!--TERM:Integer--> {  }  'Pr3Yunjian$Integer__INT_' [ <!--TOKEN:INT-->  {  }  "0"  ]]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BNE_Label_' [ <!--TERM:Label--> {  }  v"TRUE" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  v"FALSE" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "return" : A_return[{  }  #r ] ; "offset" : A_offset[{  }  #o ] ; "vt" : {#v}A_vt ; "next" : A_next[{  }  v"NEXT" ] ; "false" : A_false[{  }  v"FALSE" ] ; "true" : A_true[{  }  v"TRUE" ]  }  'Pr3Yunjian$Instructions_IT' [ <!--TERM:IfTail--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]
+;
+
+
+- [Fresh[v"TRUE"::Label,v"BEGIN"::Label,v"NEXT"::Label]]:
+  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_while(_Expression_)_Statement_' [ <!--TERM:Expression--> {  }  #1 ,  <!--TERM:Statement--> {  }  #2 ]]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"BEGIN" ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_CMP_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant--> {  }  'Pr3Yunjian$Constant_#_Integer_' [ <!--TERM:Integer--> {  }  'Pr3Yunjian$Integer__INT_' [ <!--TOKEN:INT-->  {  }  "0"  ]]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BEQ_Label_' [ <!--TERM:Label--> {  }  v"NEXT" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"TRUE" ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  v"BEGIN" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"NEXT" ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]]]
+;
+
+
+- :
+  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  # ]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R6' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]
+;
+
+
+- :
+  { "return" : A_return[{  }  #r ] ; "offset" : A_offset[{  }  #o ] ; "vt" : {#v}A_vt ; "next" : A_next[{  }  #n ] ; "false" : A_false[{  }  #f ] ; "true" : A_true[{  }  #t ]  }  'Pr3Yunjian$Instructions_IT' [ <!--TERM:IfTail--> {  }  'Pr3Yunjian$IfTail__Statement_else_Statement_' [ <!--TERM:Statement--> {  }  #1 ,  <!--TERM:Statement--> {  }  #2 ]]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #t ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[A_unused_null] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  #n ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #f ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[A_unused_null] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #n ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]
+;
+
+
+- :
+  { "return" : A_return[{  }  #r ] ; "offset" : A_offset[{  }  #o ] ; "vt" : {#v}A_vt ; "next" : A_next[{  }  #n ] ; "false" : A_false[{  }  #f ] ; "true" : A_true[{  }  #t ]  }  'Pr3Yunjian$Instructions_IT' [ <!--TERM:IfTail--> {  }  'Pr3Yunjian$IfTail__Statement_else_Statement_' [ <!--TERM:Statement--> {  }  #1 ,  <!--TERM:Statement--> {  }  #2 ]]
+→
+  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #t ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[A_unused_null] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  #n ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #f ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]
+;
+
+
+- :
+   'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression-->  # ]
+→
+   'Pr3Yunjian$Instructions_' 
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$After1.-->
+
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$After1_Join1' [ <!--TERM:After1-->  'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:FT-->  #ft1 ],  <!--TERM:After1-->  'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  #2 ,  <!--TERM:FT-->  #ft2 ]]
+→
+   'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:Instructions-->  #2 ],  <!--TERM:FT-->  'Pr3Yunjian$FT_AppendFT' [ <!--TERM:FT-->  #ft1 ,  <!--TERM:FT-->  #ft2 ]]
+;
+
+
+- :
+   'Pr3Yunjian$After1_P1' [ <!--TERM:Program-->  'Pr3Yunjian$Program__Declarations_' [ <!--TERM:Declarations-->  #Ds ]]
+→
+   'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  #Ds ]
+;
+
+
+- :
+   'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  'Pr3Yunjian$Declarations__Declaration__Declarations_' [ <!--TERM:Declaration-->  #D ,  <!--TERM:Declarations-->  #Ds ]]
+→
+   'Pr3Yunjian$After1_Join1' [ <!--TERM:After1-->  'Pr3Yunjian$After1_D' [ <!--TERM:Declaration-->  #D ],  <!--TERM:After1-->  'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  #Ds ]]
+;
+
+
+- :
+   'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  'Pr3Yunjian$Declarations_' ]
+→
+   'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ,  <!--TERM:FT-->  'Pr3Yunjian$FT_NoFT' ]
+;
+
+
+- [Free[f::Identifier]]:
+   'Pr3Yunjian$After1_D' [ <!--TERM:Declaration-->  'Pr3Yunjian$Declaration_function_Type__Identifier__ArgumentSignature_{_Statements_}' [ <!--TERM:Type-->  #T ,  <!--TERM:Identifier-->  f ,  <!--TERM:ArgumentSignature-->  #As ,  <!--TERM:Statements-->  #S ]]
+→
+   'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ,  <!--TERM:FT-->  'Pr3Yunjian$FT_MoFT' [ <!--TERM:Identifier-->  f ,  <!--TERM:Type-->  #T ,  <!--TERM:FT-->  'Pr3Yunjian$FT_NoFT' ]]
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Integers.-->
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Constant.-->
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  #x ]
+→
+   'Pr3Yunjian$Constant_#_Integer_' [ <!--TERM:Integer-->  'Pr3Yunjian$Integer__INT_' [ <!--TOKEN:INT-->   #x  ]]
+;
+
+
+- :
+   'Pr3Yunjian$Constant_Reference' [ <!--TERM:Computed-->  #id ]
+→
+   'Pr3Yunjian$Constant_&_ID_' [ <!--TOKEN:ID-->   #id  ]
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Mem.-->
+
+
+
+
+
+
+- :
+   'Pr3Yunjian$Mem_FrameAccess' [ <!--TERM:Computed-->  #x ]
+→
+   'Pr3Yunjian$Mem_FrameAccess1' [ <!--TERM:Computed-->  #x ,  <!--TERM:Mem-->  'Pr3Yunjian$Mem_[_Reg_,_Sign__Arg_]' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Sign-->  'Pr3Yunjian$Sign_' ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant-->  'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  #x ]]],  <!--TERM:Mem-->  'Pr3Yunjian$Mem_[_Reg_,_Sign__Arg_]' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Sign-->  'Pr3Yunjian$Sign_-' ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant-->  'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  'Sub' [ <!--TERM:Computed-->  'StringToNumeric' [ <!--TERM:Computed-->  "0" ],  <!--TERM:Computed-->  #x ]]]]]
+;
+
+
+- :
+   'Pr3Yunjian$Mem_FrameAccess1' [ <!--TERM:Computed-->  #x ,  <!--TERM:Mem-->  #pos ,  <!--TERM:Mem-->  #neg ]
+→
+   'Pr3Yunjian$Mem_FrameAccess2' [ <!--TERM:Computed-->  'If' [ <!--TERM:-->  'LessEq2' [ <!--TERM:-->  'StringToNumeric' [ <!--TERM:Computed-->  "0" ],  <!--TERM:-->  #x ],  <!--TERM:-->  #pos ,  <!--TERM:-->  #neg ]]
+;
+
+
+- :
+   'Pr3Yunjian$Mem_FrameAccess2' [ <!--TERM:Computed-->  #mem ]
+→
+   #mem 
+;
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Integer.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Regs.-->
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Expression.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$String.-->
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$IfTail.-->
+
 
 
 
@@ -1710,21 +2234,33 @@ $Print2-Pr3Yunjian$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n
 
 
 
-<!--RULES FOR SORT Pr3Yunjian$Computed.-->
+<!--RULES FOR SORT Pr3Yunjian$Op.-->
 
 
 
 
-- :
-   'Pr3Yunjian$Computed_Incr' [ <!--TERM:Computed-->  #o ]
-→
-   'Sum2' [ <!--TERM:Computed-->  #o ,  <!--TERM:Computed-->  'StringToNumeric' [ <!--TERM:Computed-->  "4" ]]
-;
 
 
 
-<!--RULES FOR SORT Pr3Yunjian$TypeListTail.-->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--RULES FOR SORT Pr3Yunjian$Declaration.-->
 
 
 
@@ -1907,286 +2443,7 @@ $Print2-Pr3Yunjian$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n
 
 
 
-<!--RULES FOR SORT Pr3Yunjian$ArgumentSignature.-->
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Integer.-->
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Statement.-->
-
-
-
-
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$ExpressionListTail.-->
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Instructions.-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- :
-   'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ,  <!--TERM:Instructions-->  # ]
-→
-   # 
-;
-
-
-- :
-   'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  #1 ,  <!--TERM:Instructions-->  #2 ],  <!--TERM:Instructions-->  #3 ]
-→
-   'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  #1 ,  <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  #2 ,  <!--TERM:Instructions-->  #3 ]]
-;
-
-
-- :
-   'Pr3Yunjian$Instructions_Compile' [ <!--TERM:Program-->  #1 ]
-→
-   'Pr3Yunjian$Instructions_P2' [ <!--TERM:After1-->  'Pr3Yunjian$After1_P1' [ <!--TERM:Program-->  #1 ],  <!--TERM:Program-->  #1 ]
-;
-
-
-- :
-   'Pr3Yunjian$Instructions_P2' [ <!--TERM:After1-->  'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:FT-->  #ft1 ],  <!--TERM:Program-->  #P ]
-→
-  { "vt" : {}A_vt ; "ft" : {}A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:FT-->  #ft1 ,  <!--TERM:Program-->  #P ]
-;
-
-
-- [Free[f::Pr3Yunjian$Identifier]]:
-  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:FT--> {  }  'Pr3Yunjian$FT_MoFT' [ <!--TERM:Identifier--> {  }  f ,  <!--TERM:Type--> {  }  #T ,  <!--TERM:FT--> {  }  #ft ],  <!--TERM:Program--> {  }  #P ]
-→
-  { "vt" : {##vt}A_vt ; "ft" : {##ft;  f  : {  }  #T }A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:FT--> {  }  #ft ,  <!--TERM:Program--> {  }  #P ]
-;
-
-
-- :
-  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P2Load' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:FT--> {  }  'Pr3Yunjian$FT_NoFT' ,  <!--TERM:Program--> {  }  #P ]
-→
-  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  #is ,  <!--TERM:Instructions--> { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P' [ <!--TERM:Program--> {  }  #P ]]
-;
-
-
-- :
-  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_P' [ <!--TERM:Program--> {  }  'Pr3Yunjian$Program__Declarations_' [ <!--TERM:Declarations--> {  }  #Ds ]]
-→
-  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  #Ds ]
-;
-
-
-- :
-  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  'Pr3Yunjian$Declarations__Declaration__Declarations_' [ <!--TERM:Declaration--> {  }  #D ,  <!--TERM:Declarations--> {  }  #Ds ]]
-→
-  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_F' [ <!--TERM:Declaration--> {  }  #D ],  <!--TERM:Instructions--> { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  #Ds ]]
-;
-
-
-- :
-  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_Ds' [ <!--TERM:Declarations--> {  }  'Pr3Yunjian$Declarations_' ]
-→
-  {  }  'Pr3Yunjian$Instructions_' 
-;
-
-
-- [Free[f::Label], Fresh[v"L"::Label]]:
-  { "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_F' [ <!--TERM:Declaration--> {  }  'Pr3Yunjian$Declaration_function_Type__Identifier__ArgumentSignature_{_Statements_}' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  f ,  <!--TERM:ArgumentSignature--> {  }  #AS ,  <!--TERM:Statements--> {  }  #S ]]
-→
-  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  f ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_STMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_,_Regs_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_LR' ]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "return" : A_return[{  }  v"L" ] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS' [ <!--TERM:ArgumentSignature--> {  }  #AS ,  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R3' ]],  <!--TERM:Statements--> {  }  #S ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  v"L" ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R12' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_LDMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_,_Regs_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_PC' ]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]]
-;
-
-
-- :
-  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS' [ <!--TERM:ArgumentSignature--> {  }  'Pr3Yunjian$ArgumentSignature_()' ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
-→
-  { "offset" : A_offset[{  }  'Sub' [ <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "0" ],  <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "4" ]]] ; "unused" : A_unused[{  }  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ]]] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #S ]
-;
-
-
-- [Free[a::Pr3Yunjian$Identifier]]:
-  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS' [ <!--TERM:ArgumentSignature--> {  }  'Pr3Yunjian$ArgumentSignature_(_Type__Identifier__TypeIdentifierTail_)' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  a ,  <!--TERM:TypeIdentifierTail--> {  }  #TIT ],  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg--> {  }  #r ,  <!--TERM:Rs--> {  }  #Rs ],  <!--TERM:Statements--> {  }  #S ]
-→
-  { "return" : A_return[#return] ; "vt" : {##vt;  a  : {  }  'Pr3Yunjian$Local_RegLocal' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Reg--> {  }  #r ]}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  #TIT ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
-;
-
-
-- :
-  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  'Pr3Yunjian$TypeIdentifierTail_' ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
-→
-  { "offset" : A_offset[{  }  'Sub' [ <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "0" ],  <!--TERM:Computed--> {  }  'StringToNumeric' [ <!--TERM:Computed--> {  }  "4" ]]] ; "unused" : A_unused[{  }  'Pr3Yunjian$Rs_XRegs' [ <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_-_Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R11' ]]] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #S ]
-;
-
-
-- [Free[a::Pr3Yunjian$Identifier]]:
-  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  'Pr3Yunjian$TypeIdentifierTail_,_Type__Identifier__TypeIdentifierTail_' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  a ,  <!--TERM:TypeIdentifierTail--> {  }  #TIT ],  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_MoRs' [ <!--TERM:Reg--> {  }  #r ,  <!--TERM:Rs--> {  }  #Rs ],  <!--TERM:Statements--> {  }  #S ]
-→
-  { "return" : A_return[#return] ; "vt" : {##vt;  a  : {  }  'Pr3Yunjian$Local_RegLocal' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Reg--> {  }  #r ]}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  #TIT ,  <!--TERM:Rs--> {  }  #Rs ,  <!--TERM:Statements--> {  }  #S ]
-;
-
-
-- [Free[a::Identifier]]:
-  { "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_AS2' [ <!--TERM:TypeIdentifierTail--> {  }  'Pr3Yunjian$TypeIdentifierTail_,_Type__Identifier__TypeIdentifierTail_' [ <!--TERM:Type--> {  }  #T ,  <!--TERM:Identifier--> {  }  a ,  <!--TERM:TypeIdentifierTail--> {  }  #TIT ],  <!--TERM:Rs--> {  }  'Pr3Yunjian$Rs_NoRs' ,  <!--TERM:Statements--> {  }  #S ]
-→
-  {  }  Special_error[%n⟪More than four arguments to function not allowed.⟫] 
-;
-
-
-- :
-   'Pr3Yunjian$Instructions_Store' [ <!--TERM:Local-->  'Pr3Yunjian$Local_RegLocal' [ <!--TERM:Type-->  #t ,  <!--TERM:Reg-->  #lvalue ],  <!--TERM:Reg-->  #rs ]
-→
-   'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op-->  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg-->  #lvalue ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg-->  #rs ]]],  <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ]
-;
-
-
-- :
-   'Pr3Yunjian$Instructions_Store' [ <!--TERM:Local-->  'Pr3Yunjian$Local_FrameLocal' [ <!--TERM:Type-->  #t ,  <!--TERM:Computed-->  #lvalue ],  <!--TERM:Reg-->  #rs ]
-→
-   'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op-->  'Pr3Yunjian$Op_STR_Reg_,_Mem_' [ <!--TERM:Reg-->  #rs ,  <!--TERM:Mem-->  'Pr3Yunjian$Mem_FrameAccess' [ <!--TERM:Computed-->  #lvalue ]]],  <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ]
-;
-
-
-- :
-   'Pr3Yunjian$Instructions_StoreReg' [ <!--TERM:Reg-->  #mem ,  <!--TERM:Reg-->  #value ]
-→
-   'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction-->  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op-->  'Pr3Yunjian$Op_STR_Reg_,_Mem_' [ <!--TERM:Reg-->  #value ,  <!--TERM:Mem-->  'Pr3Yunjian$Mem_[_Reg_,_Sign__Arg_]' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Sign-->  'Pr3Yunjian$Sign_' ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg-->  #mem ]]]],  <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ]
-;
-
-
-- [Free[r::Pr3Yunjian$Label]]:
-  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_var_Type__Identifier_;' [ <!--TERM:Type--> {  }  #t ,  <!--TERM:Identifier--> {  }  #1 ],  <!--TERM:Statements--> {  }  #2 ]]
-→
-  { "offset" : A_offset[{  }  'Pr3Yunjian$Computed_Incr' [ <!--TERM:Computed--> {  }  #o ]] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {#v;  #1  : {  }  'Pr3Yunjian$Local_FrameLocal' [ <!--TERM:Type--> {  }  #t ,  <!--TERM:Computed--> {  }  #o ]}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #2 ]
-;
-
-
-- [Free[r::Pr3Yunjian$Label]]:
-  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {##vt;  #1  : {  }  #l }A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement__Expression_=_Expression_;' [ <!--TERM:Expression--> {  }  'Pr3Yunjian$Expression__Identifier_' [ <!--TERM:Identifier--> {  }  #1 ],  <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Statements--> {  }  #3 ]]
-→
-  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_Store' [ <!--TERM:Local--> {  }  #l ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {##vt;  #1  : {  }  #l }A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #3 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]
-;
-
-
-- :
-  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement__Expression_=_Expression_;' [ <!--TERM:Expression--> {  }  'Pr3Yunjian$Expression_*_Expression_' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Statements--> {  }  #3 ]]
-→
-  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_STMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_LDMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_StoreReg' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #3 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]
-;
-
-
-- [Fresh[v"TRUE"::Pr3Yunjian$Label,v"NEXT"::Pr3Yunjian$Label,v"FALSE"::Pr3Yunjian$Label]]:
-  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements__Statement__Statements_' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_if(_Expression_)_IfTail_' [ <!--TERM:Expression--> {  }  #1 ,  <!--TERM:IfTail--> {  }  #2 ],  <!--TERM:Statements--> {  }  #3 ]]
-→
-  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_CMP_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant--> {  }  'Pr3Yunjian$Constant_#_Integer_' [ <!--TERM:Integer--> {  }  'Pr3Yunjian$Integer__INT_' [ <!--TOKEN:INT-->  {  }  "0"  ]]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BNE_Label_' [ <!--TERM:Label--> {  }  v"TRUE" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  v"FALSE" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "return" : A_return[{  }  #r ] ; "offset" : A_offset[{  }  #o ] ; "vt" : {#v}A_vt ; "next" : A_next[{  }  v"NEXT" ] ; "false" : A_false[{  }  v"FALSE" ] ; "true" : A_true[{  }  v"TRUE" ]  }  'Pr3Yunjian$Instructions_IT' [ <!--TERM:IfTail--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #3 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]
-;
-
-
-- :
-  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  'Pr3Yunjian$Statements_' ]
-→
-  {  }  'Pr3Yunjian$Instructions_' 
-;
-
-
-- :
-  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  # ]
-→
-  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]
-;
-
-
-- :
-  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_{_Statements_}' [ <!--TERM:Statements--> {  }  #ss ]]
-→
-  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_S' [ <!--TERM:Statements--> {  }  #ss ]
-;
-
-
-- :
-  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_var_Type__Identifier_;' [ <!--TERM:Type--> {  }  #t ,  <!--TERM:Identifier--> {  }  #1 ]]
-→
-  {  }  'Pr3Yunjian$Instructions_' 
-;
-
-
-- [Free[r::Pr3Yunjian$Label]]:
-  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  r ] ; "vt" : {##vt;  #1  : {  }  #l }A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement__Expression_=_Expression_;' [ <!--TERM:Expression--> {  }  'Pr3Yunjian$Expression__Identifier_' [ <!--TERM:Identifier--> {  }  #1 ],  <!--TERM:Expression--> {  }  #2 ]]
-→
-  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_Store' [ <!--TERM:Local--> {  }  #l ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]
-;
-
-
-- :
-  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement__Expression_=_Expression_;' [ <!--TERM:Expression--> {  }  'Pr3Yunjian$Expression_*_Expression_' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Expression--> {  }  #2 ]]
-→
-  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_STMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_LDMFD_Reg_!,{_Regs_}' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_SP' ,  <!--TERM:Regs--> {  }  'Pr3Yunjian$Regs__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_StoreReg' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R5' ,  <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]
-;
-
-
-- [Fresh[v"TRUE"::Pr3Yunjian$Label,v"NEXT"::Pr3Yunjian$Label,v"FALSE"::Pr3Yunjian$Label]]:
-  { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[#unused] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  'Pr3Yunjian$Statement_if(_Expression_)_IfTail_' [ <!--TERM:Expression--> {  }  #1 ,  <!--TERM:IfTail--> {  }  #2 ]]
-→
-  {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_CMP_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R4' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant--> {  }  'Pr3Yunjian$Constant_#_Integer_' [ <!--TERM:Integer--> {  }  'Pr3Yunjian$Integer__INT_' [ <!--TOKEN:INT-->  {  }  "0"  ]]]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BNE_Label_' [ <!--TERM:Label--> {  }  v"TRUE" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  v"FALSE" ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "return" : A_return[{  }  #r ] ; "offset" : A_offset[{  }  #o ] ; "vt" : {#v}A_vt ; "next" : A_next[{  }  v"NEXT" ] ; "false" : A_false[{  }  v"FALSE" ] ; "true" : A_true[{  }  v"TRUE" ]  }  'Pr3Yunjian$Instructions_IT' [ <!--TERM:IfTail--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]
-;
-
-
-- :
-  { "offset" : A_offset[#offset] ; "unused" : A_unused[#unused] ; "return" : A_return[#return] ; "vt" : {##vt}A_vt ; "ft" : {##ft}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  # ]
-→
-  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_MOV_Reg_,_Arg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R0' ,  <!--TERM:Arg--> {  }  'Pr3Yunjian$Arg__Reg_' [ <!--TERM:Reg--> {  }  'Pr3Yunjian$Reg_R6' ]]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]
-;
-
-
-- :
-  { "return" : A_return[{  }  #r ] ; "offset" : A_offset[{  }  #o ] ; "vt" : {#v}A_vt ; "next" : A_next[{  }  #n ] ; "false" : A_false[{  }  #f ] ; "true" : A_true[{  }  #t ]  }  'Pr3Yunjian$Instructions_IT' [ <!--TERM:IfTail--> {  }  'Pr3Yunjian$IfTail__Statement_else_Statement_' [ <!--TERM:Statement--> {  }  #1 ,  <!--TERM:Statement--> {  }  #2 ]]
-→
-  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #t ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[A_unused_null] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  #n ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #f ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[A_unused_null] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  #2 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #n ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]]]
-;
-
-
-- :
-  { "return" : A_return[{  }  #r ] ; "offset" : A_offset[{  }  #o ] ; "vt" : {#v}A_vt ; "next" : A_next[{  }  #n ] ; "false" : A_false[{  }  #f ] ; "true" : A_true[{  }  #t ]  }  'Pr3Yunjian$Instructions_IT' [ <!--TERM:IfTail--> {  }  'Pr3Yunjian$IfTail__Statement_else_Statement_' [ <!--TERM:Statement--> {  }  #1 ,  <!--TERM:Statement--> {  }  #2 ]]
-→
-  {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #t ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions--> { "offset" : A_offset[{  }  #o ] ; "unused" : A_unused[A_unused_null] ; "return" : A_return[{  }  #r ] ; "vt" : {#v}A_vt ; "ft" : {}A_ft  }  'Pr3Yunjian$Instructions_SingleS' [ <!--TERM:Statement--> {  }  #1 ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Op_' [ <!--TERM:Op--> {  }  'Pr3Yunjian$Op_BL_Label_' [ <!--TERM:Label--> {  }  #n ]],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions__Instruction__Instructions_' [ <!--TERM:Instruction--> {  }  'Pr3Yunjian$Instruction__Label_' [ <!--TERM:Label--> {  }  #f ],  <!--TERM:Instructions--> {  }  'Pr3Yunjian$Instructions_' ]]]]
-;
-
-
-- :
-   'Pr3Yunjian$Instructions_E' [ <!--TERM:Expression-->  # ]
-→
-   'Pr3Yunjian$Instructions_' 
-;
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Local.-->
+<!--RULES FOR SORT Pr3Yunjian$TypeListTail.-->
 
 
 
@@ -2225,250 +2482,7 @@ $Print2-Pr3Yunjian$Computed[#n, #pr] → %n⟪‹StringToText[NumericToString[#n
 
 
 
-<!--RULES FOR SORT Pr3Yunjian$TypeIdentifierTail.-->
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Op.-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$TypeList.-->
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Arg.-->
-
-
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$String.-->
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Expression.-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Regs.-->
-
-
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Declarations.-->
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Integers.-->
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Program.-->
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$After1.-->
-
-
-
-
-
-
-
-- :
-   'Pr3Yunjian$After1_Join1' [ <!--TERM:After1-->  'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:FT-->  #ft1 ],  <!--TERM:After1-->  'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  #2 ,  <!--TERM:FT-->  #ft2 ]]
-→
-   'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_{_Instructions_}_Instructions_' [ <!--TERM:Instructions-->  #1 ,  <!--TERM:Instructions-->  #2 ],  <!--TERM:FT-->  'Pr3Yunjian$FT_AppendFT' [ <!--TERM:FT-->  #ft1 ,  <!--TERM:FT-->  #ft2 ]]
-;
-
-
-- :
-   'Pr3Yunjian$After1_P1' [ <!--TERM:Program-->  'Pr3Yunjian$Program__Declarations_' [ <!--TERM:Declarations-->  #Ds ]]
-→
-   'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  #Ds ]
-;
-
-
-- :
-   'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  'Pr3Yunjian$Declarations__Declaration__Declarations_' [ <!--TERM:Declaration-->  #D ,  <!--TERM:Declarations-->  #Ds ]]
-→
-   'Pr3Yunjian$After1_Join1' [ <!--TERM:After1-->  'Pr3Yunjian$After1_D' [ <!--TERM:Declaration-->  #D ],  <!--TERM:After1-->  'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  #Ds ]]
-;
-
-
-- :
-   'Pr3Yunjian$After1_P1Ds' [ <!--TERM:Declarations-->  'Pr3Yunjian$Declarations_' ]
-→
-   'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ,  <!--TERM:FT-->  'Pr3Yunjian$FT_NoFT' ]
-;
-
-
-- [Free[f::Identifier]]:
-   'Pr3Yunjian$After1_D' [ <!--TERM:Declaration-->  'Pr3Yunjian$Declaration_function_Type__Identifier__ArgumentSignature_{_Statements_}' [ <!--TERM:Type-->  #T ,  <!--TERM:Identifier-->  f ,  <!--TERM:ArgumentSignature-->  #As ,  <!--TERM:Statements-->  #S ]]
-→
-   'Pr3Yunjian$After1_Data1' [ <!--TERM:Instructions-->  'Pr3Yunjian$Instructions_' ,  <!--TERM:FT-->  'Pr3Yunjian$FT_MoFT' [ <!--TERM:Identifier-->  f ,  <!--TERM:Type-->  #T ,  <!--TERM:FT-->  'Pr3Yunjian$FT_NoFT' ]]
-;
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$IfTail.-->
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Constant.-->
-
-
-
-
-
-
-- :
-   'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  #x ]
-→
-   'Pr3Yunjian$Constant_#_Integer_' [ <!--TERM:Integer-->  'Pr3Yunjian$Integer__INT_' [ <!--TOKEN:INT-->   #x  ]]
-;
-
-
-- :
-   'Pr3Yunjian$Constant_Reference' [ <!--TERM:Computed-->  #id ]
-→
-   'Pr3Yunjian$Constant_&_ID_' [ <!--TOKEN:ID-->   #id  ]
-;
-
-
-
 <!--RULES FOR SORT Pr3Yunjian$Statements.-->
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Label.-->
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$ExpressionList.-->
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Type.-->
-
-
-
-
-
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Mem.-->
-
-
-
-
-
-
-- :
-   'Pr3Yunjian$Mem_FrameAccess' [ <!--TERM:Computed-->  #x ]
-→
-   'Pr3Yunjian$Mem_FrameAccess1' [ <!--TERM:Computed-->  #x ,  <!--TERM:Mem-->  'Pr3Yunjian$Mem_[_Reg_,_Sign__Arg_]' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Sign-->  'Pr3Yunjian$Sign_' ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant-->  'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  #x ]]],  <!--TERM:Mem-->  'Pr3Yunjian$Mem_[_Reg_,_Sign__Arg_]' [ <!--TERM:Reg-->  'Pr3Yunjian$Reg_R12' ,  <!--TERM:Sign-->  'Pr3Yunjian$Sign_-' ,  <!--TERM:Arg-->  'Pr3Yunjian$Arg__Constant_' [ <!--TERM:Constant-->  'Pr3Yunjian$Constant_Immediate' [ <!--TERM:Computed-->  'Sub' [ <!--TERM:Computed-->  'StringToNumeric' [ <!--TERM:Computed-->  "0" ],  <!--TERM:Computed-->  #x ]]]]]
-;
-
-
-- :
-   'Pr3Yunjian$Mem_FrameAccess1' [ <!--TERM:Computed-->  #x ,  <!--TERM:Mem-->  #pos ,  <!--TERM:Mem-->  #neg ]
-→
-   'Pr3Yunjian$Mem_FrameAccess2' [ <!--TERM:Computed-->  'If' [ <!--TERM:-->  'LessEq2' [ <!--TERM:-->  'StringToNumeric' [ <!--TERM:Computed-->  "0" ],  <!--TERM:-->  #x ],  <!--TERM:-->  #pos ,  <!--TERM:-->  #neg ]]
-;
-
-
-- :
-   'Pr3Yunjian$Mem_FrameAccess2' [ <!--TERM:Computed-->  #mem ]
-→
-   #mem 
-;
-
-
-
-<!--RULES FOR SORT Pr3Yunjian$Reg.-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

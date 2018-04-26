@@ -390,6 +390,18 @@ module edu.nyu.cs.cc.Pr3Yunjian {
       {⟨Instructions IT(#2)↓true(⟦TRUE⟧)↓false(⟦FALSE⟧)↓next(⟦NEXT⟧)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
       {⟨Instructions S(#3)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
     ⟧;
+  S(⟦ while ( ⟨Expression#1⟩ ) ⟨Statement#2⟩  ⟨Statements#3⟩ ⟧)↓offset(#o)↓vt{:#v}↓return(#r)
+  → ⟦
+     BEGIN
+     {⟨Instructions E(#1)⟩}
+     CMP R4, # 0
+     BEQ NEXT
+     TRUE {⟨Instructions SingleS(#2)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
+     BL  BEGIN
+     NEXT
+     {⟨Instructions S(#3)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
+  ⟧;
+
   S(⟦⟧) → ⟦⟧;
   S(#) → ⟦MOV R0, R5⟧;
 
@@ -421,6 +433,16 @@ module edu.nyu.cs.cc.Pr3Yunjian {
       BL  FALSE
       {⟨Instructions IT(#2)↓true(⟦TRUE⟧)↓false(⟦FALSE⟧)↓next(⟦NEXT⟧)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
     ⟧;
+  SingleS(⟦ while ( ⟨Expression#1⟩ ) ⟨Statement#2⟩ ⟧)↓offset(#o)↓vt{:#v}↓return(#r)
+                                                                     → ⟦
+     BEGIN
+     {⟨Instructions E(#1)⟩}
+     CMP R4, # 0
+     BEQ NEXT
+     TRUE {⟨Instructions SingleS(#2)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
+     BL  BEGIN
+     NEXT
+  ⟧;
   SingleS(#) → ⟦MOV R0, R6⟧;
 
 
