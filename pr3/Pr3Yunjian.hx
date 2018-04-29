@@ -27,8 +27,7 @@ module edu.nyu.cs.cc.Pr3Yunjian {
   token fragment Letter     | [A-Za-z] ;
   token fragment LetterEtc  | ⟨Letter⟩ | [$_] ;
   token fragment Digit      | [0-9] ;
-  //token fragment Escape  | [\n\\nt"] | "x" ⟨Hex⟩ ⟨Hex⟩ | ⟨Octal⟩; reverse this after everything being done.
-  token fragment Escape  | [\n\\nt] | "x" ⟨Hex⟩ ⟨Hex⟩ | ⟨Octal⟩;
+  token fragment Escape  | [\n\\nt"] | "x" ⟨Hex⟩ ⟨Hex⟩ | ⟨Octal⟩;
   token fragment Hex     | [0-9A-Fa-f] ;
   token fragment Octal   | [0-7] | [0-7][0-7] | [0-7][0-7][0-7];
 

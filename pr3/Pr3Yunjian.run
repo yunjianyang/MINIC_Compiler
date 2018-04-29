@@ -12,7 +12,7 @@ usage () {
 MODULE='edu.nyu.cs.cc.Pr3Yunjian'
 NAME='Pr3Yunjian'
 SORT='Program'
-SORTS='Program Declaration After1 Instructions TypeList TypeListTail FT Integer IfTail Regs Statement Identifier Rs TypeIdentifierTail Mem Integers String Sign Arg ExpressionList Reg Instruction ArgumentSignature Computed Type Op ExpressionListTail Label Constant Statements Declarations Expression Local STR ID INT'
+SORTS='Program Computed Expression Local TypeIdentifierTail Regs After1 Declarations Reg Rs Identifier Sign Integers ExpressionList FT TypeList Constant Label Instructions IfTail ExpressionListTail Integer Statement String Statements Arg Instruction TypeListTail ArgumentSignature Declaration Type Mem Op STR INT ID'
 SINKCLASS='net.sf.crsx.text.TextSink'
 PARSERCLASS='edu.nyu.cs.cc.Pr3YunjianParser'
 PREFIX='pr3yunjian_'
@@ -93,7 +93,7 @@ if [ -z "$BUILD" -o ! -d "$BUILD" ]; then
 
 # Check options.
 if [ -z "$SORT" ]; then
-   fail=true; echo "${0}: SORT must be correctly specified (use default or one of "Program Declaration After1 Instructions TypeList TypeListTail FT Integer IfTail Regs Statement Identifier Rs TypeIdentifierTail Mem Integers String Sign Arg ExpressionList Reg Instruction ArgumentSignature Computed Type Op ExpressionListTail Label Constant Statements Declarations Expression Local STR ID INT")" >&2
+   fail=true; echo "${0}: SORT must be correctly specified (use default or one of "Program Computed Expression Local TypeIdentifierTail Regs After1 Declarations Reg Rs Identifier Sign Integers ExpressionList FT TypeList Constant Label Instructions IfTail ExpressionListTail Integer Statement String Statements Arg Instruction TypeListTail ArgumentSignature Declaration Type Mem Op STR INT ID")" >&2
 elif [ -z "$SCHEME" ]; then
    SCHEME="$NAME"'$'"$SORT";
 fi
