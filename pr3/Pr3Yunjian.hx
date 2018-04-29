@@ -359,6 +359,12 @@ module edu.nyu.cs.cc.Pr3Yunjian {
   StoreReg(#mem, #value) →
     ⟦ STR ⟨Reg#value⟩, [R12, ⟨Reg#mem⟩]⟧;
 
+  sort Instructions | scheme Load(Local, Reg);
+  Load(RegLocal(#t, #o), #rs) →
+    ⟦ MOV ⟨Reg#rs⟩, ⟨Reg#o⟩⟧;
+  Load(FrameLocal(#t, #o), #rs) →
+    ⟦ LDR ⟨Reg#rs⟩, ⟨Mem FrameAccess(#o)⟩⟧;
+
   // Statements
   sort Instructions | scheme S(Statements) ↓ft ↓vt ↓return ↓unused ↓offset ;
   S(⟦ var ⟨Type#t⟩ ⟨Identifier#1⟩ ; ⟨Statements#2⟩⟧)
@@ -367,37 +373,37 @@ module edu.nyu.cs.cc.Pr3Yunjian {
   S(⟦ ⟨Identifier#1⟩ = ⟨Expression#2⟩ ; ⟨Statements#3⟩⟧)
     ↓offset(#o)↓vt{#1:#l}↓return(r)
   → ⟦
-     {⟨Instructions E(#2)⟩}
+     {⟨Instructions E(#2)↓vt{#1:#l}⟩}
      {⟨Instructions Store(#l, ⟦R4⟧)⟩}
      {⟨Instructions S(#3)↓offset(#o)↓vt{#1:#l}↓return(r)⟩}
     ⟧;
   S(⟦ *⟨Expression#1⟩ = ⟨Expression#2⟩ ; ⟨Statements#3⟩⟧)
     ↓offset(#o)↓vt{:#v}↓return(#r)
   → ⟦
-     {⟨Instructions E(#1)⟩}
+     {⟨Instructions E(#1)↓vt{:#v}⟩}
      STMFD SP!, {R4}
-     {⟨Instructions E(#2)⟩}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
      LDMFD SP!, {R5}
      {⟨Instructions StoreReg(⟦R5⟧, ⟦R4⟧)⟩}
      {⟨Instructions S(#3)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
     ⟧;
   S(⟦ if ( ⟨Expression#1⟩ ) ⟨IfTail#2⟩ ⟨Statements#3⟩⟧)↓offset(#o)↓vt{:#v}↓return(#r)
   → ⟦
-      {⟨Instructions E(#1)⟩}
+      {⟨Instructions E(#1)↓vt{:#v}⟩}
       CMP R4, # 0
       BNE TRUE
-      BL  FALSE
+      B  FALSE
       {⟨Instructions IT(#2)↓true(⟦TRUE⟧)↓false(⟦FALSE⟧)↓next(⟦NEXT⟧)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
       {⟨Instructions S(#3)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
     ⟧;
   S(⟦ while ( ⟨Expression#1⟩ ) ⟨Statement#2⟩  ⟨Statements#3⟩ ⟧)↓offset(#o)↓vt{:#v}↓return(#r)
   → ⟦
      BEGIN
-     {⟨Instructions E(#1)⟩}
+     {⟨Instructions E(#1)↓vt{:#v}⟩}
      CMP R4, # 0
      BEQ NEXT
      TRUE {⟨Instructions SingleS(#2)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
-     BL  BEGIN
+     B  BEGIN
      NEXT
      {⟨Instructions S(#3)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
   ⟧;
@@ -413,34 +419,34 @@ module edu.nyu.cs.cc.Pr3Yunjian {
   SingleS(⟦ ⟨Identifier#1⟩ = ⟨Expression#2⟩ ; ⟧)
     ↓offset(#o)↓vt{#1:#l}↓return(r)
   → ⟦
-     {⟨Instructions E(#2)⟩}
+     {⟨Instructions E(#2)↓vt{#1:#l}⟩}
      {⟨Instructions Store(#l, ⟦R4⟧)⟩}
     ⟧;
   SingleS(⟦ *⟨Expression#1⟩ = ⟨Expression#2⟩ ;⟧)
     ↓offset(#o)↓vt{:#v}↓return(#r)
   → ⟦
-     {⟨Instructions E(#1)⟩}
+     {⟨Instructions E(#1)↓vt{:#v}⟩}
      STMFD SP!, {R4}
-     {⟨Instructions E(#2)⟩}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
      LDMFD SP!, {R5}
      {⟨Instructions StoreReg(⟦R5⟧, ⟦R4⟧)⟩}
     ⟧;
   SingleS(⟦ if ( ⟨Expression#1⟩ ) ⟨IfTail#2⟩⟧)↓offset(#o)↓vt{:#v}↓return(#r)
   → ⟦
-      {⟨Instructions E(#1)⟩}
+      {⟨Instructions E(#1)↓vt{:#v}⟩}
       CMP R4, # 0
       BNE TRUE
-      BL  FALSE
+      B  FALSE
       {⟨Instructions IT(#2)↓true(⟦TRUE⟧)↓false(⟦FALSE⟧)↓next(⟦NEXT⟧)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
     ⟧;
   SingleS(⟦ while ( ⟨Expression#1⟩ ) ⟨Statement#2⟩ ⟧)↓offset(#o)↓vt{:#v}↓return(#r)
                                                                      → ⟦
      BEGIN
-     {⟨Instructions E(#1)⟩}
+     {⟨Instructions E(#1)↓vt{:#v}⟩}
      CMP R4, # 0
      BEQ NEXT
      TRUE {⟨Instructions SingleS(#2)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
-     BL  BEGIN
+     B  BEGIN
      NEXT
   ⟧;
   SingleS(#) → ⟦MOV R0, R6⟧;
@@ -451,7 +457,7 @@ module edu.nyu.cs.cc.Pr3Yunjian {
     ↓true(#t) ↓false(#f) ↓next(#n) ↓vt{:#v} ↓offset(#o) ↓return(#r)
   → ⟦⟨Label#t⟩
      {⟨Instructions SingleS(#1)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
-     BL ⟨Label#n⟩
+     B ⟨Label#n⟩
      ⟨Label#f⟩
      {⟨Instructions SingleS(#2)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
      ⟨Label#n⟩
@@ -460,11 +466,34 @@ module edu.nyu.cs.cc.Pr3Yunjian {
     ↓true(#t) ↓false(#f) ↓next(#n) ↓vt{:#v} ↓offset(#o) ↓return(#r)
   → ⟦⟨Label#t⟩
      {⟨Instructions SingleS(#1)↓offset(#o)↓vt{:#v}↓return(#r)⟩}
-     BL ⟨Label#n⟩
+     B ⟨Label#n⟩
      ⟨Label#f⟩
    ⟧;
 
-  sort Instructions | scheme E(Expression);
-  E(#) → ⟦⟧;
+  sort Instructions | scheme FunctionCall(ExpressionList, Identifier)↓vt;
+  FunctionCall(⟦⟧, f) → ⟦B f⟧;
+  FunctionCall(⟦⟨Expression#1⟩ ⟨ExpressionListTail#2⟩⟧, f)↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     MOV R0, R4
+     {⟨Instructions FunctionCall2(#2, XRegs(⟦R1-R3⟧))↓vt{:#v}⟩}
+     BL f
+    ⟧;
+
+  sort Instructions | scheme FunctionCall2(ExpressionListTail, Rs)↓vt;
+  FunctionCall2(⟦ , ⟨Expression#1⟩ ⟨ExpressionListTail#2⟩ ⟧, MoRs(#r, #Rs))↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+       MOV ⟨Reg #r⟩, R4
+      {⟨Instructions FunctionCall2(#2, #Rs)↓vt{:#v}⟩}
+    ⟧;
+  FunctionCall2(⟦ , ⟨Expression#1⟩ ⟨ExpressionListTail#2⟩ ⟧, NoRs)
+    → error⟦More than four arguments to function not allowed.⟧ ;
+  FunctionCall2(⟦⟧, #) → ⟦⟧;
+
+  sort Instructions | scheme E(Expression)↓vt;
+  E( ⟦ ⟨Integer#1⟩ ⟧) → ⟦MOV R4, #⟨Integer #1⟩⟧;
+  E( ⟦ ⟨String#1⟩ ⟧)  → ⟦DCS  ⟨String#1⟩⟧; //TODO
+  E( ⟦ ⟨Identifier#1⟩ ⟧)↓vt{#1:#v} → ⟦{⟨Instructions Load(#v, ⟦R4⟧)⟩}⟧;
+  E( ⟦ ⟨Identifier#1⟩ ( ⟨ExpressionList#2⟩ )⟧)↓vt{:#v} → FunctionCall(#2, #1)↓vt{:#v};
+  E(#)  → ⟦⟧;
 
 }
