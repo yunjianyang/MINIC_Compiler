@@ -11,77 +11,77 @@ public interface Pr3YunjianEmbedConstants {
   /** End of File. */
   int EOF = 0;
   /** RegularExpression Id. */
-  int T_meta_STR = 5;
+  int T_meta_Instruction = 9;
   /** RegularExpression Id. */
-  int T_meta_String = 11;
+  int T_meta_Type = 20;
   /** RegularExpression Id. */
-  int T_meta_Type = 22;
+  int T_meta_Sign = 28;
   /** RegularExpression Id. */
-  int T_meta_Op = 54;
+  int T_meta_STR = 34;
   /** RegularExpression Id. */
-  int T_meta_Identifier = 60;
+  int T_meta_Rs = 40;
   /** RegularExpression Id. */
-  int T_meta_Statements = 66;
+  int T_meta_Mem = 49;
   /** RegularExpression Id. */
-  int T_meta_Constant = 74;
+  int T_meta_Arg = 57;
   /** RegularExpression Id. */
-  int T_meta_TypeIdentifierTail = 80;
+  int T_meta_Program = 63;
   /** RegularExpression Id. */
-  int T_meta_Integer = 86;
+  int T_meta_Reg = 85;
   /** RegularExpression Id. */
-  int T_meta_Mem = 94;
+  int T_meta_Declaration = 94;
   /** RegularExpression Id. */
-  int T_meta_Computed = 100;
+  int T_meta_Local = 100;
   /** RegularExpression Id. */
-  int T_meta_IfTail = 107;
+  int T_meta_INT = 106;
   /** RegularExpression Id. */
-  int T_meta_Instructions = 113;
+  int T_meta_ExpressionList = 112;
   /** RegularExpression Id. */
-  int T_meta_Instruction = 123;
+  int T_meta_String = 118;
   /** RegularExpression Id. */
-  int T_meta_ExpressionList = 129;
+  int T_meta_Integers = 124;
   /** RegularExpression Id. */
-  int T_meta_INT = 135;
+  int T_meta_TypeListTail = 130;
   /** RegularExpression Id. */
-  int T_meta_Label = 141;
+  int T_meta_ID = 136;
   /** RegularExpression Id. */
-  int T_meta_TypeList = 147;
+  int T_meta_After1 = 142;
   /** RegularExpression Id. */
-  int T_meta_Reg = 169;
+  int T_meta_TypeList = 148;
   /** RegularExpression Id. */
-  int T_meta_TypeListTail = 175;
+  int T_meta_Label = 154;
   /** RegularExpression Id. */
-  int T_meta_After1 = 181;
+  int T_meta_Computed = 160;
   /** RegularExpression Id. */
-  int T_meta_ArgumentSignature = 187;
+  int T_meta_Declarations = 166;
   /** RegularExpression Id. */
-  int T_meta_Declarations = 193;
+  int T_meta_ArgumentSignature = 172;
   /** RegularExpression Id. */
-  int T_meta_ExpressionListTail = 199;
+  int T_meta_Op = 201;
   /** RegularExpression Id. */
-  int T_meta_ID = 205;
+  int T_meta_Constant = 209;
   /** RegularExpression Id. */
-  int T_meta_Local = 211;
+  int T_meta_FT = 215;
   /** RegularExpression Id. */
-  int T_meta_Rs = 217;
+  int T_meta_Statement = 226;
   /** RegularExpression Id. */
-  int T_meta_Expression = 235;
+  int T_meta_Instructions = 232;
   /** RegularExpression Id. */
-  int T_meta_Declaration = 242;
+  int T_meta_IfTail = 239;
   /** RegularExpression Id. */
-  int T_meta_Arg = 250;
+  int T_meta_Statements = 245;
   /** RegularExpression Id. */
-  int T_meta_Regs = 256;
+  int T_meta_TypeIdentifierTail = 251;
   /** RegularExpression Id. */
-  int T_meta_Sign = 262;
+  int T_meta_ExpressionListTail = 257;
   /** RegularExpression Id. */
-  int T_meta_FT = 268;
+  int T_meta_Regs = 263;
   /** RegularExpression Id. */
-  int T_meta_Integers = 274;
+  int T_meta_Integer = 269;
   /** RegularExpression Id. */
-  int T_meta_Program = 280;
+  int T_meta_Identifier = 275;
   /** RegularExpression Id. */
-  int T_meta_Statement = 291;
+  int T_meta_Expression = 291;
   /** RegularExpression Id. */
   int T_ID = 294;
   /** RegularExpression Id. */
@@ -104,301 +104,217 @@ public interface Pr3YunjianEmbedConstants {
   /** Lexical state. */
   int DEFAULT = 0;
   /** Lexical state. */
-  int IN_META_STR = 1;
+  int IN_META_Instruction = 1;
   /** Lexical state. */
-  int IN_NESTED_META_STR = 2;
+  int IN_NESTED_META_Instruction = 2;
   /** Lexical state. */
-  int IN_META_String = 3;
+  int IN_META_Type = 3;
   /** Lexical state. */
-  int IN_NESTED_META_String = 4;
+  int IN_NESTED_META_Type = 4;
   /** Lexical state. */
-  int IN_META_Type = 5;
+  int IN_META_Sign = 5;
   /** Lexical state. */
-  int IN_NESTED_META_Type = 6;
+  int IN_NESTED_META_Sign = 6;
   /** Lexical state. */
-  int IN_META_Op = 7;
+  int IN_META_STR = 7;
   /** Lexical state. */
-  int IN_NESTED_META_Op = 8;
+  int IN_NESTED_META_STR = 8;
   /** Lexical state. */
-  int IN_META_Identifier = 9;
+  int IN_META_Rs = 9;
   /** Lexical state. */
-  int IN_NESTED_META_Identifier = 10;
+  int IN_NESTED_META_Rs = 10;
   /** Lexical state. */
-  int IN_META_Statements = 11;
+  int IN_META_Mem = 11;
   /** Lexical state. */
-  int IN_NESTED_META_Statements = 12;
+  int IN_NESTED_META_Mem = 12;
   /** Lexical state. */
-  int IN_META_Constant = 13;
+  int IN_META_Arg = 13;
   /** Lexical state. */
-  int IN_NESTED_META_Constant = 14;
+  int IN_NESTED_META_Arg = 14;
   /** Lexical state. */
-  int IN_META_TypeIdentifierTail = 15;
+  int IN_META_Program = 15;
   /** Lexical state. */
-  int IN_NESTED_META_TypeIdentifierTail = 16;
+  int IN_NESTED_META_Program = 16;
   /** Lexical state. */
-  int IN_META_Integer = 17;
+  int IN_META_Reg = 17;
   /** Lexical state. */
-  int IN_NESTED_META_Integer = 18;
+  int IN_NESTED_META_Reg = 18;
   /** Lexical state. */
-  int IN_META_Mem = 19;
+  int IN_META_Declaration = 19;
   /** Lexical state. */
-  int IN_NESTED_META_Mem = 20;
+  int IN_NESTED_META_Declaration = 20;
   /** Lexical state. */
-  int IN_META_Computed = 21;
+  int IN_META_Local = 21;
   /** Lexical state. */
-  int IN_NESTED_META_Computed = 22;
+  int IN_NESTED_META_Local = 22;
   /** Lexical state. */
-  int IN_META_IfTail = 23;
+  int IN_META_INT = 23;
   /** Lexical state. */
-  int IN_NESTED_META_IfTail = 24;
+  int IN_NESTED_META_INT = 24;
   /** Lexical state. */
-  int IN_META_Instructions = 25;
+  int IN_META_ExpressionList = 25;
   /** Lexical state. */
-  int IN_NESTED_META_Instructions = 26;
+  int IN_NESTED_META_ExpressionList = 26;
   /** Lexical state. */
-  int IN_META_Instruction = 27;
+  int IN_META_String = 27;
   /** Lexical state. */
-  int IN_NESTED_META_Instruction = 28;
+  int IN_NESTED_META_String = 28;
   /** Lexical state. */
-  int IN_META_ExpressionList = 29;
+  int IN_META_Integers = 29;
   /** Lexical state. */
-  int IN_NESTED_META_ExpressionList = 30;
+  int IN_NESTED_META_Integers = 30;
   /** Lexical state. */
-  int IN_META_INT = 31;
+  int IN_META_TypeListTail = 31;
   /** Lexical state. */
-  int IN_NESTED_META_INT = 32;
+  int IN_NESTED_META_TypeListTail = 32;
   /** Lexical state. */
-  int IN_META_Label = 33;
+  int IN_META_ID = 33;
   /** Lexical state. */
-  int IN_NESTED_META_Label = 34;
+  int IN_NESTED_META_ID = 34;
   /** Lexical state. */
-  int IN_META_TypeList = 35;
+  int IN_META_After1 = 35;
   /** Lexical state. */
-  int IN_NESTED_META_TypeList = 36;
+  int IN_NESTED_META_After1 = 36;
   /** Lexical state. */
-  int IN_META_Reg = 37;
+  int IN_META_TypeList = 37;
   /** Lexical state. */
-  int IN_NESTED_META_Reg = 38;
+  int IN_NESTED_META_TypeList = 38;
   /** Lexical state. */
-  int IN_META_TypeListTail = 39;
+  int IN_META_Label = 39;
   /** Lexical state. */
-  int IN_NESTED_META_TypeListTail = 40;
+  int IN_NESTED_META_Label = 40;
   /** Lexical state. */
-  int IN_META_After1 = 41;
+  int IN_META_Computed = 41;
   /** Lexical state. */
-  int IN_NESTED_META_After1 = 42;
+  int IN_NESTED_META_Computed = 42;
   /** Lexical state. */
-  int IN_META_ArgumentSignature = 43;
+  int IN_META_Declarations = 43;
   /** Lexical state. */
-  int IN_NESTED_META_ArgumentSignature = 44;
+  int IN_NESTED_META_Declarations = 44;
   /** Lexical state. */
-  int IN_META_Declarations = 45;
+  int IN_META_ArgumentSignature = 45;
   /** Lexical state. */
-  int IN_NESTED_META_Declarations = 46;
+  int IN_NESTED_META_ArgumentSignature = 46;
   /** Lexical state. */
-  int IN_META_ExpressionListTail = 47;
+  int IN_META_Op = 47;
   /** Lexical state. */
-  int IN_NESTED_META_ExpressionListTail = 48;
+  int IN_NESTED_META_Op = 48;
   /** Lexical state. */
-  int IN_META_ID = 49;
+  int IN_META_Constant = 49;
   /** Lexical state. */
-  int IN_NESTED_META_ID = 50;
+  int IN_NESTED_META_Constant = 50;
   /** Lexical state. */
-  int IN_META_Local = 51;
+  int IN_META_FT = 51;
   /** Lexical state. */
-  int IN_NESTED_META_Local = 52;
+  int IN_NESTED_META_FT = 52;
   /** Lexical state. */
-  int IN_META_Rs = 53;
+  int IN_META_Statement = 53;
   /** Lexical state. */
-  int IN_NESTED_META_Rs = 54;
+  int IN_NESTED_META_Statement = 54;
   /** Lexical state. */
-  int IN_META_Expression = 55;
+  int IN_META_Instructions = 55;
   /** Lexical state. */
-  int IN_NESTED_META_Expression = 56;
+  int IN_NESTED_META_Instructions = 56;
   /** Lexical state. */
-  int IN_META_Declaration = 57;
+  int IN_META_IfTail = 57;
   /** Lexical state. */
-  int IN_NESTED_META_Declaration = 58;
+  int IN_NESTED_META_IfTail = 58;
   /** Lexical state. */
-  int IN_META_Arg = 59;
+  int IN_META_Statements = 59;
   /** Lexical state. */
-  int IN_NESTED_META_Arg = 60;
+  int IN_NESTED_META_Statements = 60;
   /** Lexical state. */
-  int IN_META_Regs = 61;
+  int IN_META_TypeIdentifierTail = 61;
   /** Lexical state. */
-  int IN_NESTED_META_Regs = 62;
+  int IN_NESTED_META_TypeIdentifierTail = 62;
   /** Lexical state. */
-  int IN_META_Sign = 63;
+  int IN_META_ExpressionListTail = 63;
   /** Lexical state. */
-  int IN_NESTED_META_Sign = 64;
+  int IN_NESTED_META_ExpressionListTail = 64;
   /** Lexical state. */
-  int IN_META_FT = 65;
+  int IN_META_Regs = 65;
   /** Lexical state. */
-  int IN_NESTED_META_FT = 66;
+  int IN_NESTED_META_Regs = 66;
   /** Lexical state. */
-  int IN_META_Integers = 67;
+  int IN_META_Integer = 67;
   /** Lexical state. */
-  int IN_NESTED_META_Integers = 68;
+  int IN_NESTED_META_Integer = 68;
   /** Lexical state. */
-  int IN_META_Program = 69;
+  int IN_META_Identifier = 69;
   /** Lexical state. */
-  int IN_NESTED_META_Program = 70;
+  int IN_NESTED_META_Identifier = 70;
   /** Lexical state. */
-  int IN_META_Statement = 71;
+  int IN_META_Expression = 71;
   /** Lexical state. */
-  int IN_NESTED_META_Statement = 72;
+  int IN_NESTED_META_Expression = 72;
 
   /** Literal token values. */
   String[] tokenImage = {
     "<EOF>",
-    "<token of kind 1>",
+    "\"DCI\"",
+    "\"DCS\"",
+    "\"DEF\"",
+    "\"=\"",
+    "<token of kind 5>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 6>",
-    "<token of kind 7>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 12>",
+    "<token of kind 10>",
     "\"*\"",
     "\"(\"",
     "\")\"",
     "\"char\"",
     "\"int\"",
-    "<token of kind 18>",
+    "<token of kind 16>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 23>",
-    "\"ADD\"",
-    "\",\"",
-    "\"AND\"",
-    "\"B\"",
-    "\"BEQ\"",
-    "\"BGE\"",
-    "\"BGT\"",
-    "\"BL\"",
-    "\"BLE\"",
-    "\"BLT\"",
-    "\"BNE\"",
-    "\"CMP\"",
-    "\"EOR\"",
-    "\"LDMFD\"",
-    "\"!\"",
-    "\"{\"",
-    "\"}\"",
-    "\"LDR\"",
-    "\"MOV\"",
-    "\"MUL\"",
-    "\"MVN\"",
-    "\"ORR\"",
-    "\"RSB\"",
-    "\"STMFD\"",
-    "\"STR\"",
-    "\"SUB\"",
-    "<token of kind 50>",
+    "<token of kind 21>",
+    "\"+\"",
+    "\"-\"",
+    "<token of kind 24>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 55>",
-    "<token of kind 56>",
+    "<token of kind 29>",
+    "<token of kind 30>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 61>",
-    "<token of kind 62>",
+    "<token of kind 35>",
+    "<token of kind 36>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 67>",
-    "\"#\"",
-    "\"&\"",
-    "<token of kind 70>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 75>",
-    "<token of kind 76>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 81>",
-    "<token of kind 82>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 87>",
+    "<token of kind 41>",
     "\"[\"",
+    "\",\"",
     "\"]\"",
-    "<token of kind 90>",
+    "<token of kind 45>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 95>",
-    "<token of kind 96>",
+    "<token of kind 50>",
+    "\"LSL\"",
+    "\"LSR\"",
+    "<token of kind 53>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 101>",
-    "\"else\"",
-    "<token of kind 103>",
+    "<token of kind 58>",
+    "<token of kind 59>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 108>",
-    "<token of kind 109>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 114>",
-    "\"DCI\"",
-    "\"DCS\"",
-    "\"DEF\"",
-    "\"=\"",
-    "<token of kind 119>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 124>",
-    "<token of kind 125>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 130>",
-    "<token of kind 131>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 136>",
-    "<token of kind 137>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 142>",
-    "<token of kind 143>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 148>",
+    "<token of kind 64>",
     "\"LR\"",
     "\"PC\"",
     "\"R0\"",
@@ -415,60 +331,202 @@ public interface Pr3YunjianEmbedConstants {
     "\"R8\"",
     "\"R9\"",
     "\"SP\"",
-    "<token of kind 165>",
+    "<token of kind 81>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 170>",
-    "<token of kind 171>",
+    "<token of kind 86>",
+    "\"function\"",
+    "\"{\"",
+    "\"}\"",
+    "<token of kind 90>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 176>",
-    "<token of kind 177>",
+    "<token of kind 95>",
+    "<token of kind 96>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 182>",
-    "<token of kind 183>",
+    "<token of kind 101>",
+    "<token of kind 102>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 188>",
-    "<token of kind 189>",
+    "<token of kind 107>",
+    "<token of kind 108>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 194>",
-    "<token of kind 195>",
+    "<token of kind 113>",
+    "<token of kind 114>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 200>",
-    "<token of kind 201>",
+    "<token of kind 119>",
+    "<token of kind 120>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 206>",
-    "<token of kind 207>",
+    "<token of kind 125>",
+    "<token of kind 126>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 212>",
-    "<token of kind 213>",
+    "<token of kind 131>",
+    "<token of kind 132>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",
     "\"\\u27e9\"",
     "\"\\u27e9\"",
-    "<token of kind 218>",
+    "<token of kind 137>",
+    "<token of kind 138>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 143>",
+    "<token of kind 144>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 149>",
+    "<token of kind 150>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 155>",
+    "<token of kind 156>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 161>",
+    "<token of kind 162>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 167>",
+    "<token of kind 168>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 173>",
+    "\"ADD\"",
+    "\"AND\"",
+    "\"B\"",
+    "\"BEQ\"",
+    "\"BGE\"",
+    "\"BGT\"",
+    "\"BL\"",
+    "\"BLE\"",
+    "\"BLT\"",
+    "\"BNE\"",
+    "\"CMP\"",
+    "\"EOR\"",
+    "\"LDMFD\"",
+    "\"!\"",
+    "\"LDR\"",
+    "\"MOV\"",
+    "\"MUL\"",
+    "\"MVN\"",
+    "\"ORR\"",
+    "\"RSB\"",
+    "\"STMFD\"",
+    "\"STR\"",
+    "\"SUB\"",
+    "<token of kind 197>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 202>",
+    "\"#\"",
+    "\"&\"",
+    "<token of kind 205>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 210>",
+    "<token of kind 211>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 216>",
+    "\"if\"",
+    "\"return\"",
+    "\";\"",
+    "\"var\"",
+    "\"while\"",
+    "<token of kind 222>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 227>",
+    "<token of kind 228>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 233>",
+    "\"else\"",
+    "<token of kind 235>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 240>",
+    "<token of kind 241>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 246>",
+    "<token of kind 247>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 252>",
+    "<token of kind 253>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 258>",
+    "<token of kind 259>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 264>",
+    "<token of kind 265>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 270>",
+    "<token of kind 271>",
+    "\"\\u27e8\"",
+    "\"\\u27e8\"",
+    "\"\\u27e9\"",
+    "\"\\u27e9\"",
+    "<token of kind 276>",
     "\"||\"",
     "\"&&\"",
     "\"!=\"",
@@ -477,66 +535,8 @@ public interface Pr3YunjianEmbedConstants {
     "\"<=\"",
     "\">\"",
     "\">=\"",
-    "\"+\"",
-    "\"-\"",
     "\"null\"",
     "\"sizeof\"",
-    "<token of kind 231>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 236>",
-    "\"function\"",
-    "<token of kind 238>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 243>",
-    "\"LSL\"",
-    "\"LSR\"",
-    "<token of kind 246>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 251>",
-    "<token of kind 252>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 257>",
-    "<token of kind 258>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 263>",
-    "<token of kind 264>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 269>",
-    "<token of kind 270>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 275>",
-    "<token of kind 276>",
-    "\"\\u27e8\"",
-    "\"\\u27e8\"",
-    "\"\\u27e9\"",
-    "\"\\u27e9\"",
-    "<token of kind 281>",
-    "\"if\"",
-    "\"return\"",
-    "\";\"",
-    "\"var\"",
-    "\"while\"",
     "<token of kind 287>",
     "\"\\u27e8\"",
     "\"\\u27e8\"",

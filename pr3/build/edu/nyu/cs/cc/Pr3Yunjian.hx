@@ -491,9 +491,83 @@ module edu.nyu.cs.cc.Pr3Yunjian {
 
   sort Instructions | scheme E(Expression)↓vt;
   E( ⟦ ⟨Integer#1⟩ ⟧) → ⟦MOV R4, #⟨Integer #1⟩⟧;
-  E( ⟦ ⟨String#1⟩ ⟧)  → ⟦DCS  ⟨String#1⟩⟧; //TODO
+  E( ⟦ ⟨String#1⟩ ⟧)  → ⟦DCS  ⟨String#1⟩⟧;
   E( ⟦ ⟨Identifier#1⟩ ⟧)↓vt{#1:#v} → ⟦{⟨Instructions Load(#v, ⟦R4⟧)⟩}⟧;
+
   E( ⟦ ⟨Identifier#1⟩ ( ⟨ExpressionList#2⟩ )⟧)↓vt{:#v} → FunctionCall(#2, #1)↓vt{:#v};
+  E( ⟦ null ( ⟨Type#⟩ ) ⟧ ) → ⟦MOV R4, #0⟧;
+  E( ⟦ sizeof ( ⟨Type#⟩ )⟧ ) → ⟦MOV R4, #4⟧;
+
+
+  E( ⟦ ! ⟨Expression#1⟩ ⟧ )↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     MVN R4, R4
+  ⟧;
+
+  E( ⟦ - ⟨Expression#1⟩ ⟧ )↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     RSB R4, R4, #0
+  ⟧;
+
+  E(  ⟦ + ⟨Expression#1⟩ ⟧ )↓vt{:#v} → E(#1)↓vt{:#v};
+
+  E(  ⟦ * ⟨Expression#1⟩ ⟧ )↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     LDR R4, [R12, R4]
+  ⟧;
+
+  E(  ⟦ & ⟨Expression#⟩ ⟧ ) → ⟦⟧;
+
+  E(  ⟦ ⟨Expression#1⟩ * ⟨Expression#2⟩ ⟧)↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     MUL R4, R4, R5
+  ⟧;
+
+  E(  ⟦ ⟨Expression#1⟩ + ⟨Expression#2⟩ ⟧)↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     ADD R4, R4, R5
+  ⟧;
+
+  E(  ⟦ ⟨Expression#1⟩ - ⟨Expression#2⟩ ⟧)↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     ADD R4, R5, R4
+  ⟧;
+
+  E(  ⟦ ⟨Expression#1⟩ && ⟨Expression#2⟩ ⟧)↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     AND R4, R5, R4
+  ⟧;
+
+  E(  ⟦ ⟨Expression#1⟩ || ⟨Expression#2⟩ ⟧)↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     ORR R4, R5, R4
+  ⟧;
+
+  /*
+
+  E(  ⟦ ⟨Expression⟩ < ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
+  E(  ⟦ ⟨Expression⟩ > ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
+  E(  ⟦ ⟨Expression⟩ <= ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
+  E(  ⟦ ⟨Expression⟩ >= ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
+
+  E(  ⟦ ⟨Expression⟩ == ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
+  E(  ⟦ ⟨Expression⟩ != ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
+  */
   E(#)  → ⟦⟧;
 
 }
