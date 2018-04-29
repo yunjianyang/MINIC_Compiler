@@ -476,6 +476,7 @@ module edu.nyu.cs.cc.Pr3Yunjian {
      MOV R0, R4
      {⟨Instructions FunctionCall2(#2, XRegs(⟦R1-R3⟧))↓vt{:#v}⟩}
      BL f
+     MOV R4, R0
     ⟧;
 
   sort Instructions | scheme FunctionCall2(ExpressionListTail, Rs)↓vt;
