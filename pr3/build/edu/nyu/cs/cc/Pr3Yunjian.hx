@@ -260,8 +260,8 @@ module edu.nyu.cs.cc.Pr3Yunjian {
 
  // HACS doesn't like to compile with Computed sort
  // unless there exists a scheme that can generate Computed
- sort Computed | scheme Incr(Computed) ;
- Incr(#o) → ⟦ #o + 4 ⟧;
+ sort Computed | scheme Decr(Computed) ;
+ Decr(#o) → ⟦ #o - 4 ⟧;
 
  // MAIN SCHEME
 
@@ -368,7 +368,7 @@ module edu.nyu.cs.cc.Pr3Yunjian {
   sort Instructions | scheme S(Statements) ↓ft ↓vt ↓return ↓unused ↓offset ;
   S(⟦ var ⟨Type#t⟩ ⟨Identifier#1⟩ ; ⟨Statements#2⟩⟧)
     ↓offset(#o)↓vt{:#v}↓return(r)
-  → S(#2)↓offset(Incr(#o))↓vt{:#v}↓vt{#1:FrameLocal(#t, #o)}↓return(r);
+  → S(#2)↓offset(Decr(#o))↓vt{:#v}↓vt{#1:FrameLocal(#t, #o)}↓return(r);
   S(⟦ ⟨Identifier#1⟩ = ⟨Expression#2⟩ ; ⟨Statements#3⟩⟧)
     ↓offset(#o)↓vt{#1:#l}↓return(r)
   → ⟦
@@ -558,16 +558,88 @@ module edu.nyu.cs.cc.Pr3Yunjian {
      ORR R4, R5, R4
   ⟧;
 
-  /*
 
-  E(  ⟦ ⟨Expression⟩ < ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
-  E(  ⟦ ⟨Expression⟩ > ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
-  E(  ⟦ ⟨Expression⟩ <= ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
-  E(  ⟦ ⟨Expression⟩ >= ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
+  E(  ⟦ ⟨Expression#1⟩ < ⟨Expression#2⟩ ⟧ )↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     CMP R5, R4
+     BLT TRUE
+     MOV R4, #0
+     B NEXT
+     TRUE
+     MOV R4, #1
+     NEXT
+  ⟧;
 
-  E(  ⟦ ⟨Expression⟩ == ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
-  E(  ⟦ ⟨Expression⟩ != ⟨Expression⟩ ⟧ ) → ⟦⟧; //TODO
-  */
-  E(#)  → ⟦⟧;
+  E(  ⟦ ⟨Expression#1⟩ > ⟨Expression#2⟩ ⟧ )↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     CMP R5, R4
+     BGT TRUE
+     MOV R4, #0
+     B NEXT
+     TRUE
+     MOV R4, #1
+     NEXT
+  ⟧;
 
+  E(  ⟦ ⟨Expression#1⟩ <= ⟨Expression#2⟩ ⟧ )↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     CMP R5, R4
+     BLE TRUE
+     MOV R4, #0
+     B NEXT
+     TRUE
+     MOV R4, #1
+     NEXT
+  ⟧;
+
+  E(  ⟦ ⟨Expression#1⟩ >= ⟨Expression#2⟩ ⟧ )↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     CMP R5, R4
+     BGE TRUE
+     MOV R4, #0
+     B NEXT
+     TRUE
+     MOV R4, #1
+     NEXT
+  ⟧;
+
+  E(  ⟦ ⟨Expression#1⟩ == ⟨Expression#2⟩ ⟧ )↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     CMP R5, R4
+     BEQ TRUE
+     MOV R4, #0
+     B NEXT
+     TRUE
+     MOV R4, #1
+     NEXT
+  ⟧;
+
+  E(  ⟦ ⟨Expression#1⟩ != ⟨Expression#2⟩ ⟧ )↓vt{:#v}
+  → ⟦{⟨Instructions E(#1)↓vt{:#v}⟩}
+     STMFD SP!, {R4}
+     {⟨Instructions E(#2)↓vt{:#v}⟩}
+     LDMFD SP!, {R5}
+     CMP R5, R4
+     BNE TRUE
+     MOV R4, #0
+     B NEXT
+     TRUE
+     MOV R4, #1
+     NEXT
+  ⟧;
 }
